@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GaurDR</title>
+    <link>https://gaurdr.github.io/</link>
+    <description>Recent content on GaurDR</description>
+    <image>
+      <url>https://gaurdr.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://gaurdr.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 17 Sep 2022 23:03:23 -0600</lastBuildDate><atom:link href="https://gaurdr.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Research assistantships available for Undergraduates</title>
+      <link>https://gaurdr.github.io/news/ugrad-positions/</link>
+      <pubDate>Sat, 17 Sep 2022 23:03:23 -0600</pubDate>
+      
+      <guid>https://gaurdr.github.io/news/ugrad-positions/</guid>
+      <description>Undergraduate Research assistantships in Optimization Research Group, Lethbridge
+Three research assistantships are available immediately for qualified undergraduate students in CS and related disciplines. You will work on international collaborative projects with partners from the UK, Croatia and the Netherlands funded by the Natural Sciences and Engineering Research Council of Canada, NSERC.
+Quantum Approaches for Electric Grid Operations (1 position) The project is on quantum approaches for Electrical Grid operations and is led by Drs.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://gaurdr.github.io/about/</link>
+      <pubDate>Sat, 17 Sep 2022 22:53:43 -0600</pubDate>
+      
+      <guid>https://gaurdr.github.io/about/</guid>
+      <description> Email: gaur@cs.uleth.ca Phone: +1 (403) 329-2496 Address: D512, 4401 University Drive, Lethbridge, AB, Canada T1K5K4 Office Hours: Tu, Th 12:00 to 13:00 or email for an appointment. All email in the inbox is processed. </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://gaurdr.github.io/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gaurdr.github.io/home/</guid>
+      <description>Biography Daya Gaur obtained B. Tech (hons) in CSE from IT-BHU, Varanasi and M.Sc. and Ph.D, degrees from School of Computing Science, Simon Fraser University. He is a Professor (Full) of Computer Science at the University of Lethbridge. His research interests are in Algorithms both classical and Quantum. He is a founding member of the https://www.ulethbridge.ca/artsci/math-computer-science/optimization-research-group[Optimization Research Group, Lethbridge], member of Quantum Alberta and Southern Alberta Genome Sciences Center.
+He has held visiting appointments at STCS, TIFR Mumbai, Department of CSE, IIT Delhi, Department of CSE, IIT BHU.</description>
+    </item>
+    
+    
+  </channel>
+</rss>
