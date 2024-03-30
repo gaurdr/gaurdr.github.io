@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://gaurdr.github.io/posts/</loc>
     <lastmod>2024-03-29T17:46:47-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://gaurdr.github.io/categories/</loc>
     <lastmod>2024-03-29T17:46:47-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/cpsc-3630/</loc>
+    <loc>https://gaurdr.github.io/tags/cpsc-3630/</loc>
     <lastmod>2024-03-29T17:46:47-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://gaurdr.github.io/</loc>
     <lastmod>2024-03-29T17:46:47-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/programming/</loc>
+    <loc>https://gaurdr.github.io/categories/programming/</loc>
     <lastmod>2024-03-29T17:46:47-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/self_tm_complete/</loc>
+    <loc>https://gaurdr.github.io/posts/self_tm_complete/</loc>
     <lastmod>2024-03-29T17:46:47-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://gaurdr.github.io/tags/</loc>
     <lastmod>2024-03-29T17:46:47-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/toc/</loc>
+    <loc>https://gaurdr.github.io/categories/toc/</loc>
     <lastmod>2024-03-29T17:46:47-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/news/</loc>
+    <loc>https://gaurdr.github.io/news/</loc>
     <lastmod>2022-09-17T23:03:23-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://gaurdr.github.io/about/</loc>
     <lastmod>2022-09-17T22:53:43-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/home/</loc>
+    <loc>https://gaurdr.github.io/home/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://gaurdr.github.io/search/</loc>
   </url>
 </urlset>
