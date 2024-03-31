@@ -5,21 +5,21 @@
     <link>https://gaurdr.github.io/tags/cpsc-3630/</link>
     <description>Recent content in CPSC 3630 on GaurDR</description>
     <image>
+      <title>GaurDR</title>
       <url>https://gaurdr.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://gaurdr.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Mar 2024 17:46:47 -0600</lastBuildDate><atom:link href="https://gaurdr.github.io/tags/cpsc-3630/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Mar 2024 17:46:47 -0600</lastBuildDate>
+    <atom:link href="https://gaurdr.github.io/tags/cpsc-3630/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SELF TM</title>
       <link>https://gaurdr.github.io/posts/self_tm_complete/</link>
       <pubDate>Fri, 29 Mar 2024 17:46:47 -0600</pubDate>
-      
       <guid>https://gaurdr.github.io/posts/self_tm_complete/</guid>
       <description>SELF Turing Machine There exists a Turing machine named SELF that can generate its own code without any external input. For details on SELF, refer to Chapter 6 (first few pages) of the Theory of Computation book by Sipser.
 SELF is composed of two parts, A, B both Turing machines. First, A runs and leaves &amp;lt;B&amp;gt;, the description of TM B, on the tape. Then, B runs and analyses the contents of the tape to determine the description &amp;lt;A&amp;gt; of the Turing machine that left the contents on the tape.</description>
     </item>
-    
   </channel>
 </rss>
