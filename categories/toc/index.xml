@@ -56,7 +56,7 @@ def B(): global s   print(&quot;def A(): global s s =&quot;, s) print(s)
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mh">0x27</span><span class="p">))</span>
 </span></span></code></pre></div><pre><code>'
 </code></pre>
-<h1 id="chr0x27"><code>chr(0x27)</code></h1>
+<h2 id="chr0x27"><code>chr(0x27)</code></h2>
 <p>The code below fixes the <code>'</code> issue.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">global</span> <span class="n">s</span>
