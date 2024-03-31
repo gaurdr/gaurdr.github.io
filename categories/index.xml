@@ -4,28 +4,28 @@
     <title>Categories on GaurDR</title>
     <link>https://gaurdr.github.io/categories/</link>
     <description>Recent content in Categories on GaurDR</description>
-    <image>
-      <title>GaurDR</title>
-      <url>https://gaurdr.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://gaurdr.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 Mar 2024 17:46:47 -0600</lastBuildDate>
-    <atom:link href="https://gaurdr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 29 Mar 2024 17:46:47 -0600</lastBuildDate><atom:link href="https://gaurdr.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Programming</title>
       <link>https://gaurdr.github.io/categories/programming/</link>
       <pubDate>Fri, 29 Mar 2024 17:46:47 -0600</pubDate>
+      
       <guid>https://gaurdr.github.io/categories/programming/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
     <item>
       <title>TOC</title>
       <link>https://gaurdr.github.io/categories/toc/</link>
       <pubDate>Fri, 29 Mar 2024 17:46:47 -0600</pubDate>
+      
       <guid>https://gaurdr.github.io/categories/toc/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
+    
   </channel>
 </rss>
