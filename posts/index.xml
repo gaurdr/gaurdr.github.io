@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>GaurDR</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://gaurdr.github.io/posts/</link>
     <description>Recent content on GaurDR</description>
     <image>
       <title>GaurDR</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://gaurdr.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://gaurdr.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 29 Mar 2024 17:46:47 -0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gaurdr.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SELF TM</title>
-      <link>http://localhost:1313/posts/self_tm_complete/</link>
+      <link>https://gaurdr.github.io/posts/self_tm_complete/</link>
       <pubDate>Fri, 29 Mar 2024 17:46:47 -0600</pubDate>
-      <guid>http://localhost:1313/posts/self_tm_complete/</guid>
+      <guid>https://gaurdr.github.io/posts/self_tm_complete/</guid>
       <description>SELF Turing Machine There exists a Turing machine named SELF that can generate its own code without any external input. For details on SELF, refer to Chapter 6 (first few pages) of the Theory of Computation book by Sipser.
 SELF is composed of two parts, A, B both Turing machines. First, A runs and leaves &amp;lt;B&amp;gt;, the description of TM B, on the tape. Then, B runs and analyses the contents of the tape to determine the description &amp;lt;A&amp;gt; of the Turing machine that left the contents on the tape.</description>
     </item>
