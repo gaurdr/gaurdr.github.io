@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alberta referendum 2026 – results maps</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    ol { padding-left: 22px; }
+    li { margin: 6px 0; }
+    li.soon { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alberta referendum 2026 – results by riding</h1>
+    <p class="prompt">One map per ballot question. Hover over a riding to see its results.</p>
+  </header>
+  <main><ol id="list"></ol></main>
+  <script src="assets/questions.js"></script>
+  <script>
+    const list = document.getElementById("list");
+    for (const [n, q] of Object.entries(QUESTIONS)) {
+      const li = document.createElement("li");
+      li.value = n;
+      if (q.ready) li.innerHTML = `<a href="q${n}.html">${q.short}</a>`;
+      else { li.className = "soon"; li.textContent = `${q.short} (coming soon)`; }
+      list.appendChild(li);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alberta referendum 2026 – results by riding</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-question="9">
+  <header>
+    <nav class="status" id="nav"><a href="index.html">← All questions</a></nav>
+    <h1 id="title"></h1>
+    <p class="prompt" id="prompt"></p>
+    <div class="status" id="status">Loading results…</div>
+    <div class="summary" id="summary"></div>
+  </header>
+  <main>
+    <div class="legend" id="legend"></div>
+    <div class="search"><input id="search" type="search" placeholder="Find a riding…"></div>
+    <div class="layout">
+      <div class="panel"><h2>Alberta</h2><svg id="map-ab"></svg></div>
+      <div class="insets">
+        <div class="panel"><h2>Edmonton</h2><svg id="map-edm"></svg></div>
+        <div class="panel"><h2>Calgary</h2><svg id="map-cgy"></svg></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Results: CBC News live feed. Boundaries: Elections Alberta, 2019 electoral divisions (87 ridings).
+  </footer>
+  <div id="tooltip"></div>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+  <script src="assets/questions.js"></script>
+  <script src="assets/map.js"></script>
+</body>
+</html>
