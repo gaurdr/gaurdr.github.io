@@ -5,7 +5,8 @@
   const GC = "https://dgiitrpr.goatcounter.com";
   if (["localhost", "127.0.0.1", "[::1]"].includes(location.hostname)) return;
 
-  fetch(`${GC}/counter/${encodeURIComponent(location.pathname)}.json`)
+  // Without a start date GoatCounter leaves out today's visits; the site launched Oct 2026.
+  fetch(`${GC}/counter/${encodeURIComponent(location.pathname)}.json?start=2026-10-01`)
     .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
     .then(({ count }) => {
       const el = document.createElement("div");
