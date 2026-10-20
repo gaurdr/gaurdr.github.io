@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alberta referendum 2026 – ridings that vote alike</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/clusters.css">
+</head>
+<body>
+  <header>
+    <nav class="status"><a href="index.html">← All questions</a></nav>
+    <h1>Ridings that vote alike</h1>
+    <p class="prompt">
+      Ridings grouped by how they voted across all 10 questions, using k-means clustering.
+      Hover over a riding to highlight its cluster. Click a riding for its results and its cluster's summary.
+    </p>
+    <div class="toggle" role="tablist" aria-label="Clustering">
+      <button type="button" role="tab" data-key="A" aria-selected="true">Overall leaning</button>
+      <button type="button" role="tab" data-key="B" aria-selected="false">Issue profile</button>
+    </div>
+    <p class="explain" id="explain"></p>
+    <div class="status" id="status">Loading…</div>
+  </header>
+  <main>
+    <div class="legend" id="legend"></div>
+    <div class="cl-layout">
+      <div class="cl-maps">
+        <div class="panel"><h2>Alberta</h2><svg id="map-ab"></svg></div>
+        <div class="cl-insets">
+          <div class="panel"><h2>Edmonton</h2><svg id="map-edm"></svg></div>
+          <div class="panel"><h2>Calgary</h2><svg id="map-cgy"></svg></div>
+        </div>
+      </div>
+      <aside class="cl-side panel" id="side" aria-live="polite"></aside>
+    </div>
+    <details class="cl-table">
+      <summary>Show all ridings as a table</summary>
+      <div id="table"></div>
+    </details>
+  </main>
+  <footer>
+    Results: CBC News live feed. Boundaries: Elections Alberta, 2019 electoral divisions (87 ridings).
+    Clusters: k-means on each riding's Yes shares (log-odds). Explanations: a random forest trained on the cluster labels, explained with SHAP.
+  </footer>
+  <div id="tooltip"></div>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+  <script src="assets/clusters.js"></script>
+  <script data-goatcounter="https://dgiitrpr.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+  <script src="assets/stats.js" defer></script>
+</body>
+</html>

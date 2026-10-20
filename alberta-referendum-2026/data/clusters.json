@@ -1,0 +1,5758 @@
+{
+ "meta": {
+  "feedState": "live",
+  "pollsReported": 4841,
+  "totalPolls": 5583,
+  "questions": {
+   "1": "immigration control",
+   "2": "programs by status",
+   "3": "12-month residency",
+   "4": "fees non-PR",
+   "5": "proof of citizenship",
+   "6": "provinces pick judges",
+   "7": "abolish Senate",
+   "8": "opt out w/ funding",
+   "9": "provincial paramountcy",
+   "10": "separation referendum"
+  }
+ },
+ "clusterings": {
+  "A": {
+   "title": "Overall leaning (level)",
+   "k": 4,
+   "stability": 0.849,
+   "wardAgreement": 0.933,
+   "exploratory": false,
+   "clusters": {
+    "1": {
+     "n": 20,
+     "description": "Level band 1 of 4 (least Yes overall). Average Yes on Q1 to Q9: 39%; on Q10: 14%.",
+     "yes": [
+      41.6,
+      40.1,
+      42.8,
+      42.3,
+      47.1,
+      33.9,
+      36.3,
+      31.8,
+      35.1,
+      13.6
+     ],
+     "level": -0.643,
+     "profile": [
+      0.048,
+      0.006,
+      0.036,
+      0.068,
+      -0.02,
+      -0.047,
+      -0.02,
+      -0.051,
+      -0.006,
+      -0.015
+     ],
+     "topShap": [
+      [
+       "level",
+       0.761
+      ],
+      [
+       "prof immigration (Q1-4)",
+       0.121
+      ],
+      [
+       "prof constitution (Q6-9)",
+       0.067
+      ]
+     ],
+     "examples": [
+      "Edmonton-Strathcona",
+      "Calgary-Bhullar-McCall",
+      "Edmonton-Highlands-Norwood",
+      "Edmonton-City Centre",
+      "Edmonton-Meadows"
+     ]
+    },
+    "2": {
+     "n": 26,
+     "description": "Level band 2 of 4 (middle Yes overall). Average Yes on Q1 to Q9: 49%; on Q10: 19%.",
+     "yes": [
+      49.8,
+      49.7,
+      52.1,
+      50.6,
+      58.0,
+      44.8,
+      47.2,
+      43.0,
+      45.0,
+      18.8
+     ],
+     "level": -0.234,
+     "profile": [
+      -0.025,
+      -0.006,
+      0.002,
+      -0.003,
+      0.014,
+      0.006,
+      0.023,
+      0.028,
+      0.005,
+      -0.043
+     ],
+     "topShap": [
+      [
+       "level",
+       0.636
+      ],
+      [
+       "prof immigration (Q1-4)",
+       0.153
+      ],
+      [
+       "prof separation (Q10)",
+       0.116
+      ]
+     ],
+     "examples": [
+      "Calgary-North",
+      "Calgary-Acadia",
+      "Edmonton-Beverly-Clareview",
+      "Calgary-Cross",
+      "Edmonton-Mill Woods"
+     ]
+    },
+    "3": {
+     "n": 18,
+     "description": "Level band 3 of 4 (middle Yes overall). Average Yes on Q1 to Q9: 64%; on Q10: 33%.",
+     "yes": [
+      67.0,
+      65.6,
+      66.8,
+      65.4,
+      72.4,
+      61.4,
+      62.5,
+      58.3,
+      60.4,
+      33.4
+     ],
+     "level": 0.425,
+     "profile": [
+      0.041,
+      -0.005,
+      -0.039,
+      -0.048,
+      -0.002,
+      0.025,
+      -0.007,
+      -0.012,
+      -0.027,
+      0.073
+     ],
+     "topShap": [
+      [
+       "level",
+       0.561
+      ],
+      [
+       "prof immigration (Q1-4)",
+       0.194
+      ],
+      [
+       "prof separation (Q10)",
+       0.11
+      ]
+     ],
+     "examples": [
+      "Morinville-St. Albert",
+      "Strathcona-Sherwood Park",
+      "Peace River",
+      "Red Deer-North",
+      "Cypress-Medicine Hat"
+     ]
+    },
+    "4": {
+     "n": 12,
+     "description": "Level band 4 of 4 (most Yes overall). Average Yes on Q1 to Q9: 75%; on Q10: 44%.",
+     "yes": [
+      75.0,
+      76.4,
+      77.6,
+      76.1,
+      81.4,
+      72.6,
+      73.6,
+      71.2,
+      73.1,
+      43.9
+     ],
+     "level": 0.941,
+     "profile": [
+      -0.088,
+      0.01,
+      -0.007,
+      -0.036,
+      0.006,
+      0.028,
+      -0.006,
+      0.043,
+      0.04,
+      0.01
+     ],
+     "topShap": [
+      [
+       "level",
+       0.654
+      ],
+      [
+       "prof constitution (Q6-9)",
+       0.124
+      ],
+      [
+       "prof immigration (Q1-4)",
+       0.095
+      ]
+     ],
+     "examples": [
+      "Lac Ste. Anne-Parkland",
+      "Lacombe-Ponoka",
+      "Central Peace-Notley",
+      "Innisfail-Sylvan Lake",
+      "Maskwacis-Wetaskiwin"
+     ]
+    }
+   }
+  },
+  "B": {
+   "title": "Issue profile",
+   "k": 3,
+   "stability": 0.608,
+   "wardAgreement": 0.669,
+   "exploratory": true,
+   "clusters": {
+    "1": {
+     "n": 31,
+     "description": "Relative to their own overall leaning: more Yes on Q1 (immigration control); less Yes on Q9 (provincial paramountcy).",
+     "yes": [
+      57.2,
+      54.0,
+      55.7,
+      54.5,
+      60.5,
+      48.0,
+      49.9,
+      45.7,
+      47.7,
+      23.0
+     ],
+     "level": -0.071,
+     "profile": [
+      0.136,
+      0.021,
+      0.005,
+      0.006,
+      -0.017,
+      -0.028,
+      -0.026,
+      -0.032,
+      -0.049,
+      -0.017
+     ],
+     "topShap": [
+      [
+       "Q1 immigration control",
+       0.471
+      ],
+      [
+       "Q10 separation referendum",
+       0.096
+      ],
+      [
+       "Q4 fees non-PR",
+       0.08
+      ]
+     ],
+     "examples": [
+      "Calgary-Bhullar-McCall",
+      "Edmonton-Meadows",
+      "Calgary-Mountain View",
+      "Calgary-Falconridge",
+      "Edmonton-Ellerslie"
+     ]
+    },
+    "2": {
+     "n": 29,
+     "description": "Relative to their own overall leaning: less Yes on Q1 (immigration control); less Yes on Q10 (separation referendum).",
+     "yes": [
+      53.6,
+      56.0,
+      58.6,
+      57.6,
+      64.6,
+      52.4,
+      53.9,
+      49.6,
+      51.7,
+      24.4
+     ],
+     "level": 0.05,
+     "profile": [
+      -0.138,
+      -0.007,
+      0.022,
+      0.029,
+      0.075,
+      0.047,
+      0.03,
+      0.017,
+      0.008,
+      -0.083
+     ],
+     "topShap": [
+      [
+       "Q1 immigration control",
+       0.505
+      ],
+      [
+       "Q10 separation referendum",
+       0.106
+      ],
+      [
+       "Q5 proof of citizenship",
+       0.099
+      ]
+     ],
+     "examples": [
+      "Edmonton-Strathcona",
+      "Edmonton-Glenora",
+      "Edmonton-Riverview",
+      "Edmonton-Rutherford",
+      "Calgary-Buffalo"
+     ]
+    },
+    "3": {
+     "n": 13,
+     "description": "Relative to their own overall leaning: more Yes on Q10 (separation referendum); less Yes on Q4 (fees non-PR).",
+     "yes": [
+      60.2,
+      58.3,
+      59.6,
+      57.8,
+      64.3,
+      54.2,
+      56.7,
+      54.0,
+      55.8,
+      33.0
+     ],
+     "level": 0.177,
+     "profile": [
+      0.006,
+      -0.054,
+      -0.085,
+      -0.112,
+      -0.1,
+      -0.021,
+      0.011,
+      0.065,
+      0.04,
+      0.251
+     ],
+     "topShap": [
+      [
+       "Q10 separation referendum",
+       0.308
+      ],
+      [
+       "Q4 fees non-PR",
+       0.223
+      ],
+      [
+       "Q5 proof of citizenship",
+       0.108
+      ]
+     ],
+     "examples": [
+      "Edmonton-Highlands-Norwood",
+      "Calgary-Acadia",
+      "Edmonton-Beverly-Clareview",
+      "Calgary-East",
+      "Lesser Slave Lake"
+     ]
+    }
+   }
+  }
+ },
+ "ridings": {
+  "1": {
+   "name": "Calgary-Acadia",
+   "pollsReported": 0.807,
+   "complete": true,
+   "yes": [
+    41.5,
+    42.2,
+    49.4,
+    45.9,
+    53.0,
+    32.3,
+    48.5,
+    39.5,
+    41.5,
+    18.9
+   ],
+   "level": -0.423,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.364
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.078
+    ],
+    [
+     "prof separation (Q10)",
+     -0.076
+    ]
+   ],
+   "probaA": 0.76,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q10 separation referendum",
+     0.27
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.047
+    ],
+    [
+     "Q9 provincial paramountcy",
+     0.037
+    ]
+   ],
+   "probaB": 0.63,
+   "profileTop": [
+    [
+     6,
+     -0.334
+    ],
+    [
+     7,
+     0.267
+    ],
+    [
+     1,
+     -0.173
+    ]
+   ]
+  },
+  "2": {
+   "name": "Calgary-Beddington",
+   "pollsReported": 0.717,
+   "complete": true,
+   "yes": [
+    53.9,
+    39.4,
+    44.1,
+    45.4,
+    51.2,
+    40.0,
+    40.9,
+    37.3,
+    39.1,
+    16.5
+   ],
+   "level": -0.449,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.285
+    ],
+    [
+     "prof separation (Q10)",
+     0.056
+    ],
+    [
+     "prof voter ID (Q5)",
+     0.017
+    ]
+   ],
+   "probaA": 0.64,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.256
+    ],
+    [
+     "Q10 separation referendum",
+     0.068
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.059
+    ]
+   ],
+   "probaB": 0.89,
+   "profileTop": [
+    [
+     1,
+     0.354
+    ],
+    [
+     2,
+     -0.213
+    ],
+    [
+     3,
+     -0.105
+    ]
+   ]
+  },
+  "3": {
+   "name": "Calgary-Bow",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    47.1,
+    51.3,
+    51.9,
+    50.8,
+    57.4,
+    45.1,
+    47.0,
+    42.4,
+    43.8,
+    18.5
+   ],
+   "level": -0.248,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.394
+    ],
+    [
+     "prof separation (Q10)",
+     0.073
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.072
+    ]
+   ],
+   "probaA": 0.94,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.335
+    ],
+    [
+     "Q7 abolish Senate",
+     0.048
+    ],
+    [
+     "Q6 provinces pick judges",
+     0.043
+    ]
+   ],
+   "probaB": 0.97,
+   "profileTop": [
+    [
+     1,
+     -0.119
+    ],
+    [
+     2,
+     0.07
+    ],
+    [
+     6,
+     0.035
+    ]
+   ]
+  },
+  "4": {
+   "name": "Calgary-Buffalo",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    39.2,
+    35.8,
+    44.4,
+    41.4,
+    52.4,
+    36.5,
+    40.5,
+    32.5,
+    34.2,
+    14.5
+   ],
+   "level": -0.606,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.542
+    ],
+    [
+     "prof separation (Q10)",
+     0.04
+    ],
+    [
+     "prof immigration (Q1-4)",
+     -0.007
+    ]
+   ],
+   "probaA": 0.83,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.3
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.098
+    ],
+    [
+     "Q6 provinces pick judges",
+     0.043
+    ]
+   ],
+   "probaB": 0.92,
+   "profileTop": [
+    [
+     2,
+     -0.205
+    ],
+    [
+     5,
+     0.159
+    ],
+    [
+     7,
+     0.125
+    ]
+   ]
+  },
+  "5": {
+   "name": "Calgary-Cross",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    50.0,
+    47.8,
+    47.7,
+    45.4,
+    52.8,
+    39.5,
+    42.3,
+    38.1,
+    40.6,
+    15.8
+   ],
+   "level": -0.4,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.365
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.086
+    ],
+    [
+     "prof separation (Q10)",
+     0.069
+    ]
+   ],
+   "probaA": 0.91,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.265
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.064
+    ],
+    [
+     "Q10 separation referendum",
+     0.06
+    ]
+   ],
+   "probaB": 0.96,
+   "profileTop": [
+    [
+     1,
+     0.152
+    ],
+    [
+     2,
+     0.081
+    ],
+    [
+     10,
+     -0.078
+    ]
+   ]
+  },
+  "6": {
+   "name": "Calgary-Currie",
+   "pollsReported": 0.966,
+   "complete": true,
+   "yes": [
+    41.7,
+    44.6,
+    44.8,
+    44.1,
+    50.9,
+    38.9,
+    40.3,
+    36.8,
+    38.7,
+    15.5
+   ],
+   "level": -0.497,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.524
+    ],
+    [
+     "prof separation (Q10)",
+     0.041
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.014
+    ]
+   ],
+   "probaA": 0.86,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.327
+    ],
+    [
+     "Q7 abolish Senate",
+     0.045
+    ],
+    [
+     "Q10 separation referendum",
+     0.043
+    ]
+   ],
+   "probaB": 0.92,
+   "profileTop": [
+    [
+     1,
+     -0.09
+    ],
+    [
+     2,
+     0.052
+    ],
+    [
+     8,
+     0.033
+    ]
+   ]
+  },
+  "7": {
+   "name": "Calgary-East",
+   "pollsReported": 0.77,
+   "complete": true,
+   "yes": [
+    52.2,
+    49.8,
+    50.4,
+    47.3,
+    53.8,
+    38.8,
+    40.6,
+    45.3,
+    47.3,
+    20.2
+   ],
+   "level": -0.284,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.385
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.095
+    ],
+    [
+     "prof separation (Q10)",
+     -0.079
+    ]
+   ],
+   "probaA": 0.78,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q5 proof of citizenship",
+     0.095
+    ],
+    [
+     "Q10 separation referendum",
+     0.091
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.077
+    ]
+   ],
+   "probaB": 0.6,
+   "profileTop": [
+    [
+     7,
+     -0.194
+    ],
+    [
+     6,
+     -0.189
+    ],
+    [
+     8,
+     0.173
+    ]
+   ]
+  },
+  "8": {
+   "name": "Calgary-Edgemont",
+   "pollsReported": 0.93,
+   "complete": true,
+   "yes": [
+    35.8,
+    54.0,
+    54.5,
+    53.1,
+    58.1,
+    48.8,
+    49.9,
+    44.6,
+    46.5,
+    14.3
+   ],
+   "level": -0.246,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.384
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.083
+    ],
+    [
+     "prof separation (Q10)",
+     0.046
+    ]
+   ],
+   "probaA": 0.92,
+   "clusterB": 2,
+   "statusB": "outlier",
+   "profileTop": [
+    [
+     1,
+     -0.586
+    ],
+    [
+     10,
+     -0.346
+    ],
+    [
+     6,
+     0.178
+    ]
+   ]
+  },
+  "9": {
+   "name": "Calgary-Elbow",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    49.4,
+    46.5,
+    47.0,
+    46.8,
+    48.3,
+    37.8,
+    39.8,
+    34.8,
+    36.6,
+    14.8
+   ],
+   "level": -0.479,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.471
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.08
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.049
+    ]
+   ],
+   "probaA": 0.89,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.237
+    ],
+    [
+     "Q10 separation referendum",
+     0.055
+    ],
+    [
+     "Q7 abolish Senate",
+     0.049
+    ]
+   ],
+   "probaB": 0.93,
+   "profileTop": [
+    [
+     1,
+     0.203
+    ],
+    [
+     5,
+     -0.133
+    ],
+    [
+     2,
+     0.11
+    ]
+   ]
+  },
+  "10": {
+   "name": "Calgary-Falconridge",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    44.5,
+    41.7,
+    41.9,
+    41.9,
+    46.6,
+    31.1,
+    36.8,
+    33.5,
+    36.5,
+    14.6
+   ],
+   "level": -0.616,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.493
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.124
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.069
+    ]
+   ],
+   "probaA": 0.96,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.247
+    ],
+    [
+     "Q7 abolish Senate",
+     0.053
+    ],
+    [
+     "Q10 separation referendum",
+     0.053
+    ]
+   ],
+   "probaB": 0.88,
+   "profileTop": [
+    [
+     6,
+     -0.198
+    ],
+    [
+     1,
+     0.144
+    ],
+    [
+     5,
+     -0.063
+    ]
+   ]
+  },
+  "11": {
+   "name": "Calgary-Fish Creek",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    58.5,
+    55.1,
+    56.7,
+    54.9,
+    61.2,
+    49.9,
+    51.6,
+    46.7,
+    48.1,
+    20.2
+   ],
+   "level": -0.052,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.383
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.086
+    ],
+    [
+     "prof separation (Q10)",
+     0.064
+    ]
+   ],
+   "probaA": 0.91,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.277
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.066
+    ],
+    [
+     "Q4 fees non-PR",
+     0.043
+    ]
+   ],
+   "probaB": 0.86,
+   "profileTop": [
+    [
+     1,
+     0.147
+    ],
+    [
+     10,
+     -0.122
+    ],
+    [
+     9,
+     -0.053
+    ]
+   ]
+  },
+  "12": {
+   "name": "Calgary-Foothills",
+   "pollsReported": 0.145,
+   "complete": false,
+   "yes": [
+    43.6,
+    46.1,
+    48.2,
+    45.4,
+    54.3,
+    39.6,
+    41.7,
+    39.4,
+    23.1,
+    14.8
+   ],
+   "level": -0.511,
+   "clusterA": 1,
+   "statusA": "assigned",
+   "clusterB": 1,
+   "statusB": "assigned",
+   "profileTop": [
+    [
+     9,
+     -0.717
+    ],
+    [
+     8,
+     0.156
+    ],
+    [
+     5,
+     0.138
+    ]
+   ]
+  },
+  "13": {
+   "name": "Calgary-Glenmore",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    52.0,
+    48.8,
+    49.7,
+    49.8,
+    55.8,
+    43.9,
+    46.1,
+    40.6,
+    43.5,
+    17.6
+   ],
+   "level": -0.281,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.393
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.108
+    ],
+    [
+     "prof separation (Q10)",
+     0.076
+    ]
+   ],
+   "probaA": 0.97,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.28
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.065
+    ],
+    [
+     "Q10 separation referendum",
+     0.063
+    ]
+   ],
+   "probaB": 0.96,
+   "profileTop": [
+    [
+     1,
+     0.111
+    ],
+    [
+     10,
+     -0.063
+    ],
+    [
+     3,
+     -0.047
+    ]
+   ]
+  },
+  "14": {
+   "name": "Calgary-Hays",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    56.3,
+    52.0,
+    59.4,
+    55.2,
+    62.8,
+    49.8,
+    51.5,
+    46.8,
+    49.3,
+    22.1
+   ],
+   "level": -0.039,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.387
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.101
+    ],
+    [
+     "prof separation (Q10)",
+     0.079
+    ]
+   ],
+   "probaA": 0.96,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.27
+    ],
+    [
+     "Q10 separation referendum",
+     0.06
+    ],
+    [
+     "Q4 fees non-PR",
+     0.045
+    ]
+   ],
+   "probaB": 0.9,
+   "profileTop": [
+    [
+     2,
+     -0.109
+    ],
+    [
+     3,
+     0.103
+    ],
+    [
+     1,
+     0.044
+    ]
+   ]
+  },
+  "15": {
+   "name": "Calgary-Klein",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    44.8,
+    49.3,
+    49.9,
+    48.1,
+    54.5,
+    42.6,
+    44.0,
+    39.8,
+    41.9,
+    17.8
+   ],
+   "level": -0.342,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.391
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.076
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.032
+    ]
+   ],
+   "probaA": 0.86,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.342
+    ],
+    [
+     "Q7 abolish Senate",
+     0.044
+    ],
+    [
+     "Q10 separation referendum",
+     0.037
+    ]
+   ],
+   "probaB": 0.92,
+   "profileTop": [
+    [
+     1,
+     -0.116
+    ],
+    [
+     2,
+     0.083
+    ],
+    [
+     6,
+     0.025
+    ]
+   ]
+  },
+  "16": {
+   "name": "Calgary-Lougheed",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    54.4,
+    51.2,
+    51.6,
+    53.7,
+    61.0,
+    48.6,
+    50.5,
+    46.0,
+    48.6,
+    21.2
+   ],
+   "level": -0.116,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.389
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.091
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.047
+    ]
+   ],
+   "probaA": 0.93,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.251
+    ],
+    [
+     "Q10 separation referendum",
+     0.067
+    ],
+    [
+     "Q4 fees non-PR",
+     0.043
+    ]
+   ],
+   "probaB": 0.72,
+   "profileTop": [
+    [
+     3,
+     -0.137
+    ],
+    [
+     2,
+     -0.066
+    ],
+    [
+     1,
+     0.043
+    ]
+   ]
+  },
+  "17": {
+   "name": "Calgary-Bhullar-McCall",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    40.5,
+    37.7,
+    38.1,
+    33.8,
+    43.3,
+    27.5,
+    28.1,
+    26.2,
+    27.8,
+    10.7
+   ],
+   "level": -0.88,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.492
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.064
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.059
+    ]
+   ],
+   "probaA": 0.89,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.254
+    ],
+    [
+     "Q10 separation referendum",
+     0.052
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.045
+    ]
+   ],
+   "probaB": 0.92,
+   "profileTop": [
+    [
+     1,
+     0.245
+    ],
+    [
+     7,
+     -0.156
+    ],
+    [
+     2,
+     0.147
+    ]
+   ]
+  },
+  "18": {
+   "name": "Calgary-Mountain View",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    41.1,
+    38.2,
+    39.0,
+    43.3,
+    44.5,
+    32.4,
+    34.2,
+    29.9,
+    31.3,
+    12.0
+   ],
+   "level": -0.727,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.502
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.106
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.067
+    ]
+   ],
+   "probaA": 0.96,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.243
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.061
+    ],
+    [
+     "Q10 separation referendum",
+     0.057
+    ]
+   ],
+   "probaB": 0.99,
+   "profileTop": [
+    [
+     4,
+     0.194
+    ],
+    [
+     1,
+     0.117
+    ],
+    [
+     9,
+     -0.088
+    ]
+   ]
+  },
+  "19": {
+   "name": "Calgary-North",
+   "pollsReported": 0.904,
+   "complete": true,
+   "yes": [
+    48.6,
+    46.2,
+    46.2,
+    47.4,
+    53.3,
+    38.7,
+    41.3,
+    37.5,
+    38.8,
+    15.8
+   ],
+   "level": -0.426,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.33
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.08
+    ],
+    [
+     "prof separation (Q10)",
+     0.067
+    ]
+   ],
+   "probaA": 0.83,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.26
+    ],
+    [
+     "Q10 separation referendum",
+     0.058
+    ],
+    [
+     "Q7 abolish Senate",
+     0.049
+    ]
+   ],
+   "probaB": 0.99,
+   "profileTop": [
+    [
+     1,
+     0.118
+    ],
+    [
+     4,
+     0.059
+    ],
+    [
+     9,
+     -0.057
+    ]
+   ]
+  },
+  "20": {
+   "name": "Calgary-North East",
+   "pollsReported": 0.954,
+   "complete": true,
+   "yes": [
+    47.0,
+    42.5,
+    43.1,
+    46.2,
+    52.4,
+    35.9,
+    40.6,
+    34.4,
+    36.7,
+    14.5
+   ],
+   "level": -0.514,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.515
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.061
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.025
+    ]
+   ],
+   "probaA": 0.88,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.268
+    ],
+    [
+     "Q10 separation referendum",
+     0.054
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.04
+    ]
+   ],
+   "probaB": 0.88,
+   "profileTop": [
+    [
+     1,
+     0.145
+    ],
+    [
+     4,
+     0.1
+    ],
+    [
+     6,
+     -0.083
+    ]
+   ]
+  },
+  "21": {
+   "name": "Calgary-North West",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    47.8,
+    50.3,
+    50.8,
+    49.6,
+    55.4,
+    42.8,
+    44.9,
+    40.1,
+    41.5,
+    17.9
+   ],
+   "level": -0.308,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.388
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.101
+    ],
+    [
+     "prof separation (Q10)",
+     0.061
+    ]
+   ],
+   "probaA": 0.94,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     -0.058
+    ],
+    [
+     "Q10 separation referendum",
+     0.05
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.05
+    ]
+   ],
+   "probaB": 0.6,
+   "profileTop": [
+    [
+     2,
+     0.089
+    ],
+    [
+     9,
+     -0.062
+    ],
+    [
+     1,
+     -0.03
+    ]
+   ]
+  },
+  "22": {
+   "name": "Calgary-Peigan",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    51.7,
+    55.5,
+    56.3,
+    54.5,
+    60.2,
+    54.8,
+    56.1,
+    51.1,
+    54.4,
+    20.7
+   ],
+   "level": -0.002,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.347
+    ],
+    [
+     "prof separation (Q10)",
+     0.067
+    ],
+    [
+     "prof immigration (Q1-4)",
+     -0.037
+    ]
+   ],
+   "probaA": 0.75,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.273
+    ],
+    [
+     "Q10 separation referendum",
+     0.106
+    ],
+    [
+     "Q5 proof of citizenship",
+     -0.076
+    ]
+   ],
+   "probaB": 0.79,
+   "profileTop": [
+    [
+     1,
+     -0.179
+    ],
+    [
+     6,
+     0.177
+    ],
+    [
+     9,
+     0.152
+    ]
+   ]
+  },
+  "23": {
+   "name": "Calgary-Shaw",
+   "pollsReported": 0.479,
+   "complete": false,
+   "yes": [
+    52.2,
+    49.6,
+    50.4,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    20.4
+   ],
+   "level": -0.217,
+   "clusterA": null,
+   "statusA": "unplaced",
+   "clusterB": null,
+   "statusB": "unplaced",
+   "profileTop": [
+    [
+     3,
+     -0.081
+    ],
+    [
+     10,
+     0.054
+    ],
+    [
+     1,
+     0.054
+    ]
+   ]
+  },
+  "24": {
+   "name": "Calgary-South East",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    56.6,
+    59.2,
+    59.9,
+    57.8,
+    65.3,
+    52.2,
+    53.8,
+    49.6,
+    51.4,
+    23.3
+   ],
+   "level": 0.06,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.358
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.11
+    ],
+    [
+     "prof separation (Q10)",
+     0.081
+    ]
+   ],
+   "probaA": 0.95,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.3
+    ],
+    [
+     "Q10 separation referendum",
+     0.037
+    ],
+    [
+     "Q7 abolish Senate",
+     0.025
+    ]
+   ],
+   "probaB": 0.87,
+   "profileTop": [
+    [
+     2,
+     0.082
+    ],
+    [
+     10,
+     -0.057
+    ],
+    [
+     1,
+     -0.045
+    ]
+   ]
+  },
+  "25": {
+   "name": "Calgary-Varsity",
+   "pollsReported": 0.078,
+   "complete": false,
+   "yes": [
+    13.7,
+    38.1,
+    38.4,
+    38.6,
+    44.2,
+    33.6,
+    35.9,
+    30.8,
+    31.7,
+    11.9
+   ],
+   "level": -0.881,
+   "clusterA": 1,
+   "statusA": "assigned",
+   "clusterB": 2,
+   "statusB": "assigned",
+   "profileTop": [
+    [
+     1,
+     -1.209
+    ],
+    [
+     7,
+     0.204
+    ],
+    [
+     6,
+     0.18
+    ]
+   ]
+  },
+  "26": {
+   "name": "Calgary-West",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    49.4,
+    54.5,
+    54.6,
+    54.0,
+    60.3,
+    47.8,
+    50.5,
+    46.4,
+    45.9,
+    18.4
+   ],
+   "level": -0.142,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.388
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.086
+    ],
+    [
+     "prof separation (Q10)",
+     0.059
+    ]
+   ],
+   "probaA": 0.95,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.306
+    ],
+    [
+     "Q10 separation referendum",
+     0.096
+    ],
+    [
+     "Q7 abolish Senate",
+     0.046
+    ]
+   ],
+   "probaB": 0.97,
+   "profileTop": [
+    [
+     10,
+     -0.151
+    ],
+    [
+     1,
+     -0.131
+    ],
+    [
+     2,
+     0.092
+    ]
+   ]
+  },
+  "27": {
+   "name": "Edmonton-Beverly-Clareview",
+   "pollsReported": 0.551,
+   "complete": true,
+   "yes": [
+    46.3,
+    44.5,
+    45.7,
+    43.5,
+    49.3,
+    40.1,
+    43.1,
+    44.1,
+    41.8,
+    17.1
+   ],
+   "level": -0.412,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.363
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.078
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.039
+    ]
+   ],
+   "probaA": 0.78,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q4 fees non-PR",
+     0.156
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.098
+    ],
+    [
+     "Q1 immigration control",
+     0.093
+    ]
+   ],
+   "probaB": 0.67,
+   "profileTop": [
+    [
+     8,
+     0.251
+    ],
+    [
+     5,
+     -0.159
+    ],
+    [
+     4,
+     -0.109
+    ]
+   ]
+  },
+  "28": {
+   "name": "Edmonton-Castle Downs",
+   "pollsReported": 0.232,
+   "complete": false,
+   "yes": [
+    45.7,
+    44.1,
+    48.2,
+    59.5,
+    51.8,
+    40.1,
+    39.2,
+    35.7,
+    36.3,
+    14.0
+   ],
+   "level": -0.43,
+   "clusterA": 2,
+   "statusA": "assigned",
+   "clusterB": 1,
+   "statusB": "assigned",
+   "profileTop": [
+    [
+     4,
+     0.551
+    ],
+    [
+     10,
+     -0.189
+    ],
+    [
+     9,
+     -0.159
+    ]
+   ]
+  },
+  "29": {
+   "name": "Edmonton-City Centre",
+   "pollsReported": 0.899,
+   "complete": true,
+   "yes": [
+    33.4,
+    31.0,
+    37.0,
+    48.8,
+    40.9,
+    27.7,
+    30.6,
+    25.3,
+    55.1,
+    11.1
+   ],
+   "level": -0.766,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.551
+    ],
+    [
+     "prof separation (Q10)",
+     0.023
+    ],
+    [
+     "prof voter ID (Q5)",
+     0.02
+    ]
+   ],
+   "probaA": 0.86,
+   "clusterB": 2,
+   "statusB": "outlier",
+   "profileTop": [
+    [
+     9,
+     0.942
+    ],
+    [
+     4,
+     0.454
+    ],
+    [
+     2,
+     -0.266
+    ]
+   ]
+  },
+  "30": {
+   "name": "Edmonton-Decore",
+   "pollsReported": 0.75,
+   "complete": true,
+   "yes": [
+    47.2,
+    45.2,
+    45.4,
+    48.9,
+    58.3,
+    43.2,
+    45.5,
+    43.1,
+    43.6,
+    15.7
+   ],
+   "level": -0.334,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.371
+    ],
+    [
+     "prof separation (Q10)",
+     0.071
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.042
+    ]
+   ],
+   "probaA": 0.84,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q5 proof of citizenship",
+     0.106
+    ],
+    [
+     "Q10 separation referendum",
+     0.098
+    ],
+    [
+     "Q1 immigration control",
+     0.051
+    ]
+   ],
+   "probaB": 0.77,
+   "profileTop": [
+    [
+     3,
+     -0.167
+    ],
+    [
+     10,
+     -0.149
+    ],
+    [
+     8,
+     0.131
+    ]
+   ]
+  },
+  "31": {
+   "name": "Edmonton-Ellerslie",
+   "pollsReported": 0.654,
+   "complete": true,
+   "yes": [
+    43.6,
+    39.7,
+    44.3,
+    42.7,
+    50.3,
+    32.9,
+    33.9,
+    32.0,
+    33.5,
+    15.7
+   ],
+   "level": -0.616,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.48
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.112
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.075
+    ]
+   ],
+   "probaA": 0.93,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.224
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.047
+    ],
+    [
+     "Q4 fees non-PR",
+     0.042
+    ]
+   ],
+   "probaB": 0.77,
+   "profileTop": [
+    [
+     7,
+     -0.15
+    ],
+    [
+     10,
+     0.132
+    ],
+    [
+     6,
+     -0.115
+    ]
+   ]
+  },
+  "32": {
+   "name": "Edmonton-Glenora",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    35.6,
+    33.7,
+    44.7,
+    41.7,
+    47.3,
+    34.3,
+    36.0,
+    31.1,
+    34.3,
+    12.2
+   ],
+   "level": -0.704,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.569
+    ],
+    [
+     "prof separation (Q10)",
+     0.031
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.018
+    ]
+   ],
+   "probaA": 0.89,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.328
+    ],
+    [
+     "Q10 separation referendum",
+     0.041
+    ],
+    [
+     "Q6 provinces pick judges",
+     0.039
+    ]
+   ],
+   "probaB": 0.94,
+   "profileTop": [
+    [
+     2,
+     -0.202
+    ],
+    [
+     3,
+     0.177
+    ],
+    [
+     1,
+     -0.141
+    ]
+   ]
+  },
+  "33": {
+   "name": "Edmonton-Gold Bar",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    46.0,
+    42.5,
+    43.6,
+    42.3,
+    48.0,
+    36.5,
+    38.3,
+    33.5,
+    35.3,
+    13.5
+   ],
+   "level": -0.577,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.511
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.131
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.032
+    ]
+   ],
+   "probaA": 0.96,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.272
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.065
+    ],
+    [
+     "Q10 separation referendum",
+     0.057
+    ]
+   ],
+   "probaB": 0.97,
+   "profileTop": [
+    [
+     1,
+     0.166
+    ],
+    [
+     10,
+     -0.086
+    ],
+    [
+     9,
+     -0.057
+    ]
+   ]
+  },
+  "34": {
+   "name": "Edmonton-Highlands-Norwood",
+   "pollsReported": 0.918,
+   "complete": true,
+   "yes": [
+    37.8,
+    35.1,
+    36.3,
+    34.6,
+    40.9,
+    33.9,
+    36.2,
+    31.1,
+    33.0,
+    13.9
+   ],
+   "level": -0.771,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.496
+    ],
+    [
+     "prof immigration (Q1-4)",
+     -0.039
+    ],
+    [
+     "prof voter ID (Q5)",
+     0.023
+    ]
+   ],
+   "probaA": 0.71,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q4 fees non-PR",
+     0.21
+    ],
+    [
+     "Q10 separation referendum",
+     0.192
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.086
+    ]
+   ],
+   "probaB": 0.92,
+   "profileTop": [
+    [
+     10,
+     0.146
+    ],
+    [
+     5,
+     -0.143
+    ],
+    [
+     4,
+     -0.127
+    ]
+   ]
+  },
+  "35": {
+   "name": "Edmonton-Manning",
+   "pollsReported": 0.017,
+   "complete": false,
+   "yes": [
+    36.8,
+    36.1,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    7.7
+   ],
+   "level": -0.96,
+   "clusterA": null,
+   "statusA": "unplaced",
+   "clusterB": null,
+   "statusB": "unplaced",
+   "profileTop": [
+    [
+     10,
+     -0.328
+    ],
+    [
+     1,
+     0.169
+    ],
+    [
+     2,
+     0.159
+    ]
+   ]
+  },
+  "36": {
+   "name": "Edmonton-McClung",
+   "pollsReported": 0.843,
+   "complete": true,
+   "yes": [
+    43.6,
+    41.0,
+    53.8,
+    50.4,
+    59.8,
+    43.0,
+    45.4,
+    40.5,
+    43.3,
+    13.7
+   ],
+   "level": -0.349,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.379
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.086
+    ],
+    [
+     "prof separation (Q10)",
+     0.042
+    ]
+   ],
+   "probaA": 0.87,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.273
+    ],
+    [
+     "Q10 separation referendum",
+     0.088
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.082
+    ]
+   ],
+   "probaB": 0.98,
+   "profileTop": [
+    [
+     10,
+     -0.297
+    ],
+    [
+     2,
+     -0.245
+    ],
+    [
+     5,
+     0.2
+    ]
+   ]
+  },
+  "37": {
+   "name": "Edmonton-Meadows",
+   "pollsReported": 0.918,
+   "complete": true,
+   "yes": [
+    39.4,
+    37.8,
+    39.4,
+    39.3,
+    44.8,
+    30.5,
+    33.2,
+    28.6,
+    31.7,
+    14.3
+   ],
+   "level": -0.746,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.51
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.065
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.038
+    ]
+   ],
+   "probaA": 0.89,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.224
+    ],
+    [
+     "Q10 separation referendum",
+     -0.072
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.051
+    ]
+   ],
+   "probaB": 0.85,
+   "profileTop": [
+    [
+     10,
+     0.157
+    ],
+    [
+     8,
+     -0.095
+    ],
+    [
+     6,
+     -0.094
+    ]
+   ]
+  },
+  "38": {
+   "name": "Edmonton-Mill Woods",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    47.4,
+    43.9,
+    45.6,
+    49.3,
+    56.8,
+    44.2,
+    44.8,
+    38.2,
+    40.8,
+    17.0
+   ],
+   "level": -0.363,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.386
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.091
+    ],
+    [
+     "prof separation (Q10)",
+     0.067
+    ]
+   ],
+   "probaA": 0.94,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q5 proof of citizenship",
+     0.123
+    ],
+    [
+     "Q1 immigration control",
+     -0.059
+    ],
+    [
+     "Q6 provinces pick judges",
+     0.059
+    ]
+   ],
+   "probaB": 0.62,
+   "profileTop": [
+    [
+     3,
+     -0.129
+    ],
+    [
+     6,
+     0.113
+    ],
+    [
+     2,
+     -0.113
+    ]
+   ]
+  },
+  "39": {
+   "name": "Edmonton-North West",
+   "pollsReported": 0.485,
+   "complete": false,
+   "yes": [
+    37.2,
+    35.5,
+    35.9,
+    42.7,
+    55.6,
+    34.3,
+    39.7,
+    35.7,
+    37.0,
+    9.9
+   ],
+   "level": -0.664,
+   "clusterA": 1,
+   "statusA": "assigned",
+   "clusterB": 2,
+   "statusB": "assigned",
+   "profileTop": [
+    [
+     10,
+     -0.351
+    ],
+    [
+     5,
+     0.342
+    ],
+    [
+     3,
+     -0.23
+    ]
+   ]
+  },
+  "40": {
+   "name": "Edmonton-Riverview",
+   "pollsReported": 0.962,
+   "complete": true,
+   "yes": [
+    34.5,
+    41.5,
+    42.2,
+    48.9,
+    47.1,
+    34.4,
+    36.5,
+    30.1,
+    33.7,
+    11.8
+   ],
+   "level": -0.666,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.51
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.119
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.046
+    ]
+   ],
+   "probaA": 0.95,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.328
+    ],
+    [
+     "Q10 separation referendum",
+     0.099
+    ],
+    [
+     "Q7 abolish Senate",
+     0.046
+    ]
+   ],
+   "probaB": 0.93,
+   "profileTop": [
+    [
+     4,
+     0.359
+    ],
+    [
+     1,
+     -0.224
+    ],
+    [
+     10,
+     -0.152
+    ]
+   ]
+  },
+  "41": {
+   "name": "Edmonton-Rutherford",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    37.7,
+    43.5,
+    44.1,
+    42.2,
+    48.6,
+    35.2,
+    38.4,
+    33.1,
+    34.5,
+    12.6
+   ],
+   "level": -0.621,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.565
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.018
+    ],
+    [
+     "prof separation (Q10)",
+     0.018
+    ]
+   ],
+   "probaA": 0.88,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.324
+    ],
+    [
+     "Q10 separation referendum",
+     0.095
+    ],
+    [
+     "Q7 abolish Senate",
+     0.048
+    ]
+   ],
+   "probaB": 0.94,
+   "profileTop": [
+    [
+     1,
+     -0.133
+    ],
+    [
+     2,
+     0.129
+    ],
+    [
+     10,
+     -0.122
+    ]
+   ]
+  },
+  "42": {
+   "name": "Edmonton-South",
+   "pollsReported": 0.977,
+   "complete": true,
+   "yes": [
+    43.4,
+    42.0,
+    50.8,
+    46.9,
+    51.0,
+    36.4,
+    39.3,
+    34.8,
+    35.8,
+    15.4
+   ],
+   "level": -0.502,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.48
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.105
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.046
+    ]
+   ],
+   "probaA": 0.92,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q7 abolish Senate",
+     0.058
+    ],
+    [
+     "Q10 separation referendum",
+     0.057
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.046
+    ]
+   ],
+   "probaB": 0.8,
+   "profileTop": [
+    [
+     3,
+     0.217
+    ],
+    [
+     4,
+     0.118
+    ],
+    [
+     9,
+     -0.111
+    ]
+   ]
+  },
+  "43": {
+   "name": "Edmonton-South West",
+   "pollsReported": 0.987,
+   "complete": true,
+   "yes": [
+    46.7,
+    44.5,
+    54.0,
+    48.0,
+    61.6,
+    40.8,
+    42.8,
+    39.0,
+    40.3,
+    17.0
+   ],
+   "level": -0.336,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.364
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.099
+    ],
+    [
+     "prof constitution (Q6-9)",
+     -0.064
+    ]
+   ],
+   "probaA": 0.78,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.274
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.126
+    ],
+    [
+     "Q6 provinces pick judges",
+     -0.043
+    ]
+   ],
+   "probaB": 0.77,
+   "profileTop": [
+    [
+     5,
+     0.264
+    ],
+    [
+     3,
+     0.181
+    ],
+    [
+     2,
+     -0.115
+    ]
+   ]
+  },
+  "44": {
+   "name": "Edmonton-Strathcona",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    28.3,
+    31.1,
+    33.0,
+    30.9,
+    37.3,
+    26.0,
+    28.0,
+    23.9,
+    25.3,
+    9.6
+   ],
+   "level": -1.069,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.557
+    ],
+    [
+     "prof separation (Q10)",
+     0.038
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.012
+    ]
+   ],
+   "probaA": 0.88,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.356
+    ],
+    [
+     "Q7 abolish Senate",
+     0.049
+    ],
+    [
+     "Q10 separation referendum",
+     0.032
+    ]
+   ],
+   "probaB": 0.92,
+   "profileTop": [
+    [
+     1,
+     -0.109
+    ],
+    [
+     2,
+     0.046
+    ],
+    [
+     3,
+     0.044
+    ]
+   ]
+  },
+  "45": {
+   "name": "Edmonton-West Henday",
+   "pollsReported": 0.966,
+   "complete": true,
+   "yes": [
+    47.9,
+    50.3,
+    51.6,
+    52.2,
+    60.7,
+    44.9,
+    47.1,
+    43.0,
+    46.8,
+    17.7
+   ],
+   "level": -0.222,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.391
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.08
+    ],
+    [
+     "prof separation (Q10)",
+     0.059
+    ]
+   ],
+   "probaA": 0.93,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.29
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.084
+    ],
+    [
+     "Q10 separation referendum",
+     0.08
+    ]
+   ],
+   "probaB": 0.94,
+   "profileTop": [
+    [
+     10,
+     -0.117
+    ],
+    [
+     5,
+     0.112
+    ],
+    [
+     1,
+     -0.112
+    ]
+   ]
+  },
+  "46": {
+   "name": "Edmonton-Whitemud",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    40.2,
+    46.0,
+    46.8,
+    45.4,
+    50.6,
+    37.1,
+    39.7,
+    35.3,
+    36.9,
+    12.9
+   ],
+   "level": -0.532,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.511
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.125
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.021
+    ]
+   ],
+   "probaA": 0.92,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.321
+    ],
+    [
+     "Q10 separation referendum",
+     0.1
+    ],
+    [
+     "Q7 abolish Senate",
+     0.047
+    ]
+   ],
+   "probaB": 0.95,
+   "profileTop": [
+    [
+     10,
+     -0.181
+    ],
+    [
+     2,
+     0.14
+    ],
+    [
+     1,
+     -0.115
+    ]
+   ]
+  },
+  "47": {
+   "name": "Airdrie-Cochrane",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    72.8,
+    68.2,
+    68.6,
+    63.4,
+    69.6,
+    57.5,
+    59.0,
+    55.0,
+    56.2,
+    28.7
+   ],
+   "level": 0.364,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.407
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.138
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.115
+    ]
+   ],
+   "probaA": 0.91,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.239
+    ],
+    [
+     "Q10 separation referendum",
+     0.055
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.048
+    ]
+   ],
+   "probaB": 0.93,
+   "profileTop": [
+    [
+     1,
+     0.369
+    ],
+    [
+     2,
+     0.17
+    ],
+    [
+     9,
+     -0.141
+    ]
+   ]
+  },
+  "48": {
+   "name": "Airdrie-East",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    69.9,
+    66.8,
+    67.4,
+    65.6,
+    72.1,
+    58.7,
+    59.8,
+    55.6,
+    57.9,
+    29.5
+   ],
+   "level": 0.381,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.416
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.135
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.12
+    ]
+   ],
+   "probaA": 0.92,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.257
+    ],
+    [
+     "Q10 separation referendum",
+     0.055
+    ],
+    [
+     "Q7 abolish Senate",
+     0.05
+    ]
+   ],
+   "probaB": 0.98,
+   "profileTop": [
+    [
+     1,
+     0.213
+    ],
+    [
+     9,
+     -0.09
+    ],
+    [
+     2,
+     0.087
+    ]
+   ]
+  },
+  "49": {
+   "name": "Athabasca-Barrhead-Westlock",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    71.5,
+    69.6,
+    70.8,
+    69.2,
+    74.2,
+    68.8,
+    69.9,
+    65.6,
+    67.2,
+    41.4
+   ],
+   "level": 0.667,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.297
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.109
+    ],
+    [
+     "prof separation (Q10)",
+     0.095
+    ]
+   ],
+   "probaA": 0.75,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q10 separation referendum",
+     0.243
+    ],
+    [
+     "Q4 fees non-PR",
+     0.184
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.082
+    ]
+   ],
+   "probaB": 0.9,
+   "profileTop": [
+    [
+     10,
+     0.182
+    ],
+    [
+     5,
+     -0.157
+    ],
+    [
+     4,
+     -0.119
+    ]
+   ]
+  },
+  "50": {
+   "name": "Banff-Kananaskis",
+   "pollsReported": 0.891,
+   "complete": true,
+   "yes": [
+    50.8,
+    45.5,
+    49.5,
+    48.5,
+    56.7,
+    45.3,
+    47.0,
+    40.5,
+    44.0,
+    19.4
+   ],
+   "level": -0.279,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.392
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.088
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.05
+    ]
+   ],
+   "probaA": 0.85,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.272
+    ],
+    [
+     "Q10 separation referendum",
+     0.052
+    ],
+    [
+     "Q7 abolish Senate",
+     -0.043
+    ]
+   ],
+   "probaB": 0.81,
+   "profileTop": [
+    [
+     2,
+     -0.131
+    ],
+    [
+     6,
+     0.071
+    ],
+    [
+     7,
+     0.061
+    ]
+   ]
+  },
+  "51": {
+   "name": "Bonnyville-Cold Lake-St. Paul",
+   "pollsReported": 0.486,
+   "complete": false,
+   "yes": [
+    63.0,
+    61.0,
+    62.7,
+    59.4,
+    67.2,
+    58.4,
+    59.7,
+    57.6,
+    60.2,
+    36.3
+   ],
+   "level": 0.302,
+   "clusterA": 3,
+   "statusA": "assigned",
+   "clusterB": 3,
+   "statusB": "assigned",
+   "profileTop": [
+    [
+     10,
+     0.332
+    ],
+    [
+     4,
+     -0.184
+    ],
+    [
+     5,
+     -0.128
+    ]
+   ]
+  },
+  "52": {
+   "name": "Brooks-Medicine Hat",
+   "pollsReported": 0.973,
+   "complete": true,
+   "yes": [
+    68.0,
+    65.0,
+    66.0,
+    63.6,
+    72.1,
+    64.4,
+    65.1,
+    61.4,
+    64.0,
+    36.8
+   ],
+   "level": 0.479,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.412
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.105
+    ],
+    [
+     "prof separation (Q10)",
+     0.099
+    ]
+   ],
+   "probaA": 0.84,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q10 separation referendum",
+     0.226
+    ],
+    [
+     "Q4 fees non-PR",
+     0.205
+    ],
+    [
+     "Q1 immigration control",
+     0.08
+    ]
+   ],
+   "probaB": 0.92,
+   "profileTop": [
+    [
+     4,
+     -0.183
+    ],
+    [
+     10,
+     0.179
+    ],
+    [
+     3,
+     -0.131
+    ]
+   ]
+  },
+  "53": {
+   "name": "Camrose",
+   "pollsReported": 0.914,
+   "complete": true,
+   "yes": [
+    68.4,
+    66.8,
+    67.2,
+    70.5,
+    77.0,
+    66.3,
+    68.7,
+    63.0,
+    65.8,
+    36.0
+   ],
+   "level": 0.587,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.415
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.115
+    ],
+    [
+     "prof separation (Q10)",
+     0.065
+    ]
+   ],
+   "probaA": 0.86,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.274
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.085
+    ],
+    [
+     "Q6 provinces pick judges",
+     0.043
+    ]
+   ],
+   "probaB": 0.89,
+   "profileTop": [
+    [
+     3,
+     -0.186
+    ],
+    [
+     2,
+     -0.116
+    ],
+    [
+     7,
+     0.1
+    ]
+   ]
+  },
+  "54": {
+   "name": "Cardston-Siksika",
+   "pollsReported": 0.838,
+   "complete": true,
+   "yes": [
+    67.9,
+    65.0,
+    64.9,
+    63.4,
+    68.8,
+    60.8,
+    61.3,
+    58.7,
+    59.9,
+    44.7
+   ],
+   "level": 0.429,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.405
+    ],
+    [
+     "prof separation (Q10)",
+     0.082
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.053
+    ]
+   ],
+   "probaA": 0.82,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q10 separation referendum",
+     0.234
+    ],
+    [
+     "Q4 fees non-PR",
+     0.221
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.096
+    ]
+   ],
+   "probaB": 0.81,
+   "profileTop": [
+    [
+     10,
+     0.556
+    ],
+    [
+     5,
+     -0.185
+    ],
+    [
+     4,
+     -0.143
+    ]
+   ]
+  },
+  "55": {
+   "name": "Central Peace-Notley",
+   "pollsReported": 0.95,
+   "complete": true,
+   "yes": [
+    75.9,
+    73.6,
+    73.9,
+    71.2,
+    78.0,
+    69.6,
+    72.3,
+    68.9,
+    71.6,
+    50.7
+   ],
+   "level": 0.845,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.447
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.074
+    ],
+    [
+     "prof separation (Q10)",
+     0.022
+    ]
+   ],
+   "probaA": 0.74,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q10 separation referendum",
+     0.23
+    ],
+    [
+     "Q4 fees non-PR",
+     0.224
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.092
+    ]
+   ],
+   "probaB": 0.93,
+   "profileTop": [
+    [
+     10,
+     0.378
+    ],
+    [
+     4,
+     -0.202
+    ],
+    [
+     5,
+     -0.122
+    ]
+   ]
+  },
+  "56": {
+   "name": "Chestermere-Strathmore",
+   "pollsReported": 0.958,
+   "complete": true,
+   "yes": [
+    65.4,
+    65.8,
+    66.0,
+    64.5,
+    71.1,
+    57.6,
+    63.1,
+    58.6,
+    58.0,
+    30.6
+   ],
+   "level": 0.366,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.435
+    ],
+    [
+     "prof separation (Q10)",
+     0.059
+    ],
+    [
+     "prof immigration (Q1-4)",
+     -0.036
+    ]
+   ],
+   "probaA": 0.71,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.169
+    ],
+    [
+     "Q10 separation referendum",
+     0.062
+    ],
+    [
+     "Q8 opt out w/ funding",
+     -0.056
+    ]
+   ],
+   "probaB": 0.76,
+   "profileTop": [
+    [
+     6,
+     -0.08
+    ],
+    [
+     7,
+     0.072
+    ],
+    [
+     9,
+     -0.069
+    ]
+   ]
+  },
+  "57": {
+   "name": "Cypress-Medicine Hat",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    63.9,
+    60.5,
+    61.1,
+    64.1,
+    71.3,
+    60.2,
+    61.5,
+    56.7,
+    57.7,
+    31.9
+   ],
+   "level": 0.317,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.424
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.127
+    ],
+    [
+     "prof separation (Q10)",
+     0.079
+    ]
+   ],
+   "probaA": 0.88,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q10 separation referendum",
+     0.177
+    ],
+    [
+     "Q1 immigration control",
+     0.081
+    ],
+    [
+     "Q3 12-month residency",
+     0.069
+    ]
+   ],
+   "probaB": 0.54,
+   "profileTop": [
+    [
+     3,
+     -0.18
+    ],
+    [
+     2,
+     -0.121
+    ],
+    [
+     10,
+     0.121
+    ]
+   ]
+  },
+  "58": {
+   "name": "Drayton Valley-Devon",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    74.6,
+    77.3,
+    77.5,
+    76.2,
+    80.8,
+    72.6,
+    73.3,
+    69.3,
+    71.4,
+    45.3
+   ],
+   "level": 0.918,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.473
+    ],
+    [
+     "prof separation (Q10)",
+     0.087
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.086
+    ]
+   ],
+   "probaA": 0.87,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.333
+    ],
+    [
+     "Q6 provinces pick judges",
+     0.047
+    ],
+    [
+     "Q5 proof of citizenship",
+     -0.043
+    ]
+   ],
+   "probaB": 0.83,
+   "profileTop": [
+    [
+     10,
+     0.092
+    ],
+    [
+     1,
+     -0.092
+    ],
+    [
+     2,
+     0.076
+    ]
+   ]
+  },
+  "59": {
+   "name": "Drumheller-Stettler",
+   "pollsReported": 0.93,
+   "complete": true,
+   "yes": [
+    79.2,
+    83.0,
+    84.0,
+    83.1,
+    87.6,
+    81.3,
+    80.7,
+    77.9,
+    75.2,
+    48.8
+   ],
+   "level": 1.288,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.485
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.087
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.076
+    ]
+   ],
+   "probaA": 0.85,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.281
+    ],
+    [
+     "Q10 separation referendum",
+     0.087
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.074
+    ]
+   ],
+   "probaB": 0.97,
+   "profileTop": [
+    [
+     9,
+     -0.208
+    ],
+    [
+     1,
+     -0.199
+    ],
+    [
+     6,
+     0.161
+    ]
+   ]
+  },
+  "60": {
+   "name": "Fort McMurray-Lac La Biche",
+   "pollsReported": 0.286,
+   "complete": false,
+   "yes": [
+    65.8,
+    68.5,
+    68.2,
+    66.1,
+    71.4,
+    56.4,
+    58.0,
+    54.6,
+    56.6,
+    36.5
+   ],
+   "level": 0.378,
+   "clusterA": 3,
+   "statusA": "assigned",
+   "clusterB": 1,
+   "statusB": "assigned",
+   "profileTop": [
+    [
+     10,
+     0.267
+    ],
+    [
+     2,
+     0.167
+    ],
+    [
+     7,
+     -0.155
+    ]
+   ]
+  },
+  "61": {
+   "name": "Fort McMurray-Wood Buffalo",
+   "pollsReported": 0.175,
+   "complete": false,
+   "yes": [
+    47.0,
+    66.6,
+    56.6,
+    45.4,
+    42.9,
+    31.0,
+    28.6,
+    19.3,
+    18.4,
+    36.0
+   ],
+   "level": -0.533,
+   "clusterA": 1,
+   "statusA": "assigned",
+   "clusterB": 1,
+   "statusB": "assigned",
+   "profileTop": [
+    [
+     10,
+     1.155
+    ],
+    [
+     2,
+     0.991
+    ],
+    [
+     9,
+     -0.987
+    ]
+   ]
+  },
+  "62": {
+   "name": "Fort Saskatchewan-Vegreville",
+   "pollsReported": 0.744,
+   "complete": true,
+   "yes": [
+    70.8,
+    68.4,
+    69.7,
+    67.3,
+    73.3,
+    62.1,
+    62.9,
+    57.5,
+    60.4,
+    33.3
+   ],
+   "level": 0.48,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.428
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.085
+    ],
+    [
+     "prof separation (Q10)",
+     0.036
+    ]
+   ],
+   "probaA": 0.82,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.256
+    ],
+    [
+     "Q10 separation referendum",
+     0.057
+    ],
+    [
+     "Q7 abolish Senate",
+     0.052
+    ]
+   ],
+   "probaB": 0.99,
+   "profileTop": [
+    [
+     1,
+     0.156
+    ],
+    [
+     8,
+     -0.102
+    ],
+    [
+     9,
+     -0.085
+    ]
+   ]
+  },
+  "63": {
+   "name": "Grande Prairie",
+   "pollsReported": 0.846,
+   "complete": true,
+   "yes": [
+    67.1,
+    68.2,
+    69.3,
+    66.6,
+    75.0,
+    64.1,
+    65.8,
+    60.8,
+    69.2,
+    37.5
+   ],
+   "level": 0.558,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.414
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.127
+    ],
+    [
+     "prof separation (Q10)",
+     0.08
+    ]
+   ],
+   "probaA": 0.87,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q10 separation referendum",
+     0.197
+    ],
+    [
+     "Q4 fees non-PR",
+     0.187
+    ],
+    [
+     "Q9 provincial paramountcy",
+     0.044
+    ]
+   ],
+   "probaB": 0.69,
+   "profileTop": [
+    [
+     9,
+     0.225
+    ],
+    [
+     4,
+     -0.129
+    ],
+    [
+     10,
+     0.127
+    ]
+   ]
+  },
+  "64": {
+   "name": "Grande Prairie-Wapiti",
+   "pollsReported": 0.481,
+   "complete": false,
+   "yes": [
+    72.4,
+    68.5,
+    78.0,
+    74.8,
+    80.6,
+    75.1,
+    73.0,
+    73.0,
+    75.2,
+    42.4
+   ],
+   "level": 0.894,
+   "clusterA": 4,
+   "statusA": "assigned",
+   "clusterB": 2,
+   "statusB": "assigned",
+   "profileTop": [
+    [
+     2,
+     -0.347
+    ],
+    [
+     6,
+     0.192
+    ],
+    [
+     9,
+     0.188
+    ]
+   ]
+  },
+  "65": {
+   "name": "Highwood",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    76.2,
+    73.7,
+    74.3,
+    72.9,
+    73.6,
+    64.6,
+    65.4,
+    61.3,
+    63.4,
+    34.4
+   ],
+   "level": 0.64,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.36
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.149
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.118
+    ]
+   ],
+   "probaA": 0.88,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.237
+    ],
+    [
+     "Q10 separation referendum",
+     0.051
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.047
+    ]
+   ],
+   "probaB": 0.91,
+   "profileTop": [
+    [
+     1,
+     0.271
+    ],
+    [
+     2,
+     0.162
+    ],
+    [
+     5,
+     -0.16
+    ]
+   ]
+  },
+  "66": {
+   "name": "Innisfail-Sylvan Lake",
+   "pollsReported": 0.973,
+   "complete": true,
+   "yes": [
+    72.6,
+    75.8,
+    77.2,
+    74.1,
+    80.0,
+    67.9,
+    72.2,
+    70.7,
+    72.3,
+    43.1
+   ],
+   "level": 0.857,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.483
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.086
+    ],
+    [
+     "prof separation (Q10)",
+     0.082
+    ]
+   ],
+   "probaA": 0.91,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.312
+    ],
+    [
+     "Q6 provinces pick judges",
+     -0.054
+    ],
+    [
+     "Q7 abolish Senate",
+     0.039
+    ]
+   ],
+   "probaB": 0.79,
+   "profileTop": [
+    [
+     1,
+     -0.132
+    ],
+    [
+     6,
+     -0.126
+    ],
+    [
+     8,
+     0.097
+    ]
+   ]
+  },
+  "67": {
+   "name": "Lac Ste. Anne-Parkland",
+   "pollsReported": 0.973,
+   "complete": true,
+   "yes": [
+    70.1,
+    71.9,
+    72.9,
+    71.6,
+    75.8,
+    67.0,
+    68.4,
+    68.9,
+    67.2,
+    41.7
+   ],
+   "level": 0.704,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.338
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.068
+    ],
+    [
+     "prof separation (Q10)",
+     0.055
+    ]
+   ],
+   "probaA": 0.7,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q10 separation referendum",
+     0.267
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.079
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.066
+    ]
+   ],
+   "probaB": 0.67,
+   "profileTop": [
+    [
+     8,
+     0.165
+    ],
+    [
+     10,
+     0.16
+    ],
+    [
+     5,
+     -0.105
+    ]
+   ]
+  },
+  "68": {
+   "name": "Lacombe-Ponoka",
+   "pollsReported": 0.986,
+   "complete": true,
+   "yes": [
+    76.8,
+    74.6,
+    75.2,
+    73.2,
+    79.4,
+    70.2,
+    71.3,
+    70.8,
+    68.2,
+    42.4
+   ],
+   "level": 0.837,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.476
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.07
+    ],
+    [
+     "prof separation (Q10)",
+     0.068
+    ]
+   ],
+   "probaA": 0.87,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.227
+    ],
+    [
+     "Q8 opt out w/ funding",
+     -0.072
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.061
+    ]
+   ],
+   "probaB": 0.79,
+   "profileTop": [
+    [
+     8,
+     0.122
+    ],
+    [
+     1,
+     0.109
+    ],
+    [
+     9,
+     -0.101
+    ]
+   ]
+  },
+  "69": {
+   "name": "Leduc-Beaumont",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    68.2,
+    65.4,
+    66.7,
+    64.7,
+    71.1,
+    56.8,
+    59.1,
+    54.4,
+    57.3,
+    28.8
+   ],
+   "level": 0.334,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.413
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.129
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.113
+    ]
+   ],
+   "probaA": 0.9,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.257
+    ],
+    [
+     "Q10 separation referendum",
+     0.056
+    ],
+    [
+     "Q7 abolish Senate",
+     0.053
+    ]
+   ],
+   "probaB": 0.99,
+   "profileTop": [
+    [
+     1,
+     0.179
+    ],
+    [
+     8,
+     -0.082
+    ],
+    [
+     6,
+     -0.078
+    ]
+   ]
+  },
+  "70": {
+   "name": "Lesser Slave Lake",
+   "pollsReported": 0.625,
+   "complete": true,
+   "yes": [
+    56.2,
+    52.9,
+    53.7,
+    49.2,
+    58.1,
+    46.1,
+    46.7,
+    44.7,
+    46.4,
+    31.2
+   ],
+   "level": -0.11,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.358
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.088
+    ],
+    [
+     "prof separation (Q10)",
+     -0.06
+    ]
+   ],
+   "probaA": 0.68,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q10 separation referendum",
+     0.227
+    ],
+    [
+     "Q4 fees non-PR",
+     0.221
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.091
+    ]
+   ],
+   "probaB": 0.73,
+   "profileTop": [
+    [
+     10,
+     0.516
+    ],
+    [
+     4,
+     -0.184
+    ],
+    [
+     7,
+     -0.121
+    ]
+   ]
+  },
+  "71": {
+   "name": "Lethbridge-East",
+   "pollsReported": 0.971,
+   "complete": true,
+   "yes": [
+    57.5,
+    54.3,
+    55.8,
+    53.3,
+    61.1,
+    48.3,
+    49.4,
+    44.6,
+    48.3,
+    20.0
+   ],
+   "level": -0.095,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.39
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.09
+    ],
+    [
+     "prof separation (Q10)",
+     0.069
+    ]
+   ],
+   "probaA": 0.95,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.272
+    ],
+    [
+     "Q7 abolish Senate",
+     0.054
+    ],
+    [
+     "Q10 separation referendum",
+     0.051
+    ]
+   ],
+   "probaB": 0.97,
+   "profileTop": [
+    [
+     1,
+     0.148
+    ],
+    [
+     10,
+     -0.093
+    ],
+    [
+     8,
+     -0.047
+    ]
+   ]
+  },
+  "72": {
+   "name": "Lethbridge-West",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    52.9,
+    48.4,
+    53.1,
+    50.0,
+    58.8,
+    46.0,
+    46.5,
+    42.3,
+    45.2,
+    18.6
+   ],
+   "level": -0.222,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.394
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.102
+    ],
+    [
+     "prof separation (Q10)",
+     0.081
+    ]
+   ],
+   "probaA": 0.99,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.277
+    ],
+    [
+     "Q10 separation referendum",
+     0.056
+    ],
+    [
+     "Q7 abolish Senate",
+     0.055
+    ]
+   ],
+   "probaB": 0.91,
+   "profileTop": [
+    [
+     1,
+     0.09
+    ],
+    [
+     2,
+     -0.073
+    ],
+    [
+     10,
+     -0.059
+    ]
+   ]
+  },
+  "73": {
+   "name": "Livingstone-Macleod",
+   "pollsReported": 0.979,
+   "complete": true,
+   "yes": [
+    71.1,
+    68.9,
+    69.5,
+    67.8,
+    74.1,
+    64.6,
+    64.9,
+    61.3,
+    63.6,
+    37.0
+   ],
+   "level": 0.554,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.406
+    ],
+    [
+     "prof separation (Q10)",
+     0.063
+    ],
+    [
+     "prof immigration (Q1-4)",
+     -0.04
+    ]
+   ],
+   "probaA": 0.7,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.244
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.058
+    ],
+    [
+     "Q7 abolish Senate",
+     0.048
+    ]
+   ],
+   "probaB": 0.86,
+   "profileTop": [
+    [
+     10,
+     0.109
+    ],
+    [
+     1,
+     0.097
+    ],
+    [
+     4,
+     -0.072
+    ]
+   ]
+  },
+  "74": {
+   "name": "Maskwacis-Wetaskiwin",
+   "pollsReported": 0.842,
+   "complete": true,
+   "yes": [
+    73.9,
+    78.5,
+    78.5,
+    76.3,
+    82.1,
+    72.6,
+    73.2,
+    70.7,
+    73.2,
+    33.6
+   ],
+   "level": 0.904,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.461
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.065
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.031
+    ]
+   ],
+   "probaA": 0.76,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.284
+    ],
+    [
+     "Q10 separation referendum",
+     0.089
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.062
+    ]
+   ],
+   "probaB": 0.99,
+   "profileTop": [
+    [
+     10,
+     -0.387
+    ],
+    [
+     2,
+     0.16
+    ],
+    [
+     1,
+     -0.114
+    ]
+   ]
+  },
+  "75": {
+   "name": "Morinville-St. Albert",
+   "pollsReported": 0.844,
+   "complete": true,
+   "yes": [
+    65.9,
+    63.2,
+    63.2,
+    62.1,
+    68.3,
+    55.1,
+    56.1,
+    51.8,
+    54.5,
+    25.2
+   ],
+   "level": 0.215,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.4
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.107
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.084
+    ]
+   ],
+   "probaA": 0.85,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.257
+    ],
+    [
+     "Q7 abolish Senate",
+     0.049
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.044
+    ]
+   ],
+   "probaB": 0.95,
+   "profileTop": [
+    [
+     1,
+     0.193
+    ],
+    [
+     10,
+     -0.105
+    ],
+    [
+     2,
+     0.096
+    ]
+   ]
+  },
+  "76": {
+   "name": "Olds-Didsbury-Three Hills",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    79.5,
+    77.1,
+    77.7,
+    77.6,
+    81.7,
+    73.8,
+    75.3,
+    71.7,
+    74.2,
+    44.7
+   ],
+   "level": 1.001,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.473
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.088
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.053
+    ]
+   ],
+   "probaA": 0.79,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.275
+    ],
+    [
+     "Q10 separation referendum",
+     0.071
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.064
+    ]
+   ],
+   "probaB": 0.92,
+   "profileTop": [
+    [
+     1,
+     0.101
+    ],
+    [
+     3,
+     -0.066
+    ],
+    [
+     5,
+     -0.046
+    ]
+   ]
+  },
+  "77": {
+   "name": "Peace River",
+   "pollsReported": 0.986,
+   "complete": true,
+   "yes": [
+    63.9,
+    59.8,
+    60.5,
+    60.5,
+    65.8,
+    58.2,
+    58.2,
+    56.4,
+    58.5,
+    42.5
+   ],
+   "level": 0.296,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.398
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.11
+    ],
+    [
+     "prof separation (Q10)",
+     0.093
+    ]
+   ],
+   "probaA": 0.85,
+   "clusterB": 3,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q10 separation referendum",
+     0.244
+    ],
+    [
+     "Q4 fees non-PR",
+     0.214
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.093
+    ]
+   ],
+   "probaB": 0.94,
+   "profileTop": [
+    [
+     10,
+     0.598
+    ],
+    [
+     5,
+     -0.189
+    ],
+    [
+     3,
+     -0.184
+    ]
+   ]
+  },
+  "78": {
+   "name": "Red Deer-North",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    62.1,
+    61.5,
+    66.0,
+    62.7,
+    71.7,
+    58.9,
+    60.4,
+    55.9,
+    58.5,
+    30.2
+   ],
+   "level": 0.313,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.441
+    ],
+    [
+     "prof separation (Q10)",
+     0.08
+    ],
+    [
+     "prof voter ID (Q5)",
+     0.024
+    ]
+   ],
+   "probaA": 0.76,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.312
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.082
+    ],
+    [
+     "Q7 abolish Senate",
+     0.037
+    ]
+   ],
+   "probaB": 0.92,
+   "profileTop": [
+    [
+     2,
+     -0.074
+    ],
+    [
+     5,
+     0.072
+    ],
+    [
+     1,
+     -0.067
+    ]
+   ]
+  },
+  "79": {
+   "name": "Red Deer-South",
+   "pollsReported": 0.849,
+   "complete": false,
+   "yes": [
+    59.6,
+    64.8,
+    65.1,
+    62.6,
+    69.6,
+    60.1,
+    64.7,
+    null,
+    null,
+    29.6
+   ],
+   "level": 0.324,
+   "clusterA": null,
+   "statusA": "unplaced",
+   "clusterB": null,
+   "statusB": "unplaced",
+   "profileTop": [
+    [
+     1,
+     -0.184
+    ],
+    [
+     7,
+     0.183
+    ],
+    [
+     4,
+     -0.071
+    ]
+   ]
+  },
+  "80": {
+   "name": "Rimbey-Rocky Mountain House-Sundre",
+   "pollsReported": 0.976,
+   "complete": true,
+   "yes": [
+    75.6,
+    73.3,
+    81.4,
+    81.2,
+    84.9,
+    79.6,
+    75.0,
+    72.7,
+    78.8,
+    51.1
+   ],
+   "level": 1.114,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.444
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.047
+    ],
+    [
+     "prof separation (Q10)",
+     0.041
+    ]
+   ],
+   "probaA": 0.71,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.27
+    ],
+    [
+     "Q10 separation referendum",
+     -0.112
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.08
+    ]
+   ],
+   "probaB": 0.72,
+   "profileTop": [
+    [
+     2,
+     -0.334
+    ],
+    [
+     1,
+     -0.232
+    ],
+    [
+     6,
+     0.231
+    ]
+   ]
+  },
+  "81": {
+   "name": "Sherwood Park",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    51.2,
+    55.9,
+    56.6,
+    55.3,
+    62.1,
+    47.9,
+    49.5,
+    44.1,
+    46.3,
+    19.2
+   ],
+   "level": -0.114,
+   "clusterA": 2,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.388
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.085
+    ],
+    [
+     "prof separation (Q10)",
+     0.055
+    ]
+   ],
+   "probaA": 0.91,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.319
+    ],
+    [
+     "Q10 separation referendum",
+     0.09
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.042
+    ]
+   ],
+   "probaB": 0.9,
+   "profileTop": [
+    [
+     10,
+     -0.126
+    ],
+    [
+     2,
+     0.12
+    ],
+    [
+     1,
+     -0.087
+    ]
+   ]
+  },
+  "82": {
+   "name": "Spruce Grove-Stony Plain",
+   "pollsReported": 0.806,
+   "complete": true,
+   "yes": [
+    55.3,
+    61.5,
+    67.3,
+    66.3,
+    76.6,
+    66.2,
+    67.2,
+    62.7,
+    59.5,
+    26.8
+   ],
+   "level": 0.408,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.391
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.098
+    ],
+    [
+     "prof separation (Q10)",
+     -0.068
+    ]
+   ],
+   "probaA": 0.68,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.269
+    ],
+    [
+     "Q10 separation referendum",
+     0.089
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.084
+    ]
+   ],
+   "probaB": 0.94,
+   "profileTop": [
+    [
+     1,
+     -0.443
+    ],
+    [
+     6,
+     0.244
+    ],
+    [
+     5,
+     0.234
+    ]
+   ]
+  },
+  "83": {
+   "name": "St. Albert",
+   "pollsReported": 0.983,
+   "complete": true,
+   "yes": [
+    55.1,
+    51.2,
+    52.0,
+    40.2,
+    45.1,
+    33.4,
+    35.4,
+    31.1,
+    32.1,
+    16.8
+   ],
+   "level": -0.518,
+   "clusterA": 1,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.456
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.084
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.072
+    ]
+   ],
+   "probaA": 0.88,
+   "clusterB": 1,
+   "statusB": "outlier",
+   "profileTop": [
+    [
+     1,
+     0.473
+    ],
+    [
+     2,
+     0.335
+    ],
+    [
+     3,
+     0.281
+    ]
+   ]
+  },
+  "84": {
+   "name": "Strathcona-Sherwood Park",
+   "pollsReported": 1.0,
+   "complete": true,
+   "yes": [
+    57.6,
+    62.8,
+    63.6,
+    61.7,
+    76.9,
+    61.0,
+    57.0,
+    52.8,
+    55.6,
+    26.2
+   ],
+   "level": 0.262,
+   "clusterA": 3,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.414
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.061
+    ],
+    [
+     "prof voter ID (Q5)",
+     0.036
+    ]
+   ],
+   "probaA": 0.76,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.313
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.107
+    ],
+    [
+     "Q6 provinces pick judges",
+     0.053
+    ]
+   ],
+   "probaB": 0.86,
+   "profileTop": [
+    [
+     5,
+     0.395
+    ],
+    [
+     1,
+     -0.207
+    ],
+    [
+     6,
+     0.166
+    ]
+   ]
+  },
+  "85": {
+   "name": "Taber-Warner",
+   "pollsReported": 0.971,
+   "complete": true,
+   "yes": [
+    78.5,
+    76.0,
+    76.7,
+    75.0,
+    81.3,
+    73.5,
+    73.8,
+    69.9,
+    73.0,
+    46.3
+   ],
+   "level": 0.948,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.487
+    ],
+    [
+     "prof separation (Q10)",
+     0.083
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.076
+    ]
+   ],
+   "probaA": 0.92,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.231
+    ],
+    [
+     "Q4 fees non-PR",
+     -0.08
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.053
+    ]
+   ],
+   "probaB": 0.74,
+   "profileTop": [
+    [
+     4,
+     -0.11
+    ],
+    [
+     10,
+     0.101
+    ],
+    [
+     1,
+     0.099
+    ]
+   ]
+  },
+  "86": {
+   "name": "Vermilion-Lloydminster-Wainwright",
+   "pollsReported": 0.833,
+   "complete": true,
+   "yes": [
+    70.9,
+    77.4,
+    77.7,
+    76.9,
+    81.8,
+    74.4,
+    74.9,
+    72.5,
+    79.3,
+    39.4
+   ],
+   "level": 0.965,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.445
+    ],
+    [
+     "prof constitution (Q6-9)",
+     0.047
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.038
+    ]
+   ],
+   "probaA": 0.72,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.295
+    ],
+    [
+     "Q10 separation referendum",
+     0.103
+    ],
+    [
+     "Q6 provinces pick judges",
+     0.043
+    ]
+   ],
+   "probaB": 0.93,
+   "profileTop": [
+    [
+     9,
+     0.352
+    ],
+    [
+     1,
+     -0.326
+    ],
+    [
+     10,
+     -0.199
+    ]
+   ]
+  },
+  "87": {
+   "name": "West Yellowhead",
+   "pollsReported": 0.946,
+   "complete": true,
+   "yes": [
+    72.0,
+    78.1,
+    78.1,
+    76.6,
+    83.6,
+    69.2,
+    73.1,
+    70.5,
+    73.2,
+    40.1
+   ],
+   "level": 0.912,
+   "clusterA": 4,
+   "statusA": "fitted",
+   "shapA": [
+    [
+     "level",
+     0.457
+    ],
+    [
+     "prof immigration (Q1-4)",
+     0.081
+    ],
+    [
+     "prof voter ID (Q5)",
+     0.031
+    ]
+   ],
+   "probaA": 0.76,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.288
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.084
+    ],
+    [
+     "Q10 separation referendum",
+     0.079
+    ]
+   ],
+   "probaB": 0.9,
+   "profileTop": [
+    [
+     1,
+     -0.216
+    ],
+    [
+     5,
+     0.17
+    ],
+    [
+     2,
+     0.131
+    ]
+   ]
+  }
+ }
+}
