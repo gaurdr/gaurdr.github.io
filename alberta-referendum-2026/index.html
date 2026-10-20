@@ -6,30 +6,107 @@
   <title>Alberta referendum 2026 – results maps</title>
   <link rel="stylesheet" href="assets/style.css">
   <style>
-    ol { padding-left: 22px; }
-    li { margin: 6px 0; }
-    li.soon { color: var(--muted); }
+    .intro { max-width: 760px; font-size: 16px; line-height: 1.6; }
+    .intro h2 { font-size: 19px; margin: 18px 0 6px; }
+    .intro p { margin: 0 0 12px; }
+    .intro .caveat { color: var(--muted); font-size: 14px; }
+    ol.results { list-style: none; padding: 0; margin: 8px 0 18px; max-width: 760px; }
+    ol.results li {
+      display: grid; grid-template-columns: 2.2em minmax(0, 1fr) 180px; gap: 10px; align-items: center;
+      padding: 8px 0; border-bottom: 1px solid #ebebe8;
+    }
+    ol.results .n { color: var(--muted); font-variant-numeric: tabular-nums; }
+    ol.results .res { font-size: 13px; font-variant-numeric: tabular-nums; }
+    ol.results .bar { position: relative; height: 8px; background: var(--red); border-radius: 2px; margin-top: 4px; }
+    ol.results .bar span { position: absolute; left: 0; top: 0; bottom: 0; background: var(--blue); border-radius: 2px 0 0 2px; }
+    ol.results .bar i { position: absolute; left: 50%; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--ink); }
+    .more { max-width: 760px; }
+    @media (max-width: 600px) { ol.results li { grid-template-columns: 2em minmax(0, 1fr); } ol.results .res { grid-column: 2; } }
   </style>
 </head>
 <body>
   <header>
     <h1>Alberta referendum 2026 – results by riding</h1>
-    <p class="prompt">One map per ballot question. Hover over a riding to see its results.</p>
   </header>
   <main>
-    <ol id="list"></ol>
-    <p><a href="clusters.html">Ridings that vote alike</a>: ridings grouped by how they voted across all 10 questions.</p>
+    <section class="intro">
+      <h2>What Alberta said</h2>
+      <p>
+        Alberta is staying put. CBC News projects that a majority of Albertans voted to remain in Canada. About three
+        in four voters chose Remain on Question 10, rejecting a move to start the legal process toward a binding
+        separation referendum.
+      </p>
+      <p>
+        The other nine questions, on immigration, social programs, voter ID, judges, the Senate and federal powers,
+        were far closer. Most sit within ten points of an even split, and a couple are close enough that the rest of
+        the count could still tip them. The one clear winner is requiring proof of citizenship to vote, which nearly
+        two in three voters supported.
+      </p>
+      <p>
+        Where people live told you more than which question they were answering. Rural central Alberta leaned Yes on
+        almost everything; the cores of Edmonton and Calgary leaned No on almost everything. The
+        <a href="clusters.html">ridings that vote alike</a> page maps those patterns, and the handful of questions
+        where ridings broke from them.
+      </p>
+      <p class="caveat">
+        Pick a question below to see how each of Alberta's 87 ridings voted; hover over a riding for its numbers.
+        Results come from CBC News's live feed and refresh every hour. They are unofficial until Elections Alberta
+        certifies them.
+      </p>
+    </section>
+
+    <h2 style="font-size:19px;margin:18px 0 2px">The ten questions</h2>
+    <div class="status" id="status">Loading latest results…</div>
+    <ol class="results" id="list"></ol>
+    <p class="more"><a href="clusters.html">Ridings that vote alike</a>: ridings grouped by how they voted across all 10 questions.</p>
   </main>
   <script src="assets/questions.js"></script>
   <script>
+    // Question list with live province-wide results: CBC feed, then the cached copy, then the snapshot.
+    const SOURCES = [
+      ["https://canopy.cbc.ca/live/elections/special/ABREF2026/all", "CBC live feed"],
+      ["data/results-latest.json", "cached copy of CBC feed"],
+      ["data/results-snapshot.json", "old snapshot"],
+    ];
     const list = document.getElementById("list");
+    const items = {};
     for (const [n, q] of Object.entries(QUESTIONS)) {
       const li = document.createElement("li");
-      li.value = n;
-      if (q.ready) li.innerHTML = `<a href="q${n}.html">${q.short}</a>`;
-      else { li.className = "soon"; li.textContent = `${q.short} (coming soon)`; }
+      li.innerHTML = `<span class="n">${n}.</span>
+        <span>${q.ready ? `<a href="q${n}.html">${q.short}</a>` : `${q.short} (coming soon)`}</span>
+        <span class="res"></span>`;
       list.appendChild(li);
+      items[q.slug] = { n, q, el: li.querySelector(".res") };
     }
+
+    async function load() {
+      for (const [url, label] of SOURCES) {
+        try {
+          const res = await fetch(url, { cache: "no-store" });
+          if (res.ok) return { feed: await res.json(), label };
+        } catch (e) { /* try the next source */ }
+      }
+      return null;
+    }
+
+    load().then((got) => {
+      const status = document.getElementById("status");
+      if (!got) { status.textContent = "Results are unavailable right now."; return; }
+      const { feed, label } = got;
+      const e = feed.data.election;
+      status.textContent = `Province-wide, from the ${label}: ${e.pollsReported.toLocaleString()} of ${e.totalPolls.toLocaleString()} polls reported.`;
+      for (const race of feed.data.races) {
+        const it = items[race.slug];
+        if (!it) continue;
+        const total = race.candidates.reduce((s, c) => s + c.votes, 0);
+        if (!total) { it.el.textContent = "No votes counted yet"; continue; }
+        const blue = race.candidates.find((c) => it.q.answers[c.slug]?.side === "blue");
+        const lead = race.candidates.reduce((a, b) => (b.votes > a.votes ? b : a));
+        const share = (v) => (100 * v / total).toFixed(1) + "%";
+        it.el.innerHTML = `${it.q.answers[lead.slug].label} leads, ${share(lead.votes)}
+          <div class="bar" title="${it.q.answers[blue.slug].label} ${share(blue.votes)}"><span style="width:${100 * blue.votes / total}%"></span><i></i></div>`;
+      }
+    });
   </script>
   <script data-goatcounter="https://dgiitrpr.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>

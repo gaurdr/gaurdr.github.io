@@ -9,10 +9,12 @@
   fetch(`${GC}/counter/${encodeURIComponent(location.pathname)}.json?start=2026-10-01`)
     .then((res) => (res.ok ? res.json() : Promise.reject(res.status)))
     .then(({ count }) => {
+      // Small badge in the top-right corner of the page header.
       const el = document.createElement("div");
       el.className = "views";
-      el.textContent = `${count} views of this page`;
-      (document.querySelector("footer") ?? document.body).appendChild(el);
+      el.title = "Views of this page (GoatCounter)";
+      el.textContent = `${count} ${count === "1" ? "view" : "views"}`;
+      (document.querySelector("header") ?? document.body).prepend(el);
     })
     .catch(() => {});
 })();

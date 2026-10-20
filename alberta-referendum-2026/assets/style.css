@@ -15,7 +15,7 @@ body {
   background: var(--bg);
 }
 header, main, footer { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-header { padding-top: 20px; }
+header { padding-top: 20px; position: relative; }
 h1 { font-size: 26px; margin: 0 0 4px; }
 .prompt { color: var(--muted); max-width: 820px; margin: 0 0 14px; }
 .status { font-size: 13px; color: var(--muted); }
@@ -74,4 +74,10 @@ footer { font-size: 12px; color: var(--muted); padding: 20px; }
 .refresh button:hover:not(:disabled) { background: #f0f0ee; }
 .refresh button:disabled { color: var(--muted); cursor: wait; }
 #refresh-msg { color: var(--red); margin-left: 6px; }
-.views { margin-top: 6px; }
+.views {
+  position: absolute; top: 18px; right: 20px;
+  font-size: 12px; color: var(--muted); background: #fff;
+  border: 1px solid #e3e3e0; border-radius: 999px; padding: 2px 10px;
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 600px) { .views { position: static; display: inline-block; margin-bottom: 6px; } }
