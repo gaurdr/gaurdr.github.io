@@ -242,7 +242,9 @@
     const [data, topo] = await Promise.all([d3.json(DATA_URL), d3.json(BOUNDARIES_URL)]);
     D = data;
     const m = D.meta;
-    d3.select("#status").text(`Interim results: ${d3.format(",")(m.pollsReported)} of ${d3.format(",")(m.totalPolls)} polls reported (${m.feedState}). Clusters will change when the final count is in.`);
+    const when = new Date(m.observedAt).toLocaleString("en-CA", { timeZone: "America/Edmonton", month: "long", day: "numeric",
+      year: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+    d3.select("#status").text(`Based on partial results: ${d3.format(",")(m.pollsReported)} of ${d3.format(",")(m.totalPolls)} polls reported, as observed on ${when}. Clusters will change when the final count is in.`);
 
     const features = topojson.feature(topo, Object.values(topo.objects)[0]).features;
     const calgary = features.filter((f) => f.properties.name.startsWith("Calgary-"));
