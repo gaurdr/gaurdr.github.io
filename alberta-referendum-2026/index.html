@@ -62,6 +62,25 @@
     <div class="status" id="status">Loading latest results…</div>
     <ol class="results" id="list"></ol>
     <p class="more"><a href="clusters.html">Ridings that vote alike</a>: ridings grouped by how they voted across all 10 questions.</p>
+
+    <section class="intro method-section">
+      <h2>How we did this</h2>
+      <p>
+        The results come from CBC News's live results feed for all 87 ridings, using Elections Alberta's 2019 riding
+        boundaries. For the grouping on the <a href="clusters.html">ridings that vote alike</a> page, we used results as observed at 1:52 p.m. MDT on October 20, 2026, when 4,841 of 5,583 polls
+        had reported. For each riding, we took the share of Yes votes on each of the 10 questions (Referendum on
+        Question 10) and split it into two parts: the riding's overall leaning, meaning how strongly it voted Yes across
+        the whole ballot, and its issue profile, meaning the questions where it voted more or less Yes than that leaning
+        would predict. A standard clustering method (k-means) then sorted ridings with similar numbers into groups. To
+        test whether the groups were real, we reran the grouping 200 times on reshuffled samples of ridings. The
+        overall-leaning groups held up well in these repeated tests (a stability score of 0.85 out of 1); the
+        issue-profile groups less so (0.61), which is why we call them exploratory. Ridings with fewer than half their
+        polls counted were left out of the grouping and placed afterward; they are hatched on the grouping map. To explain the
+        groups, we trained a model to reproduce them and measured how much each question mattered to its decisions (a
+        technique called SHAP), repeating the check 30 times. These are riding-level patterns. They describe places, not
+        how individuals voted.
+      </p>
+    </section>
   </main>
   <script src="assets/questions.js"></script>
   <script>

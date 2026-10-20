@@ -70,3 +70,7 @@ ul.reasons li { margin: 2px 0; }
 .commentary h2 { margin: 0 0 6px; font-size: 18px; }
 .commentary p { margin: 0 0 10px; }
 .commentary .caveat { color: var(--muted); font-size: 14px; margin-bottom: 0; }
+
+.method { max-width: 820px; margin: 0 0 14px; font-size: 14.5px; line-height: 1.55; }
+.method summary { cursor: pointer; font-weight: 600; }
+.method p { margin: 8px 0 0; color: var(--ink); }
