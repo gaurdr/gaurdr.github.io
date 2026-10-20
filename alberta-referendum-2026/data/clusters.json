@@ -225,55 +225,106 @@
       "Maskwacis-Wetaskiwin"
      ]
     }
-   }
+   },
+   "metric": "euclidean"
   },
   "B": {
    "title": "Issue profile",
    "k": 3,
-   "stability": 0.608,
-   "wardAgreement": 0.669,
+   "stability": 0.768,
+   "wardAgreement": 0.566,
    "exploratory": true,
    "clusters": {
     "1": {
-     "n": 31,
-     "description": "Relative to their own overall leaning: more Yes on Q1 (immigration control); less Yes on Q9 (provincial paramountcy).",
+     "n": 26,
+     "description": "Relative to their own overall leaning: less Yes on Q1 (immigration control); less Yes on Q10 (separation referendum).",
      "yes": [
-      57.2,
-      54.0,
-      55.7,
-      54.5,
-      60.5,
-      48.0,
-      49.9,
-      45.7,
-      47.7,
-      23.0
+      51.4,
+      54.3,
+      57.3,
+      56.8,
+      63.4,
+      50.9,
+      52.3,
+      47.9,
+      51.0,
+      22.5
      ],
-     "level": -0.071,
+     "level": -0.014,
      "profile": [
-      0.136,
-      0.021,
-      0.005,
-      0.006,
-      -0.017,
-      -0.028,
-      -0.026,
-      -0.032,
-      -0.049,
-      -0.017
+      -0.164,
+      -0.015,
+      0.03,
+      0.057,
+      0.078,
+      0.05,
+      0.028,
+      0.01,
+      0.046,
+      -0.119
      ],
      "topShap": [
       [
        "Q1 immigration control",
-       0.471
+       0.377
       ],
       [
        "Q10 separation referendum",
-       0.096
+       0.197
       ],
       [
        "Q4 fees non-PR",
-       0.08
+       0.092
+      ]
+     ],
+     "examples": [
+      "Edmonton-City Centre",
+      "Edmonton-Glenora",
+      "Edmonton-Riverview",
+      "Edmonton-Rutherford",
+      "Calgary-Buffalo"
+     ]
+    },
+    "2": {
+     "n": 23,
+     "description": "Relative to their own overall leaning: more Yes on Q1 (immigration control); less Yes on Q9 (provincial paramountcy).",
+     "yes": [
+      54.4,
+      50.8,
+      52.7,
+      50.9,
+      56.7,
+      43.5,
+      45.5,
+      41.2,
+      43.3,
+      19.6
+     ],
+     "level": -0.237,
+     "profile": [
+      0.177,
+      0.047,
+      0.039,
+      0.016,
+      -0.024,
+      -0.052,
+      -0.049,
+      -0.057,
+      -0.069,
+      -0.027
+     ],
+     "topShap": [
+      [
+       "Q1 immigration control",
+       0.417
+      ],
+      [
+       "Q10 separation referendum",
+       0.111
+      ],
+      [
+       "Q8 opt out w/ funding",
+       0.104
       ]
      ],
      "examples": [
@@ -284,96 +335,46 @@
       "Edmonton-Ellerslie"
      ]
     },
-    "2": {
-     "n": 29,
-     "description": "Relative to their own overall leaning: less Yes on Q1 (immigration control); less Yes on Q10 (separation referendum).",
-     "yes": [
-      53.6,
-      56.0,
-      58.6,
-      57.6,
-      64.6,
-      52.4,
-      53.9,
-      49.6,
-      51.7,
-      24.4
-     ],
-     "level": 0.05,
-     "profile": [
-      -0.138,
-      -0.007,
-      0.022,
-      0.029,
-      0.075,
-      0.047,
-      0.03,
-      0.017,
-      0.008,
-      -0.083
-     ],
-     "topShap": [
-      [
-       "Q1 immigration control",
-       0.505
-      ],
-      [
-       "Q10 separation referendum",
-       0.106
-      ],
-      [
-       "Q5 proof of citizenship",
-       0.099
-      ]
-     ],
-     "examples": [
-      "Edmonton-Strathcona",
-      "Edmonton-Glenora",
-      "Edmonton-Riverview",
-      "Edmonton-Rutherford",
-      "Calgary-Buffalo"
-     ]
-    },
     "3": {
-     "n": 13,
+     "n": 22,
      "description": "Relative to their own overall leaning: more Yes on Q10 (separation referendum); less Yes on Q4 (fees non-PR).",
      "yes": [
-      60.2,
-      58.3,
-      59.6,
+      63.4,
+      61.8,
+      63.0,
+      61.6,
+      68.1,
       57.8,
-      64.3,
-      54.2,
-      56.7,
-      54.0,
-      55.8,
-      33.0
+      60.1,
+      56.9,
+      58.6,
+      34.1
      ],
-     "level": 0.177,
+     "level": 0.317,
      "profile": [
-      0.006,
-      -0.054,
+      0.01,
+      -0.038,
+      -0.073,
       -0.085,
-      -0.112,
-      -0.1,
-      -0.021,
-      0.011,
-      0.065,
-      0.04,
-      0.251
+      -0.062,
+      -0.008,
+      0.015,
+      0.049,
+      0.021,
+      0.172
      ],
      "topShap": [
       [
        "Q10 separation referendum",
-       0.308
+       0.346
       ],
       [
        "Q4 fees non-PR",
-       0.223
+       0.167
       ],
       [
-       "Q5 proof of citizenship",
-       0.108
+       "Q3 12-month residency",
+       0.142
       ]
      ],
      "examples": [
@@ -381,10 +382,11 @@
       "Calgary-Acadia",
       "Edmonton-Beverly-Clareview",
       "Calgary-East",
-      "Lesser Slave Lake"
+      "Banff-Kananaskis"
      ]
     }
-   }
+   },
+   "metric": "cosine"
   }
  },
  "ridings": {
@@ -427,18 +429,18 @@
    "shapB": [
     [
      "Q10 separation referendum",
-     0.27
+     0.234
+    ],
+    [
+     "Q3 12-month residency",
+     -0.056
     ],
     [
      "Q8 opt out w/ funding",
-     0.047
-    ],
-    [
-     "Q9 provincial paramountcy",
-     0.037
+     0.046
     ]
    ],
-   "probaB": 0.63,
+   "probaB": 0.69,
    "profileTop": [
     [
      6,
@@ -488,23 +490,23 @@
     ]
    ],
    "probaA": 0.64,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.256
+     0.317
     ],
     [
      "Q10 separation referendum",
-     0.068
+     0.066
     ],
     [
-     "Q5 proof of citizenship",
-     0.059
+     "Q4 fees non-PR",
+     0.037
     ]
    ],
-   "probaB": 0.89,
+   "probaB": 0.75,
    "profileTop": [
     [
      1,
@@ -554,23 +556,23 @@
     ]
    ],
    "probaA": 0.94,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.335
+     0.239
     ],
     [
-     "Q7 abolish Senate",
-     0.048
+     "Q10 separation referendum",
+     0.122
     ],
     [
-     "Q6 provinces pick judges",
-     0.043
+     "Q4 fees non-PR",
+     0.063
     ]
    ],
-   "probaB": 0.97,
+   "probaB": 0.96,
    "profileTop": [
     [
      1,
@@ -620,23 +622,23 @@
     ]
    ],
    "probaA": 0.83,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.3
+     0.197
     ],
     [
      "Q5 proof of citizenship",
-     0.098
+     0.08
     ],
     [
-     "Q6 provinces pick judges",
-     0.043
+     "Q3 12-month residency",
+     0.054
     ]
    ],
-   "probaB": 0.92,
+   "probaB": 0.79,
    "profileTop": [
     [
      2,
@@ -686,23 +688,23 @@
     ]
    ],
    "probaA": 0.91,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.265
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.064
+     0.31
     ],
     [
      "Q10 separation referendum",
-     0.06
+     0.098
+    ],
+    [
+     "Q6 provinces pick judges",
+     0.034
     ]
    ],
-   "probaB": 0.96,
+   "probaB": 0.83,
    "profileTop": [
     [
      1,
@@ -752,23 +754,8 @@
     ]
    ],
    "probaA": 0.86,
-   "clusterB": 2,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q1 immigration control",
-     0.327
-    ],
-    [
-     "Q7 abolish Senate",
-     0.045
-    ],
-    [
-     "Q10 separation referendum",
-     0.043
-    ]
-   ],
-   "probaB": 0.92,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
      1,
@@ -822,19 +809,19 @@
    "statusB": "fitted",
    "shapB": [
     [
-     "Q5 proof of citizenship",
-     0.095
+     "Q10 separation referendum",
+     0.196
     ],
     [
-     "Q10 separation referendum",
-     0.091
+     "Q4 fees non-PR",
+     0.112
     ],
     [
      "Q8 opt out w/ funding",
-     0.077
+     0.073
     ]
    ],
-   "probaB": 0.6,
+   "probaB": 0.78,
    "profileTop": [
     [
      7,
@@ -884,8 +871,23 @@
     ]
    ],
    "probaA": 0.92,
-   "clusterB": 2,
-   "statusB": "outlier",
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.238
+    ],
+    [
+     "Q10 separation referendum",
+     0.13
+    ],
+    [
+     "Q4 fees non-PR",
+     0.065
+    ]
+   ],
+   "probaB": 0.98,
    "profileTop": [
     [
      1,
@@ -935,23 +937,23 @@
     ]
    ],
    "probaA": 0.89,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.237
+     0.288
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.081
     ],
     [
      "Q10 separation referendum",
-     0.055
-    ],
-    [
-     "Q7 abolish Senate",
-     0.049
+     0.062
     ]
    ],
-   "probaB": 0.93,
+   "probaB": 0.98,
    "profileTop": [
     [
      1,
@@ -1001,23 +1003,23 @@
     ]
    ],
    "probaA": 0.96,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.247
+     0.249
     ],
     [
-     "Q7 abolish Senate",
-     0.053
+     "Q4 fees non-PR",
+     0.06
     ],
     [
-     "Q10 separation referendum",
-     0.053
+     "Q6 provinces pick judges",
+     0.038
     ]
    ],
-   "probaB": 0.88,
+   "probaB": 0.69,
    "profileTop": [
     [
      6,
@@ -1067,23 +1069,23 @@
     ]
    ],
    "probaA": 0.91,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.277
+     0.329
     ],
     [
-     "Q5 proof of citizenship",
-     0.066
+     "Q10 separation referendum",
+     0.068
     ],
     [
-     "Q4 fees non-PR",
-     0.043
+     "Q9 provincial paramountcy",
+     0.045
     ]
    ],
-   "probaB": 0.86,
+   "probaB": 0.83,
    "profileTop": [
     [
      1,
@@ -1118,7 +1120,7 @@
    "level": -0.511,
    "clusterA": 1,
    "statusA": "assigned",
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "assigned",
    "profileTop": [
     [
@@ -1169,23 +1171,8 @@
     ]
    ],
    "probaA": 0.97,
-   "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q1 immigration control",
-     0.28
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.065
-    ],
-    [
-     "Q10 separation referendum",
-     0.063
-    ]
-   ],
-   "probaB": 0.96,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
      1,
@@ -1235,23 +1222,23 @@
     ]
    ],
    "probaA": 0.96,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.27
+     0.192
     ],
     [
      "Q10 separation referendum",
-     0.06
+     0.083
     ],
     [
-     "Q4 fees non-PR",
-     0.045
+     "Q3 12-month residency",
+     0.051
     ]
    ],
-   "probaB": 0.9,
+   "probaB": 0.71,
    "profileTop": [
     [
      2,
@@ -1301,23 +1288,23 @@
     ]
    ],
    "probaA": 0.86,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.342
+     0.237
     ],
     [
-     "Q7 abolish Senate",
-     0.044
+     "Q4 fees non-PR",
+     0.055
     ],
     [
-     "Q10 separation referendum",
-     0.037
+     "Q3 12-month residency",
+     0.054
     ]
    ],
-   "probaB": 0.92,
+   "probaB": 0.83,
    "profileTop": [
     [
      1,
@@ -1367,23 +1354,23 @@
     ]
    ],
    "probaA": 0.93,
-   "clusterB": 1,
+   "clusterB": 3,
    "statusB": "fitted",
    "shapB": [
     [
+     "Q3 12-month residency",
+     0.135
+    ],
+    [
      "Q1 immigration control",
-     0.251
+     0.126
     ],
     [
      "Q10 separation referendum",
-     0.067
-    ],
-    [
-     "Q4 fees non-PR",
-     0.043
+     -0.053
     ]
    ],
-   "probaB": 0.72,
+   "probaB": 0.63,
    "profileTop": [
     [
      3,
@@ -1433,23 +1420,23 @@
     ]
    ],
    "probaA": 0.89,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.254
-    ],
-    [
-     "Q10 separation referendum",
-     0.052
+     0.297
     ],
     [
      "Q8 opt out w/ funding",
-     0.045
+     0.074
+    ],
+    [
+     "Q7 abolish Senate",
+     0.056
     ]
    ],
-   "probaB": 0.92,
+   "probaB": 0.96,
    "profileTop": [
     [
      1,
@@ -1499,23 +1486,23 @@
     ]
    ],
    "probaA": 0.96,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.243
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.061
+     0.194
     ],
     [
      "Q10 separation referendum",
-     0.057
+     0.078
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.072
     ]
    ],
-   "probaB": 0.99,
+   "probaB": 0.86,
    "profileTop": [
     [
      4,
@@ -1565,23 +1552,23 @@
     ]
    ],
    "probaA": 0.83,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.26
+     0.308
     ],
     [
      "Q10 separation referendum",
-     0.058
+     0.078
     ],
     [
-     "Q7 abolish Senate",
-     0.049
+     "Q9 provincial paramountcy",
+     0.052
     ]
    ],
-   "probaB": 0.99,
+   "probaB": 0.88,
    "profileTop": [
     [
      1,
@@ -1631,23 +1618,23 @@
     ]
    ],
    "probaA": 0.88,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.268
-    ],
-    [
-     "Q10 separation referendum",
-     0.054
+     0.288
     ],
     [
      "Q8 opt out w/ funding",
-     0.04
+     0.081
+    ],
+    [
+     "Q10 separation referendum",
+     0.062
     ]
    ],
-   "probaB": 0.88,
+   "probaB": 0.8,
    "profileTop": [
     [
      1,
@@ -1698,22 +1685,7 @@
    ],
    "probaA": 0.94,
    "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q1 immigration control",
-     -0.058
-    ],
-    [
-     "Q10 separation referendum",
-     0.05
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.05
-    ]
-   ],
-   "probaB": 0.6,
+   "statusB": "weak",
    "profileTop": [
     [
      2,
@@ -1763,23 +1735,23 @@
     ]
    ],
    "probaA": 0.75,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.273
+     0.207
     ],
     [
      "Q10 separation referendum",
-     0.106
+     0.149
     ],
     [
-     "Q5 proof of citizenship",
-     -0.076
+     "Q4 fees non-PR",
+     -0.061
     ]
    ],
-   "probaB": 0.79,
+   "probaB": 0.71,
    "profileTop": [
     [
      1,
@@ -1865,20 +1837,20 @@
     ]
    ],
    "probaA": 0.95,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.3
+     0.232
     ],
     [
      "Q10 separation referendum",
-     0.037
+     0.112
     ],
     [
-     "Q7 abolish Senate",
-     0.025
+     "Q5 proof of citizenship",
+     0.049
     ]
    ],
    "probaB": 0.87,
@@ -1916,7 +1888,7 @@
    "level": -0.881,
    "clusterA": 1,
    "statusA": "assigned",
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "assigned",
    "profileTop": [
     [
@@ -1967,23 +1939,23 @@
     ]
    ],
    "probaA": 0.95,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.306
+     0.235
     ],
     [
      "Q10 separation referendum",
-     0.096
+     0.129
     ],
     [
-     "Q7 abolish Senate",
-     0.046
+     "Q4 fees non-PR",
+     0.065
     ]
    ],
-   "probaB": 0.97,
+   "probaB": 0.96,
    "profileTop": [
     [
      10,
@@ -2038,18 +2010,18 @@
    "shapB": [
     [
      "Q4 fees non-PR",
-     0.156
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.098
+     0.133
     ],
     [
      "Q1 immigration control",
-     0.093
+     0.116
+    ],
+    [
+     "Q3 12-month residency",
+     0.083
     ]
    ],
-   "probaB": 0.67,
+   "probaB": 0.87,
    "profileTop": [
     [
      8,
@@ -2135,8 +2107,23 @@
     ]
    ],
    "probaA": 0.86,
-   "clusterB": 2,
-   "statusB": "outlier",
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.207
+    ],
+    [
+     "Q10 separation referendum",
+     0.117
+    ],
+    [
+     "Q4 fees non-PR",
+     0.06
+    ]
+   ],
+   "probaB": 0.73,
    "profileTop": [
     [
      9,
@@ -2186,23 +2173,23 @@
     ]
    ],
    "probaA": 0.84,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q5 proof of citizenship",
-     0.106
-    ],
-    [
      "Q10 separation referendum",
-     0.098
+     0.143
     ],
     [
      "Q1 immigration control",
-     0.051
+     0.111
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.074
     ]
    ],
-   "probaB": 0.77,
+   "probaB": 0.78,
    "profileTop": [
     [
      3,
@@ -2252,23 +2239,23 @@
     ]
    ],
    "probaA": 0.93,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.224
+     0.162
     ],
     [
      "Q8 opt out w/ funding",
-     0.047
+     0.094
     ],
     [
-     "Q4 fees non-PR",
-     0.042
+     "Q9 provincial paramountcy",
+     0.071
     ]
    ],
-   "probaB": 0.77,
+   "probaB": 0.79,
    "profileTop": [
     [
      7,
@@ -2318,20 +2305,20 @@
     ]
    ],
    "probaA": 0.89,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.328
+     0.244
     ],
     [
      "Q10 separation referendum",
-     0.041
+     0.099
     ],
     [
-     "Q6 provinces pick judges",
-     0.039
+     "Q4 fees non-PR",
+     0.06
     ]
    ],
    "probaB": 0.94,
@@ -2384,23 +2371,23 @@
     ]
    ],
    "probaA": 0.96,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.272
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.065
+     0.321
     ],
     [
      "Q10 separation referendum",
-     0.057
+     0.068
+    ],
+    [
+     "Q9 provincial paramountcy",
+     0.059
     ]
    ],
-   "probaB": 0.97,
+   "probaB": 0.91,
    "profileTop": [
     [
      1,
@@ -2454,19 +2441,19 @@
    "statusB": "fitted",
    "shapB": [
     [
-     "Q4 fees non-PR",
-     0.21
-    ],
-    [
      "Q10 separation referendum",
-     0.192
+     0.223
     ],
     [
-     "Q5 proof of citizenship",
-     0.086
+     "Q4 fees non-PR",
+     0.114
+    ],
+    [
+     "Q1 immigration control",
+     0.101
     ]
    ],
-   "probaB": 0.92,
+   "probaB": 0.99,
    "profileTop": [
     [
      10,
@@ -2552,20 +2539,20 @@
     ]
    ],
    "probaA": 0.87,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.273
+     0.208
     ],
     [
      "Q10 separation referendum",
-     0.088
+     0.121
     ],
     [
-     "Q5 proof of citizenship",
-     0.082
+     "Q4 fees non-PR",
+     0.063
     ]
    ],
    "probaB": 0.98,
@@ -2618,23 +2605,23 @@
     ]
    ],
    "probaA": 0.89,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.224
-    ],
-    [
-     "Q10 separation referendum",
-     -0.072
+     0.124
     ],
     [
      "Q8 opt out w/ funding",
-     0.051
+     0.108
+    ],
+    [
+     "Q10 separation referendum",
+     -0.078
     ]
    ],
-   "probaB": 0.85,
+   "probaB": 0.74,
    "profileTop": [
     [
      10,
@@ -2684,23 +2671,23 @@
     ]
    ],
    "probaA": 0.94,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
+     "Q10 separation referendum",
+     0.106
+    ],
+    [
      "Q5 proof of citizenship",
-     0.123
+     0.072
     ],
     [
-     "Q1 immigration control",
-     -0.059
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.059
+     "Q4 fees non-PR",
+     0.063
     ]
    ],
-   "probaB": 0.62,
+   "probaB": 0.65,
    "profileTop": [
     [
      3,
@@ -2735,7 +2722,7 @@
    "level": -0.664,
    "clusterA": 1,
    "statusA": "assigned",
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "assigned",
    "profileTop": [
     [
@@ -2786,23 +2773,23 @@
     ]
    ],
    "probaA": 0.95,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.328
+     0.254
     ],
     [
      "Q10 separation referendum",
-     0.099
+     0.112
     ],
     [
-     "Q7 abolish Senate",
-     0.046
+     "Q4 fees non-PR",
+     0.055
     ]
    ],
-   "probaB": 0.93,
+   "probaB": 0.87,
    "profileTop": [
     [
      4,
@@ -2852,23 +2839,23 @@
     ]
    ],
    "probaA": 0.88,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.324
+     0.243
     ],
     [
      "Q10 separation referendum",
-     0.095
+     0.115
     ],
     [
-     "Q7 abolish Senate",
-     0.048
+     "Q4 fees non-PR",
+     0.064
     ]
    ],
-   "probaB": 0.94,
+   "probaB": 0.96,
    "profileTop": [
     [
      1,
@@ -2918,23 +2905,23 @@
     ]
    ],
    "probaA": 0.92,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q7 abolish Senate",
-     0.058
+     "Q9 provincial paramountcy",
+     0.072
     ],
     [
-     "Q10 separation referendum",
-     0.057
+     "Q8 opt out w/ funding",
+     0.051
     ],
     [
-     "Q5 proof of citizenship",
-     0.046
+     "Q4 fees non-PR",
+     0.05
     ]
    ],
-   "probaB": 0.8,
+   "probaB": 0.63,
    "profileTop": [
     [
      3,
@@ -2984,23 +2971,23 @@
     ]
    ],
    "probaA": 0.78,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.274
+     0.204
+    ],
+    [
+     "Q10 separation referendum",
+     0.102
     ],
     [
      "Q5 proof of citizenship",
-     0.126
-    ],
-    [
-     "Q6 provinces pick judges",
-     -0.043
+     0.085
     ]
    ],
-   "probaB": 0.77,
+   "probaB": 0.82,
    "profileTop": [
     [
      5,
@@ -3050,23 +3037,8 @@
     ]
    ],
    "probaA": 0.88,
-   "clusterB": 2,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q1 immigration control",
-     0.356
-    ],
-    [
-     "Q7 abolish Senate",
-     0.049
-    ],
-    [
-     "Q10 separation referendum",
-     0.032
-    ]
-   ],
-   "probaB": 0.92,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
      1,
@@ -3116,20 +3088,20 @@
     ]
    ],
    "probaA": 0.93,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.29
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.084
+     0.227
     ],
     [
      "Q10 separation referendum",
-     0.08
+     0.136
+    ],
+    [
+     "Q4 fees non-PR",
+     0.07
     ]
    ],
    "probaB": 0.94,
@@ -3182,23 +3154,23 @@
     ]
    ],
    "probaA": 0.92,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.321
+     0.243
     ],
     [
      "Q10 separation referendum",
-     0.1
+     0.12
     ],
     [
-     "Q7 abolish Senate",
-     0.047
+     "Q4 fees non-PR",
+     0.062
     ]
    ],
-   "probaB": 0.95,
+   "probaB": 0.96,
    "profileTop": [
     [
      10,
@@ -3248,23 +3220,23 @@
     ]
    ],
    "probaA": 0.91,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.239
+     0.294
     ],
     [
      "Q10 separation referendum",
-     0.055
+     0.077
     ],
     [
      "Q8 opt out w/ funding",
-     0.048
+     0.064
     ]
    ],
-   "probaB": 0.93,
+   "probaB": 0.97,
    "profileTop": [
     [
      1,
@@ -3314,23 +3286,23 @@
     ]
    ],
    "probaA": 0.92,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.257
+     0.296
     ],
     [
-     "Q10 separation referendum",
-     0.055
+     "Q8 opt out w/ funding",
+     0.088
     ],
     [
      "Q7 abolish Senate",
-     0.05
+     0.064
     ]
    ],
-   "probaB": 0.98,
+   "probaB": 0.99,
    "profileTop": [
     [
      1,
@@ -3385,18 +3357,18 @@
    "shapB": [
     [
      "Q10 separation referendum",
-     0.243
+     0.229
     ],
     [
      "Q4 fees non-PR",
-     0.184
+     0.117
     ],
     [
-     "Q5 proof of citizenship",
-     0.082
+     "Q3 12-month residency",
+     0.09
     ]
    ],
-   "probaB": 0.9,
+   "probaB": 0.98,
    "profileTop": [
     [
      10,
@@ -3446,23 +3418,23 @@
     ]
    ],
    "probaA": 0.85,
-   "clusterB": 1,
+   "clusterB": 3,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q1 immigration control",
-     0.272
-    ],
-    [
      "Q10 separation referendum",
-     0.052
+     0.199
     ],
     [
-     "Q7 abolish Senate",
-     -0.043
+     "Q4 fees non-PR",
+     0.102
+    ],
+    [
+     "Q3 12-month residency",
+     0.096
     ]
    ],
-   "probaB": 0.81,
+   "probaB": 0.82,
    "profileTop": [
     [
      2,
@@ -3553,18 +3525,18 @@
    "shapB": [
     [
      "Q10 separation referendum",
-     0.226
+     0.224
     ],
     [
      "Q4 fees non-PR",
-     0.205
+     0.119
     ],
     [
      "Q1 immigration control",
-     0.08
+     0.102
     ]
    ],
-   "probaB": 0.92,
+   "probaB": 0.98,
    "profileTop": [
     [
      4,
@@ -3614,23 +3586,23 @@
     ]
    ],
    "probaA": 0.86,
-   "clusterB": 2,
+   "clusterB": 3,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q1 immigration control",
-     0.274
+     "Q3 12-month residency",
+     0.136
     ],
     [
-     "Q5 proof of citizenship",
-     0.085
+     "Q10 separation referendum",
+     0.096
     ],
     [
-     "Q6 provinces pick judges",
-     0.043
+     "Q4 fees non-PR",
+     -0.052
     ]
    ],
-   "probaB": 0.89,
+   "probaB": 0.62,
    "profileTop": [
     [
      3,
@@ -3685,18 +3657,18 @@
    "shapB": [
     [
      "Q10 separation referendum",
-     0.234
+     0.237
     ],
     [
      "Q4 fees non-PR",
-     0.221
+     0.111
     ],
     [
-     "Q5 proof of citizenship",
-     0.096
+     "Q1 immigration control",
+     0.1
     ]
    ],
-   "probaB": 0.81,
+   "probaB": 0.95,
    "profileTop": [
     [
      10,
@@ -3751,18 +3723,18 @@
    "shapB": [
     [
      "Q10 separation referendum",
-     0.23
-    ],
-    [
-     "Q4 fees non-PR",
      0.224
     ],
     [
-     "Q5 proof of citizenship",
-     0.092
+     "Q4 fees non-PR",
+     0.126
+    ],
+    [
+     "Q1 immigration control",
+     0.099
     ]
    ],
-   "probaB": 0.93,
+   "probaB": 0.99,
    "profileTop": [
     [
      10,
@@ -3812,23 +3784,23 @@
     ]
    ],
    "probaA": 0.71,
-   "clusterB": 1,
+   "clusterB": 3,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q1 immigration control",
-     0.169
+     "Q4 fees non-PR",
+     0.116
     ],
     [
-     "Q10 separation referendum",
-     0.062
+     "Q1 immigration control",
+     0.113
     ],
     [
      "Q8 opt out w/ funding",
-     -0.056
+     0.075
     ]
    ],
-   "probaB": 0.76,
+   "probaB": 0.73,
    "profileTop": [
     [
      6,
@@ -3883,18 +3855,18 @@
    "shapB": [
     [
      "Q10 separation referendum",
-     0.177
-    ],
-    [
-     "Q1 immigration control",
-     0.081
+     0.226
     ],
     [
      "Q3 12-month residency",
-     0.069
+     0.133
+    ],
+    [
+     "Q1 immigration control",
+     0.097
     ]
    ],
-   "probaB": 0.54,
+   "probaB": 0.82,
    "profileTop": [
     [
      3,
@@ -3944,23 +3916,23 @@
     ]
    ],
    "probaA": 0.87,
-   "clusterB": 2,
+   "clusterB": 3,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q1 immigration control",
-     0.333
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.047
+     "Q10 separation referendum",
+     0.25
     ],
     [
      "Q5 proof of citizenship",
-     -0.043
+     0.046
+    ],
+    [
+     "Q4 fees non-PR",
+     0.038
     ]
    ],
-   "probaB": 0.83,
+   "probaB": 0.65,
    "profileTop": [
     [
      10,
@@ -4010,23 +3982,23 @@
     ]
    ],
    "probaA": 0.85,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.281
+     0.228
     ],
     [
      "Q10 separation referendum",
-     0.087
+     0.111
     ],
     [
      "Q5 proof of citizenship",
-     0.074
+     0.06
     ]
    ],
-   "probaB": 0.97,
+   "probaB": 0.91,
    "profileTop": [
     [
      9,
@@ -4061,7 +4033,7 @@
    "level": 0.378,
    "clusterA": 3,
    "statusA": "assigned",
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "assigned",
    "profileTop": [
     [
@@ -4097,7 +4069,7 @@
    "level": -0.533,
    "clusterA": 1,
    "statusA": "assigned",
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "assigned",
    "profileTop": [
     [
@@ -4148,23 +4120,23 @@
     ]
    ],
    "probaA": 0.82,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.256
+     0.282
     ],
     [
-     "Q10 separation referendum",
-     0.057
+     "Q8 opt out w/ funding",
+     0.094
     ],
     [
      "Q7 abolish Senate",
-     0.052
+     0.059
     ]
    ],
-   "probaB": 0.99,
+   "probaB": 0.95,
    "profileTop": [
     [
      1,
@@ -4219,18 +4191,18 @@
    "shapB": [
     [
      "Q10 separation referendum",
-     0.197
+     0.242
     ],
     [
      "Q4 fees non-PR",
-     0.187
+     0.126
     ],
     [
-     "Q9 provincial paramountcy",
-     0.044
+     "Q3 12-month residency",
+     0.079
     ]
    ],
-   "probaB": 0.69,
+   "probaB": 0.87,
    "profileTop": [
     [
      9,
@@ -4265,7 +4237,7 @@
    "level": 0.894,
    "clusterA": 4,
    "statusA": "assigned",
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "assigned",
    "profileTop": [
     [
@@ -4316,23 +4288,23 @@
     ]
    ],
    "probaA": 0.88,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.237
-    ],
-    [
-     "Q10 separation referendum",
-     0.051
+     0.287
     ],
     [
      "Q8 opt out w/ funding",
-     0.047
+     0.086
+    ],
+    [
+     "Q7 abolish Senate",
+     0.056
     ]
    ],
-   "probaB": 0.91,
+   "probaB": 0.99,
    "profileTop": [
     [
      1,
@@ -4382,23 +4354,23 @@
     ]
    ],
    "probaA": 0.91,
-   "clusterB": 2,
+   "clusterB": 3,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q1 immigration control",
-     0.312
+     "Q10 separation referendum",
+     0.204
     ],
     [
-     "Q6 provinces pick judges",
-     -0.054
+     "Q4 fees non-PR",
+     0.12
     ],
     [
-     "Q7 abolish Senate",
-     0.039
+     "Q3 12-month residency",
+     -0.064
     ]
    ],
-   "probaB": 0.79,
+   "probaB": 0.74,
    "profileTop": [
     [
      1,
@@ -4453,18 +4425,18 @@
    "shapB": [
     [
      "Q10 separation referendum",
-     0.267
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.079
+     0.259
     ],
     [
      "Q8 opt out w/ funding",
-     0.066
+     0.061
+    ],
+    [
+     "Q4 fees non-PR",
+     0.058
     ]
    ],
-   "probaB": 0.67,
+   "probaB": 0.87,
    "profileTop": [
     [
      8,
@@ -4514,23 +4486,23 @@
     ]
    ],
    "probaA": 0.87,
-   "clusterB": 1,
+   "clusterB": 3,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q1 immigration control",
-     0.227
+     "Q10 separation referendum",
+     0.165
     ],
     [
-     "Q8 opt out w/ funding",
-     -0.072
+     "Q4 fees non-PR",
+     0.135
     ],
     [
-     "Q5 proof of citizenship",
-     0.061
+     "Q3 12-month residency",
+     0.081
     ]
    ],
-   "probaB": 0.79,
+   "probaB": 0.82,
    "profileTop": [
     [
      8,
@@ -4580,20 +4552,20 @@
     ]
    ],
    "probaA": 0.9,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.257
+     0.295
     ],
     [
-     "Q10 separation referendum",
-     0.056
+     "Q8 opt out w/ funding",
+     0.088
     ],
     [
      "Q7 abolish Senate",
-     0.053
+     0.062
     ]
    ],
    "probaB": 0.99,
@@ -4651,18 +4623,18 @@
    "shapB": [
     [
      "Q10 separation referendum",
-     0.227
+     0.235
     ],
     [
      "Q4 fees non-PR",
-     0.221
+     0.136
     ],
     [
-     "Q5 proof of citizenship",
-     0.091
+     "Q1 immigration control",
+     0.096
     ]
    ],
-   "probaB": 0.73,
+   "probaB": 0.89,
    "profileTop": [
     [
      10,
@@ -4712,23 +4684,23 @@
     ]
    ],
    "probaA": 0.95,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.272
+     0.311
     ],
     [
-     "Q7 abolish Senate",
-     0.054
+     "Q8 opt out w/ funding",
+     0.088
     ],
     [
      "Q10 separation referendum",
-     0.051
+     0.075
     ]
    ],
-   "probaB": 0.97,
+   "probaB": 0.92,
    "profileTop": [
     [
      1,
@@ -4778,23 +4750,23 @@
     ]
    ],
    "probaA": 0.99,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.277
+     0.304
     ],
     [
      "Q10 separation referendum",
-     0.056
+     0.091
     ],
     [
-     "Q7 abolish Senate",
-     0.055
+     "Q3 12-month residency",
+     0.039
     ]
    ],
-   "probaB": 0.91,
+   "probaB": 0.75,
    "profileTop": [
     [
      1,
@@ -4844,23 +4816,23 @@
     ]
    ],
    "probaA": 0.7,
-   "clusterB": 1,
+   "clusterB": 3,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q1 immigration control",
-     0.244
+     "Q10 separation referendum",
+     0.23
     ],
     [
-     "Q5 proof of citizenship",
-     0.058
+     "Q4 fees non-PR",
+     0.134
     ],
     [
-     "Q7 abolish Senate",
-     0.048
+     "Q3 12-month residency",
+     0.094
     ]
    ],
-   "probaB": 0.86,
+   "probaB": 0.87,
    "profileTop": [
     [
      10,
@@ -4910,23 +4882,23 @@
     ]
    ],
    "probaA": 0.76,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.284
+     0.208
     ],
     [
      "Q10 separation referendum",
-     0.089
+     0.133
     ],
     [
-     "Q5 proof of citizenship",
-     0.062
+     "Q4 fees non-PR",
+     0.049
     ]
    ],
-   "probaB": 0.99,
+   "probaB": 0.94,
    "profileTop": [
     [
      10,
@@ -4976,23 +4948,23 @@
     ]
    ],
    "probaA": 0.85,
-   "clusterB": 1,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.257
-    ],
-    [
-     "Q7 abolish Senate",
-     0.049
+     0.303
     ],
     [
      "Q8 opt out w/ funding",
-     0.044
+     0.091
+    ],
+    [
+     "Q7 abolish Senate",
+     0.066
     ]
    ],
-   "probaB": 0.95,
+   "probaB": 0.96,
    "profileTop": [
     [
      1,
@@ -5042,23 +5014,8 @@
     ]
    ],
    "probaA": 0.79,
-   "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q1 immigration control",
-     0.275
-    ],
-    [
-     "Q10 separation referendum",
-     0.071
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.064
-    ]
-   ],
-   "probaB": 0.92,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
      1,
@@ -5113,18 +5070,18 @@
    "shapB": [
     [
      "Q10 separation referendum",
-     0.244
+     0.241
     ],
     [
-     "Q4 fees non-PR",
-     0.214
+     "Q1 immigration control",
+     0.098
     ],
     [
-     "Q5 proof of citizenship",
-     0.093
+     "Q3 12-month residency",
+     0.094
     ]
    ],
-   "probaB": 0.94,
+   "probaB": 0.96,
    "profileTop": [
     [
      10,
@@ -5174,23 +5131,23 @@
     ]
    ],
    "probaA": 0.76,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.312
+     0.185
     ],
     [
-     "Q5 proof of citizenship",
-     0.082
+     "Q10 separation referendum",
+     -0.145
     ],
     [
-     "Q7 abolish Senate",
-     0.037
+     "Q4 fees non-PR",
+     -0.087
     ]
    ],
-   "probaB": 0.92,
+   "probaB": 0.58,
    "profileTop": [
     [
      2,
@@ -5276,23 +5233,23 @@
     ]
    ],
    "probaA": 0.71,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.27
+     0.225
     ],
     [
      "Q10 separation referendum",
-     -0.112
+     -0.077
     ],
     [
-     "Q5 proof of citizenship",
-     0.08
+     "Q4 fees non-PR",
+     0.058
     ]
    ],
-   "probaB": 0.72,
+   "probaB": 0.73,
    "profileTop": [
     [
      2,
@@ -5342,23 +5299,23 @@
     ]
    ],
    "probaA": 0.91,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.319
+     0.24
     ],
     [
      "Q10 separation referendum",
-     0.09
+     0.107
     ],
     [
-     "Q5 proof of citizenship",
-     0.042
+     "Q4 fees non-PR",
+     0.058
     ]
    ],
-   "probaB": 0.9,
+   "probaB": 0.86,
    "profileTop": [
     [
      10,
@@ -5408,23 +5365,23 @@
     ]
    ],
    "probaA": 0.68,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.269
+     0.225
     ],
     [
      "Q10 separation referendum",
-     0.089
+     0.13
     ],
     [
      "Q5 proof of citizenship",
-     0.084
+     0.061
     ]
    ],
-   "probaB": 0.94,
+   "probaB": 0.95,
    "profileTop": [
     [
      1,
@@ -5474,8 +5431,23 @@
     ]
    ],
    "probaA": 0.88,
-   "clusterB": 1,
-   "statusB": "outlier",
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q1 immigration control",
+     0.263
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.092
+    ],
+    [
+     "Q9 provincial paramountcy",
+     0.057
+    ]
+   ],
+   "probaB": 0.91,
    "profileTop": [
     [
      1,
@@ -5525,20 +5497,20 @@
     ]
    ],
    "probaA": 0.76,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.313
+     0.245
+    ],
+    [
+     "Q10 separation referendum",
+     0.113
     ],
     [
      "Q5 proof of citizenship",
-     0.107
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.053
+     0.076
     ]
    ],
    "probaB": 0.86,
@@ -5591,23 +5563,23 @@
     ]
    ],
    "probaA": 0.92,
-   "clusterB": 1,
+   "clusterB": 3,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q1 immigration control",
-     0.231
+     "Q10 separation referendum",
+     0.237
     ],
     [
      "Q4 fees non-PR",
-     -0.08
+     0.133
     ],
     [
-     "Q5 proof of citizenship",
-     0.053
+     "Q3 12-month residency",
+     0.1
     ]
    ],
-   "probaB": 0.74,
+   "probaB": 0.93,
    "profileTop": [
     [
      4,
@@ -5657,23 +5629,23 @@
     ]
    ],
    "probaA": 0.72,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.295
+     0.232
     ],
     [
      "Q10 separation referendum",
-     0.103
+     0.146
     ],
     [
-     "Q6 provinces pick judges",
-     0.043
+     "Q7 abolish Senate",
+     0.034
     ]
    ],
-   "probaB": 0.93,
+   "probaB": 0.88,
    "profileTop": [
     [
      9,
@@ -5723,23 +5695,23 @@
     ]
    ],
    "probaA": 0.76,
-   "clusterB": 2,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q1 immigration control",
-     0.288
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.084
+     0.232
     ],
     [
      "Q10 separation referendum",
-     0.079
+     0.115
+    ],
+    [
+     "Q5 proof of citizenship",
+     0.069
     ]
    ],
-   "probaB": 0.9,
+   "probaB": 0.88,
    "profileTop": [
     [
      1,

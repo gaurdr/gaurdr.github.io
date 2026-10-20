@@ -50,13 +50,17 @@
         For each riding, we took the share of Yes votes on each question, counting Referendum as Yes on Question 10.
         We then split each riding's votes into two measures. Its overall leaning is how strongly it voted Yes across the
         whole ballot. Its issue profile shows the questions where it voted more or less Yes than that leaning predicts.
-        A standard clustering method, k-means, sorted ridings with similar numbers into groups.
+        A standard clustering method, k-means, sorted ridings with similar numbers into groups. For issue profiles,
+        we compared the pattern across questions, not its size. Two ridings count as similar if they depart from their
+        leaning on the same questions in the same direction, even if one departs much further than the other.
       </p>
       <p>
         To check whether the groups were stable, we reran the grouping 200 times on reshuffled samples of ridings. The
         overall-leaning groups held up well, with a stability score of 0.85 out of 1. The issue-profile groups scored
-        0.61, so we label them exploratory. Ridings with fewer than half their polls counted were left out of the
-        grouping and placed afterward. They are hatched on the map.
+        0.77, just under the 0.8 usually taken as stable, so we label them exploratory. Two kinds of ridings were left
+        out of the grouping and placed afterward. Some had fewer than half their polls counted. Others departed so
+        little from their overall leaning that their pattern could not be told apart from counting noise. That second
+        rule applies only to the issue-profile grouping. Both kinds are hatched on the map.
       </p>
       <p>
         To explain the groups, we trained a model to reproduce them. We then measured how much each question mattered

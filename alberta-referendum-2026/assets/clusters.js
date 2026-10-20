@@ -16,7 +16,7 @@
   const C = () => D.clusterings[key];
   const qName = (q) => `Q${q} ${D.meta.questions[q]}`;
   // Placed in the nearest cluster but not used to build it (few polls counted, or an outlier profile).
-  const isProvisional = (num) => ["assigned", "outlier"].includes(D.ridings[num]?.[`status${key}`]);
+  const isProvisional = (num) => ["assigned", "outlier", "weak"].includes(D.ridings[num]?.[`status${key}`]);
 
   function featureName(f) {
     if (f === "level") return "Overall leaning";
@@ -28,6 +28,7 @@
     fitted: "",
     assigned: "Fewer than half its polls had reported, so it was not used to build the clusters. It is shown in the nearest cluster.",
     outlier: "Its issue profile is far from every other riding's, so it was not used to build the clusters. It is shown in the nearest cluster.",
+    weak: "It departs very little from its overall leaning, too little to tell its pattern apart from counting noise. So it was not used to build the issue-profile clusters. It is shown in the nearest cluster.",
     unplaced: "A question had no votes counted yet, so this riding could not be placed in a cluster.",
   };
 
@@ -209,7 +210,7 @@
     const items = Object.entries(s.clusters).map(([c, cl]) =>
       `<span class="item" data-c="${c}" role="button" tabindex="0"><span class="sw" style="background:${color(+c)}"></span>Cluster ${c} (${cl.n})</span>`).join("");
     d3.select("#legend").html(`${items}<span><span class="sw" style="background:${GREY}"></span> Not placed</span>
-      <span><span class="sw provisional-sw"></span> Hatched: provisional (few polls counted, or an outlier)</span>
+      <span><span class="sw provisional-sw"></span> Hatched: provisional (few polls counted, or too weak a pattern)</span>
       <span style="color:var(--muted)">Click a cluster to highlight it</span>`);
     d3.selectAll(".legend .item")
       .on("click", function () { focusCluster(+this.dataset.c); })
