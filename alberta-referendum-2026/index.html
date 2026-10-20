@@ -33,28 +33,28 @@
       <h2>What Alberta said</h2>
       <p>
         Alberta is staying put. CBC News projects that a majority of Albertans voted to remain in Canada. About three
-        in four voters chose Remain on Question 10, rejecting a move to start the legal process toward a binding
-        separation referendum.
+        in four voters chose Remain on Question 10. They rejected starting the legal process toward a binding
+        referendum on separation.
       </p>
       <p>
-        The other nine questions, on immigration, social programs, voter ID, judges, the Senate and federal powers,
-        were far closer. Most sit within ten points of an even split, and a couple are close enough that the rest of
-        the count could still tip them. The one clear winner is requiring proof of citizenship to vote, which nearly
-        two in three voters supported.
+        The other nine questions were much closer. They covered immigration, social programs, voter ID, judges, the
+        Senate and federal powers. Most are within ten points of an even split, and the rest of the count could still
+        change the result on one or two. Requiring proof of citizenship to vote is the clear exception: nearly two in
+        three voters supported it.
       </p>
       <p>
-        Where people live told you more than which question they were answering. Rural central Alberta leaned Yes on
-        almost everything; the cores of Edmonton and Calgary leaned No on almost everything. The
-        <a href="clusters.html">ridings that vote alike</a> page maps those patterns, and the handful of questions
-        where ridings broke from them.
+        Where a riding sits mattered more than which question was asked. Rural central Alberta leaned Yes on almost
+        every question. The cores of Edmonton and Calgary leaned No on almost every question. The
+        <a href="clusters.html">ridings that vote alike</a> page maps these patterns and the few questions where
+        ridings broke from them.
       </p>
       <p class="caveat">
-        This summary is based on partial results: 4,887 of 5,583 polls reported, as observed at about 2:30 p.m. MDT
-        on October 20, 2026. The figures in the list below and on the maps update from CBC News's live feed every
-        hour. All results are unofficial until Elections Alberta certifies them.
+        This summary uses partial results observed at about 2:30 p.m. Mountain time on October 20, 2026, when 4,887 of
+        5,583 polls had reported. The list below and the maps update from CBC News's live feed every hour. All results
+        are unofficial until Elections Alberta certifies them.
       </p>
       <p class="caveat">
-        Pick a question below to see how each of Alberta's 87 ridings voted; hover over a riding for its numbers.
+        Pick a question below to see how each of Alberta's 87 ridings voted. Hover over a riding to see its numbers.
       </p>
     </section>
 
@@ -66,19 +66,26 @@
     <section class="intro method-section">
       <h2>How we did this</h2>
       <p>
-        The results come from CBC News's live results feed for all 87 ridings, using Elections Alberta's 2019 riding
-        boundaries. For the grouping on the <a href="clusters.html">ridings that vote alike</a> page, we used results as observed at 1:52 p.m. MDT on October 20, 2026, when 4,841 of 5,583 polls
-        had reported. For each riding, we took the share of Yes votes on each of the 10 questions (Referendum on
-        Question 10) and split it into two parts: the riding's overall leaning, meaning how strongly it voted Yes across
-        the whole ballot, and its issue profile, meaning the questions where it voted more or less Yes than that leaning
-        would predict. A standard clustering method (k-means) then sorted ridings with similar numbers into groups. To
-        test whether the groups were real, we reran the grouping 200 times on reshuffled samples of ridings. The
-        overall-leaning groups held up well in these repeated tests (a stability score of 0.85 out of 1); the
-        issue-profile groups less so (0.61), which is why we call them exploratory. Ridings with fewer than half their
-        polls counted were left out of the grouping and placed afterward; they are hatched on the grouping map. To explain the
-        groups, we trained a model to reproduce them and measured how much each question mattered to its decisions (a
-        technique called SHAP), repeating the check 30 times. These are riding-level patterns. They describe places, not
-        how individuals voted.
+        The results come from CBC News's live results feed for all 87 ridings. The maps use Elections Alberta's 2019
+        riding boundaries. The grouping on the <a href="clusters.html">ridings that vote alike</a> page uses results observed at 1:52 p.m. Mountain time on October 20, 2026, when 4,841 of
+        5,583 polls had reported.
+      </p>
+      <p>
+        For each riding, we took the share of Yes votes on each question, counting Referendum as Yes on Question 10.
+        We then split each riding's votes into two measures. Its overall leaning is how strongly it voted Yes across the
+        whole ballot. Its issue profile shows the questions where it voted more or less Yes than that leaning predicts.
+        A standard clustering method, k-means, sorted ridings with similar numbers into groups.
+      </p>
+      <p>
+        To check whether the groups were stable, we reran the grouping 200 times on reshuffled samples of ridings. The
+        overall-leaning groups held up well, with a stability score of 0.85 out of 1. The issue-profile groups scored
+        0.61, so we label them exploratory. Ridings with fewer than half their polls counted were left out of the
+        grouping and placed afterward. They are hatched on the grouping map.
+      </p>
+      <p>
+        To explain the groups, we trained a model to reproduce them. We then measured how much each question mattered
+        to its decisions, using a technique called SHAP, and repeated this check 30 times. All of these patterns
+        describe ridings, not how any individual voted.
       </p>
     </section>
   </main>

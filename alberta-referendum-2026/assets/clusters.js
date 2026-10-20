@@ -144,7 +144,7 @@
     const cards = Object.entries(C().clusters).map(([c, cl]) => `
       <div style="border-color:${color(+c)}"><b data-c="${c}">Cluster ${c}</b> · ${cl.n} ridings<br>${cl.description}</div>`).join("");
     return `<h3>${C().title}</h3>
-      <div class="sub">${C().k} clusters · bootstrap stability ${C().stability.toFixed(2)}
+      <div class="sub">${C().k} clusters · stability ${C().stability.toFixed(2)} out of 1
         ${C().exploratory ? ' <span class="badge">exploratory</span>' : ""}</div>
       <div class="card-list">${cards}</div>
       <p class="note">Click a riding on the map, or a cluster name above, for details.</p>`;
@@ -162,7 +162,7 @@
     const reasons = r[`shap${key}`];
     if (reasons) {
       html += `<h4>Why this cluster</h4>
-        <p>The surrogate model gives this riding a ${Math.round(r[`proba${key}`] * 100)}% probability of being in cluster ${c}. Main reasons:</p>
+        <p>A model trained to reproduce the clusters puts this riding in cluster ${c} with ${Math.round(r[`proba${key}`] * 100)}% probability. Its main reasons:</p>
         <ul class="reasons">${reasons.map(([f, v]) => `<li>${featureName(f)}: ${v >= 0 ? "toward" : "away from"} this cluster (${v >= 0 ? "+" : "−"}${Math.abs(v).toFixed(2)})</li>`).join("")}</ul>`;
     }
     if (key === "B" && r.profileTop) {
@@ -204,8 +204,8 @@
     d3.selectAll(".toggle button").attr("aria-selected", function () { return this.dataset.key === key; });
     const s = C();
     d3.select("#explain").html(key === "A"
-      ? `Groups ridings by how strongly they voted Yes overall. All 10 questions move together, so this one measure accounts for 96% of the differences between ridings. Stable clusters: bootstrap stability ${s.stability.toFixed(2)}.`
-      : `Groups ridings by which questions they voted unusually Yes or No on, given their overall leaning. These groups cut across urban and rural Alberta. <span class="badge">exploratory</span> Bootstrap stability is ${s.stability.toFixed(2)}, below the 0.8 usually taken as stable, so treat the boundaries as soft.`);
+      ? `Sorts ridings by how strongly they voted Yes overall. All 10 questions move together, so this one measure accounts for 96% of the differences between ridings. These clusters are stable, with a score of ${s.stability.toFixed(2)} out of 1 in repeated tests.`
+      : `Sorts ridings by the questions where they voted more or less Yes than their overall leaning predicts. These clusters cut across urban and rural Alberta. <span class="badge">exploratory</span> They scored ${s.stability.toFixed(2)} out of 1 in repeated tests, below the 0.8 usually taken as stable, so treat their boundaries as soft.`);
     const items = Object.entries(s.clusters).map(([c, cl]) =>
       `<span class="item" data-c="${c}" role="button" tabindex="0"><span class="sw" style="background:${color(+c)}"></span>Cluster ${c} (${cl.n})</span>`).join("");
     d3.select("#legend").html(`${items}<span><span class="sw" style="background:${GREY}"></span> Not placed</span>

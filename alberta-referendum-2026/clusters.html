@@ -15,51 +15,58 @@
       <h2>Ten questions, one answer</h2>
       <p>
         Alberta didn't really vote on ten questions. It answered one question ten times. A riding that leaned Yes on
-        immigration leaned Yes on the Senate, on judges and on the rest of the ballot. One measure, how strongly a riding
-        votes Yes overall, accounts for 96% of the differences between ridings. Of the 76 ridings with most of their
-        polls counted, 31 said Yes to all of the first nine questions and 12 said No to all nine.
+        immigration also leaned Yes on the Senate, on judges and on the rest of the ballot. A single measure, how
+        strongly a riding votes Yes overall, accounts for 96% of the differences between ridings. Of the 76 ridings
+        with most of their polls counted, 31 voted Yes on all of the first nine questions and 12 voted No on all nine.
       </p>
       <p>
-        That is why the first map sorts neatly into four bands. At one end are the city cores: about 39% Yes on the
-        first nine questions, and 14% backed starting a separation referendum. At the other is rural central Alberta,
-        at 75% and 44%.
-        Even there, the referendum option mostly falls short: only two ridings, Rimbey-Rocky Mountain House-Sundre (51.1%) and
-        Central Peace-Notley (50.7%), narrowly back a referendum. Province-wide it sits at 24.8%.
+        So the first map falls into four bands. At one end are the city cores. They voted about 39% Yes on the first
+        nine questions, and 14% backed starting a separation referendum. At the other end, rural central Alberta voted
+        75% Yes on the first nine and 44% for a referendum. Even there, the referendum option mostly fell short. Only
+        two ridings backed it, both narrowly: Rimbey-Rocky Mountain House-Sundre (51.1%) and Central Peace-Notley
+        (50.7%). Province-wide it sits at 24.8%.
       </p>
       <p>
-        Look past each riding's overall lean and two questions stand out. The first is provincial control of
+        Set aside each riding's overall lean and two questions stand out. The first is provincial control of
         immigration. Ridings in northeast Calgary and parts of south Edmonton supported it more than their other votes
-        would suggest. Central Edmonton supported it less. The second is the separation question. Calgary-East,
+        would suggest, and central Edmonton supported it less. The second is the separation question. Calgary-East,
         Edmonton-Highlands-Norwood and several rural ridings in the north and south were more open to a referendum
         than the rest of their ballot would suggest.
       </p>
       <p class="caveat">
-        A few cautions. This analysis is based on partial results: 4,841 of 5,583 polls reported, as observed at
-        1:52 p.m. MDT on October 20, 2026. Figures will change as the count finishes. These issue groupings are loose
-        tendencies, not fixed camps. And riding results describe places, not how any individual voted.
+        This analysis uses partial results observed at 1:52 p.m. Mountain time on October 20, 2026, when 4,841 of 5,583
+        polls had reported. The figures will change as the count finishes. The issue groupings are loose tendencies,
+        and riding results describe places, not how any individual voted.
       </p>
     </section>
     <details class="method">
       <summary>How we did this</summary>
       <p>
-        The results come from CBC News's live results feed for all 87 ridings, using Elections Alberta's 2019 riding
-        boundaries. For the grouping, we used results as observed at 1:52 p.m. MDT on October 20, 2026, when 4,841 of 5,583 polls
-        had reported. For each riding, we took the share of Yes votes on each of the 10 questions (Referendum on
-        Question 10) and split it into two parts: the riding's overall leaning, meaning how strongly it voted Yes across
-        the whole ballot, and its issue profile, meaning the questions where it voted more or less Yes than that leaning
-        would predict. A standard clustering method (k-means) then sorted ridings with similar numbers into groups. To
-        test whether the groups were real, we reran the grouping 200 times on reshuffled samples of ridings. The
-        overall-leaning groups held up well in these repeated tests (a stability score of 0.85 out of 1); the
-        issue-profile groups less so (0.61), which is why we call them exploratory. Ridings with fewer than half their
-        polls counted were left out of the grouping and placed afterward; they are hatched on the map. To explain the
-        groups, we trained a model to reproduce them and measured how much each question mattered to its decisions (a
-        technique called SHAP), repeating the check 30 times. These are riding-level patterns. They describe places, not
-        how individuals voted.
+        The results come from CBC News's live results feed for all 87 ridings. The maps use Elections Alberta's 2019
+        riding boundaries. The grouping uses results observed at 1:52 p.m. Mountain time on October 20, 2026, when 4,841 of
+        5,583 polls had reported.
+      </p>
+      <p>
+        For each riding, we took the share of Yes votes on each question, counting Referendum as Yes on Question 10.
+        We then split each riding's votes into two measures. Its overall leaning is how strongly it voted Yes across the
+        whole ballot. Its issue profile shows the questions where it voted more or less Yes than that leaning predicts.
+        A standard clustering method, k-means, sorted ridings with similar numbers into groups.
+      </p>
+      <p>
+        To check whether the groups were stable, we reran the grouping 200 times on reshuffled samples of ridings. The
+        overall-leaning groups held up well, with a stability score of 0.85 out of 1. The issue-profile groups scored
+        0.61, so we label them exploratory. Ridings with fewer than half their polls counted were left out of the
+        grouping and placed afterward. They are hatched on the map.
+      </p>
+      <p>
+        To explain the groups, we trained a model to reproduce them. We then measured how much each question mattered
+        to its decisions, using a technique called SHAP, and repeated this check 30 times. All of these patterns
+        describe ridings, not how any individual voted.
       </p>
     </details>
     <p class="prompt">
-      Ridings grouped by how they voted across all 10 questions, using k-means clustering.
-      Hover over a riding to highlight its cluster. Click a riding for its results and its cluster's summary.
+      The ridings are sorted into clusters: groups of ridings that voted alike across all 10 questions. Hover over a
+      riding to highlight its cluster. Click a riding to see its results and a summary of its cluster.
     </p>
     <div class="toggle" role="tablist" aria-label="Clustering">
       <button type="button" role="tab" data-key="A" aria-selected="true">Overall leaning</button>
