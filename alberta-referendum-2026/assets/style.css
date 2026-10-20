@@ -74,3 +74,4 @@ footer { font-size: 12px; color: var(--muted); padding: 20px; }
 .refresh button:hover:not(:disabled) { background: #f0f0ee; }
 .refresh button:disabled { color: var(--muted); cursor: wait; }
 #refresh-msg { color: var(--red); margin-left: 6px; }
+.views { margin-top: 6px; }
