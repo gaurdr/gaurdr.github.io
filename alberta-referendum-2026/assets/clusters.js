@@ -1,4 +1,4 @@
-// Cluster map: ridings coloured by k-means cluster, for two clusterings (A = overall leaning, B = issue profile).
+// Cluster map: ridings coloured by their issue-profile cluster (issues only; overall leaning is set aside).
 // Hover highlights the riding's cluster; click shows the riding and its cluster in the side panel.
 (function () {
   const DATA_URL = "data/clusters.json";
@@ -9,14 +9,14 @@
 
   const fmt1 = d3.format(".1f");
   const tooltip = d3.select("#tooltip");
-  let D, key = "A", selected = null, legendFocus = null, paths = [], hatches = [];
+  let D, key = "B", selected = null, legendFocus = null, paths = [], hatches = [];
 
   const color = (c) => (c == null ? GREY : COLORS[c - 1]);
   const clusterOf = (num) => D.ridings[num]?.[`cluster${key}`] ?? null;
   const C = () => D.clusterings[key];
   const qName = (q) => `Q${q} ${D.meta.questions[q]}`;
   // Placed in the nearest cluster but not used to build it (few polls counted, or an outlier profile).
-  const isProvisional = (num) => ["assigned", "outlier", "weak"].includes(D.ridings[num]?.[`status${key}`]);
+  const isProvisional = (num) => ["assigned", "outlier", "weak", "lagging"].includes(D.ridings[num]?.[`status${key}`]);
 
   function featureName(f) {
     if (f === "level") return "Overall leaning";
@@ -28,6 +28,7 @@
     fitted: "",
     assigned: "Fewer than half its polls had reported, so it was not used to build the clusters. It is shown in the nearest cluster.",
     outlier: "Its issue profile is far from every other riding's, so it was not used to build the clusters. It is shown in the nearest cluster.",
+    lagging: "Some of its questions had been counted much less fully than the rest, which would distort its pattern. So it was not used to build the clusters. It is shown in the nearest cluster.",
     weak: "It departs very little from its overall leaning, too little to tell its pattern apart from counting noise. So it was not used to build the issue-profile clusters. It is shown in the nearest cluster.",
     unplaced: "A question had no votes counted yet, so this riding could not be placed in a cluster.",
   };
@@ -202,15 +203,14 @@
   // ---------- legend, header, table ----------
 
   function renderHeader() {
-    d3.selectAll(".toggle button").attr("aria-selected", function () { return this.dataset.key === key; });
     const s = C();
-    d3.select("#explain").html(key === "A"
-      ? `Sorts ridings by how strongly they voted Yes overall. All 10 questions move together, so this one measure accounts for 96% of the differences between ridings. These clusters are stable, with a score of ${s.stability.toFixed(2)} out of 1 in repeated tests.`
-      : `Sorts ridings by the questions where they voted more or less Yes than their overall leaning predicts. These clusters cut across urban and rural Alberta. <span class="badge">exploratory</span> They scored ${s.stability.toFixed(2)} out of 1 in repeated tests, below the 0.8 usually taken as stable, so treat their boundaries as soft.`);
+    d3.select("#explain").html(`Sorts ridings by the questions where they voted more or less Yes than their overall leaning predicts. These clusters cut across urban and rural Alberta. ` + (s.exploratory
+      ? `<span class="badge">exploratory</span> They scored ${s.stability.toFixed(2)} out of 1 in repeated tests, below the 0.8 usually taken as stable, so treat their boundaries as soft.`
+      : `They held up well in repeated tests, with a stability score of ${s.stability.toFixed(2)} out of 1.`));
     const items = Object.entries(s.clusters).map(([c, cl]) =>
       `<span class="item" data-c="${c}" role="button" tabindex="0"><span class="sw" style="background:${color(+c)}"></span>Cluster ${c} (${cl.n})</span>`).join("");
     d3.select("#legend").html(`${items}<span><span class="sw" style="background:${GREY}"></span> Not placed</span>
-      <span><span class="sw provisional-sw"></span> Hatched: provisional (few polls counted, or too weak a pattern)</span>
+      <span><span class="sw provisional-sw"></span> Hatched: provisional (counting incomplete, or too weak a pattern)</span>
       <span style="color:var(--muted)">Click a cluster to highlight it</span>`);
     d3.selectAll(".legend .item")
       .on("click", function () { focusCluster(+this.dataset.c); })
@@ -220,10 +220,10 @@
   function renderTable() {
     const rows = Object.entries(D.ridings).sort((a, b) => a[1].name.localeCompare(b[1].name)).map(([num, r]) => `
       <tr data-num="${num}"><td>${r.name}</td>
-        <td>${r.clusterA ?? "–"}</td><td>${r.clusterB ?? "–"}</td>
+        <td>${r.clusterB ?? "–"}</td>
         <td class="num">${r.yes[9] == null ? "–" : fmt1(r.yes[9]) + "%"}</td>
         <td class="num">${Math.round(r.pollsReported * 100)}%</td></tr>`).join("");
-    d3.select("#table").html(`<table><tr><th>Riding</th><th>Overall-leaning cluster</th><th>Issue-profile cluster</th>
+    d3.select("#table").html(`<table><tr><th>Riding</th><th>Issue-profile cluster</th>
       <th>Yes on Q10</th><th>Polls reported</th></tr>${rows}</table>`);
     d3.selectAll(".cl-table tr[data-num]").on("click", function () {
       select(+this.dataset.num);
@@ -256,10 +256,9 @@
     drawPanel(d3.select("#map-edm"), features, edmonton, 520, 340);
     drawPanel(d3.select("#map-cgy"), features, calgary, 520, 340);
 
-    d3.selectAll(".toggle button").on("click", function () { setKey(this.dataset.key); });
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") { legendFocus = null; select(null); } });
     renderTable();
-    setKey("A");
+    setKey("B");
   }
 
   init();

@@ -45,8 +45,8 @@
       <p>
         Where a riding sits mattered more than which question was asked. Rural central Alberta leaned Yes on almost
         every question. The cores of Edmonton and Calgary leaned No on almost every question. The
-        <a href="clusters.html">ridings that vote alike</a> page maps these patterns and the few questions where
-        ridings broke from them.
+        <a href="clusters.html">ridings that vote alike</a> page sets that overall leaning aside and maps the questions
+        where ridings broke from it.
       </p>
       <p class="caveat">
         This summary uses partial results observed at about 2:30 p.m. Mountain time on October 20, 2026, when 4,887 of
@@ -61,30 +61,30 @@
     <h2 style="font-size:19px;margin:18px 0 2px">The ten questions</h2>
     <div class="status" id="status">Loading latest results…</div>
     <ol class="results" id="list"></ol>
-    <p class="more"><a href="clusters.html">Ridings that vote alike</a>: ridings grouped by how they voted across all 10 questions.</p>
+    <p class="more"><a href="clusters.html">Ridings that vote alike</a>: ridings grouped by the questions where they broke from their overall leaning.</p>
 
     <section class="intro method-section">
       <h2>How we did this</h2>
       <p>
         The results come from CBC News's live results feed for all 87 ridings. The maps use Elections Alberta's 2019
-        riding boundaries. The grouping on the <a href="clusters.html">ridings that vote alike</a> page uses results observed at 1:52 p.m. Mountain time on October 20, 2026, when 4,841 of
+        riding boundaries. The grouping on the <a href="clusters.html">ridings that vote alike</a> page uses results observed at 8:24 p.m. Mountain time on October 20, 2026, when 5,101 of
         5,583 polls had reported.
       </p>
       <p>
         For each riding, we took the share of Yes votes on each question, counting Referendum as Yes on Question 10.
         We then split each riding's votes into two measures. Its overall leaning is how strongly it voted Yes across the
         whole ballot. Its issue profile shows the questions where it voted more or less Yes than that leaning predicts.
-        A standard clustering method, k-means, sorted ridings with similar numbers into groups. For issue profiles,
-        we compared the pattern across questions, not its size. Two ridings count as similar if they depart from their
-        leaning on the same questions in the same direction, even if one departs much further than the other.
+        We set the overall leaning aside and grouped ridings by issue profile alone, using a standard clustering method,
+        k-means. We compared the pattern across questions, not its size. Two ridings count as similar if they depart
+        from their leaning on the same questions in the same direction, even if one departs much further than the other.
       </p>
       <p>
         To check whether the groups were stable, we reran the grouping 200 times on reshuffled samples of ridings. The
-        overall-leaning groups held up well, with a stability score of 0.85 out of 1. The issue-profile groups scored
-        0.77, just under the 0.8 usually taken as stable, so we label them exploratory. Two kinds of ridings were left
-        out of the grouping and placed afterward. Some had fewer than half their polls counted. Others departed so
-        little from their overall leaning that their pattern could not be told apart from counting noise. That second
-        rule applies only to the issue-profile grouping. Both kinds are hatched on the grouping map.
+        groups held up well, with a stability score of 0.86 out of 1. Three kinds of ridings were left out of the
+        grouping and placed afterward. Some had fewer than half their polls counted. In others, some question had less
+        than 80% of its usual vote count, because later questions are often counted after the first. A few departed so
+        little from their overall leaning that their pattern could not be told apart from counting noise. All three
+        kinds are hatched on the grouping map.
       </p>
       <p>
         To explain the groups, we trained a model to reproduce them. We then measured how much each question mattered
