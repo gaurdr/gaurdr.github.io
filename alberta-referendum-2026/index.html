@@ -72,11 +72,14 @@
       </p>
       <p>
         For each riding, we took the share of Yes votes on each question, counting Referendum as Yes on Question 10.
-        We then split each riding's votes into two measures. Its overall leaning is how strongly it voted Yes across the
-        whole ballot. Its issue profile shows the questions where it voted more or less Yes than that leaning predicts.
-        We set the overall leaning aside and grouped ridings by issue profile alone, using a standard clustering method,
-        k-means. We compared the pattern across questions, not its size. Two ridings count as similar if they depart
-        from their leaning on the same questions in the same direction, even if one departs much further than the other.
+        We split these into two measures. A riding's overall leaning is how strongly it voted Yes across the whole
+        ballot. Its issue profile is a list of ten numbers, one per question, showing how much more or less Yes it voted
+        on that question than its leaning predicts. We set the overall leaning aside and grouped ridings by issue
+        profile alone. To compare two ridings, we used cosine similarity, which measures how closely their two lists
+        point in the same direction. It is 1 when two ridings depart from their leaning on the same questions in the
+        same proportions, 0 when their patterns are unrelated, and −1 when they are opposite. It ignores how large the
+        departures are, so a riding with strong departures can match one with mild departures of the same shape. A
+        standard clustering method, k-means, then sorted ridings with similar patterns into groups.
       </p>
       <p>
         To check whether the groups were stable, we reran the grouping 200 times on reshuffled samples of ridings. The
