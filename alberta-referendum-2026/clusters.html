@@ -16,43 +16,46 @@
       <p>
         Most of the differences between Alberta's ridings come down to one thing: how strongly they voted Yes overall.
         A riding that leaned Yes on immigration also leaned Yes on the Senate, on judges and on the rest of the ballot.
-        That overall leaning accounts for 96% of the differences between ridings, and it largely separates the cities
-        from the countryside.
+        That overall leaning accounts for 97% of the differences between ridings. Of the 86 ridings with most of their
+        polls counted, 28 voted Yes on all of the first nine questions and 24 voted No on all nine. The most Yes-leaning
+        ridings are rural. The least Yes-leaning are in the cores of Edmonton and Calgary.
       </p>
       <p>
         This page sets that leaning aside. For each riding, it asks which questions drew more or less Yes than the
-        riding's overall leaning would predict. Grouping ridings by that pattern gives three clusters, and each one
-        mixes city, suburban and rural ridings.
+        riding's overall leaning would predict. These differences are small, usually a few percentage points. Grouping
+        ridings by that pattern gives two clusters. Each one mixes city, suburban and rural ridings.
       </p>
       <p>
-        The separation question does the most sorting. Lesser Slave Lake, Peace River, Cardston-Siksika and other rural
-        ridings in the north and south, along with Edmonton-Highlands-Norwood, were more open to a referendum than the
-        rest of their ballot would suggest. A second group, led by ridings in northeast Calgary, leaned more Yes on
-        provincial control of immigration. A third group, including central Edmonton ridings such as Edmonton-City
-        Centre and Edmonton-Riverview, leaned less Yes on limiting provincial programs by immigration status. No single
-        question stands out the way the overall leaning does.
+        The two clusters are mirror images. They differ most on the separation question, set against the immigration and
+        social-program questions. In the first, ridings
+        such as Calgary-Bhullar-McCall and Calgary-North East voted less for a referendum than their other answers
+        suggest, and slightly more Yes on the immigration and social-program questions. In the second, ridings such as
+        Peace River, Lesser Slave Lake, Cardston-Siksika and Edmonton-Highlands-Norwood voted more for a referendum, and
+        slightly less Yes on those other questions. Edmonton-City Centre is in the second cluster mainly because it
+        voted less Yes on the immigration and program questions and more on the constitutional ones. No single question
+        stands out the way the overall leaning does.
       </p>
       <p class="caveat">
-        This analysis uses partial results observed at 8:24 p.m. Mountain time on October 20, 2026, when 5,101 of 5,583
-        polls had reported. In many ridings the later questions had not been counted as fully as the first. The groups
-        are therefore built from the 45 ridings where every question was close to fully counted. The other 42 are
-        placed provisionally and hatched on the map. The figures will change as the count finishes, and riding results
-        describe places, not how any individual voted.
+        This analysis uses partial results observed at 1:35 p.m. Mountain time on October 22, 2026, when 5,464 of 5,557
+        polls had reported. In many ridings the later questions had not been counted as fully as the first, and in some
+        the pattern was too small to tell apart from counting noise. The clusters are therefore built from only 31 of the
+        87 ridings. The other 56 are placed provisionally and hatched on the map. The figures will change as the count
+        finishes, and riding results describe places, not how any individual voted.
       </p>
     </section>
     <details class="method">
       <summary>How we did this</summary>
       <p>
         The results come from CBC News's live results feed for all 87 ridings. The maps use Elections Alberta's 2019
-        riding boundaries. The grouping uses results observed at 8:24 p.m. Mountain time on October 20, 2026, when 5,101 of
-        5,583 polls had reported.
+        riding boundaries. The grouping uses results observed at 1:35 p.m. Mountain time on October 22, 2026, when 5,464 of
+        5,557 polls had reported.
       </p>
       <p>
         For each riding, we took the share of Yes votes on each question, counting Referendum as Yes on Question 10.
         We split these into two measures. A riding's overall leaning is how strongly it voted Yes across the whole
         ballot. Its issue profile is a list of ten numbers, one per question, showing how much more or less Yes it voted
-        on that question than its leaning predicts. We set the overall leaning aside and grouped ridings by issue
-        profile alone. To compare two ridings, we used cosine similarity, which measures how closely their two lists
+        on that question than its leaning predicts. We set the overall leaning aside, removing the part of each question that moves in step with it, and grouped
+        ridings by issue profile alone. To compare two ridings, we used cosine similarity, which measures how closely their two lists
         point in the same direction. It is 1 when two ridings depart from their leaning on the same questions in the
         same proportions, 0 when their patterns are unrelated, and −1 when they are opposite. It ignores how large the
         departures are, so a riding with strong departures can match one with mild departures of the same shape. A
@@ -60,7 +63,7 @@
       </p>
       <p>
         To check whether the groups were stable, we reran the grouping 200 times on reshuffled samples of ridings. The
-        groups held up well, with a stability score of 0.86 out of 1. Three kinds of ridings were left out of the
+        groups held up well, with a stability score of 0.91 out of 1. Three kinds of ridings were left out of the
         grouping and placed afterward. Some had fewer than half their polls counted. In others, some question had less
         than 80% of its usual vote count, because later questions are often counted after the first. A few departed so
         little from their overall leaning that their pattern could not be told apart from counting noise. All three

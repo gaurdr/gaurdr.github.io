@@ -1,9 +1,9 @@
 {
  "meta": {
   "feedState": "live",
-  "observedAt": "2026-10-21T02:24:04+00:00",
-  "pollsReported": 5101,
-  "totalPolls": 5583,
+  "observedAt": "2026-10-22T19:35:20+00:00",
+  "pollsReported": 5464,
+  "totalPolls": 5557,
   "questions": {
    "1": "immigration control",
    "2": "programs by status",
@@ -20,159 +20,109 @@
  "clusterings": {
   "B": {
    "title": "Issue profile",
-   "k": 3,
-   "stability": 0.86,
-   "wardAgreement": 0.527,
+   "k": 2,
+   "stability": 0.906,
+   "wardAgreement": 0.751,
    "exploratory": false,
    "clusters": {
     "1": {
-     "n": 17,
-     "description": "Relative to their own overall leaning: more Yes on Q10 (separation referendum); less Yes on Q4 (fees non-PR).",
+     "n": 18,
+     "description": "Relative to their own overall leaning: slightly more Yes on Q1 to Q5 (immigration, programs, citizenship); less Yes on Q10 (separation referendum).",
      "yes": [
-      65.9,
-      63.3,
-      64.4,
-      63.4,
-      69.5,
-      61.4,
-      62.5,
-      59.2,
-      61.3,
-      36.8
+      56.6,
+      53.9,
+      54.6,
+      53.0,
+      58.9,
+      45.5,
+      47.4,
+      42.3,
+      45.0,
+      23.9
      ],
-     "level": 0.452,
+     "level": -0.132,
      "profile": [
-      0.037,
-      -0.042,
-      -0.095,
-      -0.099,
-      -0.097,
-      0.049,
-      0.006,
-      0.034,
+      0.035,
+      0.032,
+      0.032,
+      0.029,
       0.026,
-      0.182
-     ],
-     "topShap": [
-      [
-       "Q10 separation referendum",
-       0.281
-      ],
-      [
-       "Q5 proof of citizenship",
-       0.152
-      ],
-      [
-       "Q4 fees non-PR",
-       0.133
-      ]
-     ],
-     "examples": [
-      "Edmonton-Highlands-Norwood",
-      "Calgary-Lougheed",
-      "Lesser Slave Lake",
-      "Cypress-Medicine Hat",
-      "Peace River"
-     ]
-    },
-    "2": {
-     "n": 16,
-     "description": "Relative to their own overall leaning: more Yes on Q1 (immigration control); less Yes on Q6 (provinces pick judges).",
-     "yes": [
-      55.3,
-      52.3,
-      54.0,
-      51.8,
-      58.3,
-      44.6,
-      47.0,
-      44.4,
-      45.9,
-      21.8
-     ],
-     "level": -0.114,
-     "profile": [
-      0.166,
-      0.08,
-      0.043,
-      -0.012,
-      -0.017,
-      -0.082,
-      -0.069,
-      -0.011,
-      -0.048,
-      -0.049
+      -0.003,
+      -0.006,
+      -0.024,
+      -0.024,
+      -0.096
      ],
      "topShap": [
       [
        "Q2 programs by status",
-       0.206
+       0.362
+      ],
+      [
+       "Q10 separation referendum",
+       0.191
       ],
       [
        "Q1 immigration control",
-       0.187
-      ],
-      [
-       "Q6 provinces pick judges",
-       0.175
+       0.146
       ]
      ],
      "examples": [
       "Calgary-Bhullar-McCall",
-      "Calgary-Falconridge",
-      "Edmonton-Gold Bar",
+      "Edmonton-Ellerslie",
+      "Edmonton-North West",
       "Calgary-North East",
-      "Edmonton-Decore"
+      "Edmonton-Castle Downs"
      ]
     },
-    "3": {
-     "n": 12,
-     "description": "Relative to their own overall leaning: less Yes on Q2 (programs by status); more Yes on Q9 (provincial paramountcy).",
+    "2": {
+     "n": 13,
+     "description": "Relative to their own overall leaning: slightly less Yes on Q1 to Q5 (immigration, programs, citizenship); slightly more Yes on Q6 to Q9 (constitutional questions); more Yes on Q10 (separation referendum).",
      "yes": [
-      53.8,
-      51.2,
-      55.2,
-      56.8,
-      62.9,
-      50.5,
-      52.1,
-      47.2,
-      52.1,
-      24.0
+      51.1,
+      48.5,
+      49.4,
+      48.6,
+      54.0,
+      42.4,
+      44.1,
+      40.4,
+      43.6,
+      24.9
      ],
-     "level": 0.02,
+     "level": -0.286,
      "profile": [
-      -0.029,
-      -0.104,
-      -0.045,
-      0.072,
-      0.071,
-      0.036,
-      0.013,
-      -0.032,
-      0.084,
-      -0.066
+      -0.058,
+      -0.053,
+      -0.052,
+      -0.022,
+      -0.047,
+      0.015,
+      0.004,
+      0.038,
+      0.057,
+      0.117
      ],
      "topShap": [
       [
-       "Q10 separation referendum",
-       0.194
-      ],
-      [
-       "Q5 proof of citizenship",
-       0.176
-      ],
-      [
        "Q2 programs by status",
-       0.173
+       0.362
+      ],
+      [
+       "Q10 separation referendum",
+       0.191
+      ],
+      [
+       "Q1 immigration control",
+       0.146
       ]
      ],
      "examples": [
       "Edmonton-City Centre",
-      "Edmonton-Riverview",
-      "Calgary-Currie",
-      "Edmonton-McClung",
-      "Edmonton-Mill Woods"
+      "Edmonton-Glenora",
+      "Edmonton-Highlands-Norwood",
+      "Calgary-Buffalo",
+      "Calgary-Elbow"
      ]
     }
    },
@@ -185,32 +135,32 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
+    47.7,
     47.0,
-    47.0,
-    53.7,
-    50.1,
+    46.4,
+    44.3,
     51.7,
-    38.9,
-    52.8,
-    41.5,
-    43.5,
+    35.3,
+    44.3,
+    35.7,
+    45.3,
     19.2
    ],
-   "level": -0.243,
-   "clusterB": 1,
+   "level": -0.403,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     7,
-     0.285
+     9,
+     0.263
     ],
     [
-     5,
-     -0.19
+     7,
+     0.149
     ],
     [
      6,
-     -0.183
+     -0.14
     ]
    ]
   },
@@ -219,47 +169,47 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    53.9,
-    42.3,
+    55.7,
+    44.8,
     45.8,
-    46.3,
-    51.2,
-    40.0,
-    40.9,
-    37.3,
-    39.1,
-    16.9
+    44.0,
+    50.0,
+    37.1,
+    38.3,
+    33.9,
+    35.2,
+    17.6
    ],
-   "level": -0.379,
-   "clusterB": 2,
+   "level": -0.467,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q1 immigration control",
-     0.142
-    ],
-    [
      "Q2 programs by status",
-     -0.093
+     0.104
     ],
     [
-     "Q6 provinces pick judges",
-     0.066
+     "Q1 immigration control",
+     0.077
+    ],
+    [
+     "Q8 opt out w/ funding",
+     0.028
     ]
    ],
-   "probaB": 0.69,
+   "probaB": 0.79,
    "profileTop": [
     [
      1,
-     0.348
+     0.287
     ],
     [
-     2,
-     -0.081
+     9,
+     -0.092
     ],
     [
      5,
-     -0.074
+     -0.043
     ]
    ]
   },
@@ -270,30 +220,30 @@
    "yes": [
     47.1,
     44.7,
-    51.9,
-    50.8,
-    57.4,
-    45.1,
+    45.5,
+    44.6,
+    52.2,
+    37.8,
     47.0,
     42.4,
     43.8,
     18.5
    ],
-   "level": -0.231,
-   "clusterB": 3,
+   "level": -0.376,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     2,
-     -0.131
+     8,
+     0.25
     ],
     [
-     1,
-     -0.072
+     7,
+     0.228
     ],
     [
-     6,
-     0.06
+     9,
+     0.174
     ]
    ]
   },
@@ -302,32 +252,47 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    39.2,
+    39.1,
     36.8,
-    37.5,
-    41.9,
-    50.3,
-    35.6,
-    40.9,
-    33.0,
-    34.8,
+    37.7,
+    36.5,
+    43.2,
+    30.1,
+    32.9,
+    27.5,
+    28.7,
     14.5
    ],
-   "level": -0.591,
-   "clusterB": 3,
-   "statusB": "lagging",
+   "level": -0.798,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q2 programs by status",
+     0.205
+    ],
+    [
+     "Q10 separation referendum",
+     0.118
+    ],
+    [
+     "Q1 immigration control",
+     0.084
+    ]
+   ],
+   "probaB": 0.99,
    "profileTop": [
     [
-     3,
-     -0.173
+     10,
+     0.141
+    ],
+    [
+     1,
+     -0.072
     ],
     [
      7,
-     0.155
-    ],
-    [
-     5,
-     0.103
+     0.07
     ]
    ]
   },
@@ -343,138 +308,123 @@
     52.8,
     37.3,
     40.1,
-    38.1,
-    40.6,
+    35.2,
+    37.8,
     15.8
    ],
-   "level": -0.375,
-   "clusterB": 2,
+   "level": -0.442,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q2 programs by status",
-     0.137
+     0.153
+    ],
+    [
+     "Q10 separation referendum",
+     0.085
     ],
     [
      "Q1 immigration control",
-     0.121
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.113
+     0.063
     ]
    ],
-   "probaB": 0.99,
+   "probaB": 1.0,
    "profileTop": [
     [
-     1,
-     0.19
+     10,
+     -0.166
     ],
     [
      2,
-     0.137
+     0.062
     ],
     [
-     6,
-     -0.121
+     5,
+     0.041
     ]
    ]
   },
   "6": {
    "name": "Calgary-Currie",
-   "pollsReported": 0.966,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
     41.7,
     37.6,
-    44.8,
+    38.1,
+    39.0,
     44.1,
-    50.9,
     38.9,
     40.3,
     36.8,
     38.7,
     15.5
    ],
-   "level": -0.482,
-   "clusterB": 3,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q4 fees non-PR",
-     0.121
-    ],
-    [
-     "Q2 programs by status",
-     0.106
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.082
-    ]
-   ],
-   "probaB": 0.82,
+   "level": -0.601,
+   "clusterB": 2,
+   "statusB": "lagging",
    "profileTop": [
     [
-     2,
-     -0.17
+     8,
+     0.255
     ],
     [
      6,
-     0.055
+     0.227
     ],
     [
-     8,
-     0.046
+     3,
+     -0.221
     ]
    ]
   },
   "7": {
    "name": "Calgary-East",
-   "pollsReported": 0.824,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    54.6,
-    51.1,
-    51.6,
-    50.2,
-    56.8,
-    42.3,
-    44.2,
-    39.4,
-    41.9,
-    20.3
+    55.7,
+    53.1,
+    53.6,
+    50.7,
+    57.8,
+    43.1,
+    44.8,
+    29.6,
+    43.1,
+    20.9
    ],
-   "level": -0.213,
-   "clusterB": 2,
+   "level": -0.258,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q2 programs by status",
-     0.135
+     0.157
     ],
     [
      "Q1 immigration control",
-     0.127
+     0.064
     ],
     [
-     "Q6 provinces pick judges",
-     0.098
+     "Q3 12-month residency",
+     0.056
     ]
    ],
-   "probaB": 0.97,
+   "probaB": 0.96,
    "profileTop": [
     [
-     1,
-     0.213
-    ],
-    [
      8,
-     -0.114
+     -0.435
     ],
     [
-     9,
-     -0.113
+     2,
+     0.103
+    ],
+    [
+     1,
+     0.091
     ]
    ]
   },
@@ -483,32 +433,32 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    43.0,
-    41.6,
-    48.1,
-    46.8,
-    52.0,
-    40.2,
+    44.4,
     42.7,
-    37.8,
-    39.3,
-    16.8
+    43.4,
+    42.4,
+    48.8,
+    35.5,
+    38.5,
+    33.1,
+    40.5,
+    16.7
    ],
-   "level": -0.401,
-   "clusterB": 3,
+   "level": -0.537,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     2,
-     -0.084
-    ],
-    [
-     3,
-     0.071
+     9,
+     0.2
     ],
     [
      1,
-     -0.069
+     -0.1
+    ],
+    [
+     3,
+     -0.061
     ]
    ]
   },
@@ -518,31 +468,46 @@
    "complete": true,
    "yes": [
     42.0,
-    46.5,
-    47.0,
-    46.8,
-    53.2,
-    41.0,
-    43.0,
-    38.4,
-    40.2,
+    40.1,
+    40.3,
+    40.8,
+    47.2,
+    34.4,
+    35.5,
+    32.1,
+    33.0,
     14.8
    ],
-   "level": -0.389,
-   "clusterB": 3,
-   "statusB": "lagging",
+   "level": -0.652,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q2 programs by status",
+     0.211
+    ],
+    [
+     "Q3 12-month residency",
+     0.082
+    ],
+    [
+     "Q1 immigration control",
+     0.082
+    ]
+   ],
+   "probaB": 0.9,
    "profileTop": [
     [
-     10,
-     -0.156
+     8,
+     0.099
     ],
     [
      1,
-     -0.122
+     -0.092
     ],
     [
-     2,
-     0.101
+     6,
+     0.086
     ]
    ]
   },
@@ -560,38 +525,23 @@
     34.6,
     30.7,
     33.0,
-    14.6
+    14.5
    ],
-   "level": -0.577,
-   "clusterB": 2,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q2 programs by status",
-     0.132
-    ],
-    [
-     "Q1 immigration control",
-     0.12
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.11
-    ]
-   ],
-   "probaB": 0.97,
+   "level": -0.62,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
      1,
-     0.25
+     0.061
+    ],
+    [
+     10,
+     -0.06
     ],
     [
      2,
-     0.151
-    ],
-    [
-     8,
-     -0.134
+     0.041
     ]
    ]
   },
@@ -601,65 +551,65 @@
    "complete": true,
    "yes": [
     50.2,
-    55.2,
-    56.7,
-    54.9,
-    61.4,
-    50.4,
+    48.5,
+    48.7,
+    48.2,
+    53.8,
+    42.6,
     51.7,
     46.7,
     48.2,
     20.2
    ],
-   "level": -0.038,
-   "clusterB": 3,
+   "level": -0.229,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     1,
-     -0.141
+     8,
+     0.27
     ],
     [
-     10,
-     -0.128
+     7,
+     0.264
     ],
     [
-     2,
-     0.101
+     9,
+     0.204
     ]
    ]
   },
   "12": {
    "name": "Calgary-Foothills",
-   "pollsReported": 0.452,
-   "complete": false,
+   "pollsReported": 1.0,
+   "complete": true,
    "yes": [
-    45.2,
-    43.5,
-    49.2,
-    49.5,
-    56.7,
-    43.1,
-    46.2,
-    42.7,
-    30.0,
-    15.8
+    47.8,
+    45.3,
+    47.0,
+    45.1,
+    50.4,
+    37.3,
+    43.9,
+    39.4,
+    36.3,
+    16.8
    ],
-   "level": -0.352,
-   "clusterB": 3,
-   "statusB": "assigned",
+   "level": -0.44,
+   "clusterB": 2,
+   "statusB": "lagging",
    "profileTop": [
     [
-     9,
-     -0.492
-    ],
-    [
      8,
-     0.162
+     0.196
     ],
     [
      7,
-     0.131
+     0.17
+    ],
+    [
+     10,
+     -0.095
     ]
    ]
   },
@@ -669,31 +619,31 @@
    "complete": true,
    "yes": [
     46.1,
-    51.6,
-    52.3,
-    52.1,
-    58.3,
-    46.3,
-    47.9,
-    42.9,
-    45.2,
+    43.7,
+    45.3,
+    44.9,
+    51.0,
+    38.5,
+    48.0,
+    43.0,
+    45.3,
     17.6
    ],
-   "level": -0.187,
-   "clusterB": 3,
+   "level": -0.379,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     1,
-     -0.156
+     8,
+     0.278
     ],
     [
-     10,
-     -0.149
+     7,
+     0.272
     ],
     [
-     2,
-     0.103
+     9,
+     0.239
     ]
    ]
   },
@@ -702,47 +652,32 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    56.3,
+    56.4,
     52.2,
-    58.3,
-    55.2,
-    62.8,
-    49.9,
-    51.4,
-    46.9,
+    53.6,
+    51.3,
+    58.5,
+    44.9,
+    45.8,
+    42.2,
     49.2,
     22.1
    ],
-   "level": 0.001,
-   "clusterB": 3,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q10 separation referendum",
-     0.116
-    ],
-    [
-     "Q2 programs by status",
-     0.113
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.101
-    ]
-   ],
-   "probaB": 0.74,
+   "level": -0.156,
+   "clusterB": 1,
+   "statusB": "lagging",
    "profileTop": [
     [
-     3,
-     0.08
+     9,
+     0.173
     ],
     [
-     1,
-     0.068
+     10,
+     -0.077
     ],
     [
-     2,
-     -0.062
+     7,
+     -0.048
     ]
    ]
   },
@@ -753,45 +688,45 @@
    "yes": [
     44.8,
     42.7,
-    49.9,
-    48.1,
-    54.5,
-    42.6,
-    44.0,
-    39.8,
-    41.9,
+    43.6,
+    42.2,
+    47.9,
+    35.9,
+    38.2,
+    33.0,
+    34.8,
     17.8
    ],
-   "level": -0.325,
-   "clusterB": 3,
+   "level": -0.554,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q4 fees non-PR",
-     0.116
+     "Q2 programs by status",
+     0.205
     ],
     [
-     "Q2 programs by status",
-     0.108
+     "Q10 separation referendum",
+     0.117
     ],
     [
      "Q1 immigration control",
-     0.059
+     0.084
     ]
    ],
-   "probaB": 0.76,
+   "probaB": 1.0,
    "profileTop": [
     [
-     2,
-     -0.116
+     10,
+     0.105
     ],
     [
      1,
-     -0.069
+     -0.067
     ],
     [
-     3,
-     0.068
+     7,
+     0.05
     ]
    ]
   },
@@ -800,47 +735,32 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    54.4,
+    54.7,
     51.2,
-    51.6,
-    49.7,
-    56.9,
-    48.6,
-    50.6,
-    46.1,
-    48.6,
+    51.8,
+    49.6,
+    57.0,
+    43.7,
+    45.9,
+    40.9,
+    42.6,
     21.2
    ],
-   "level": -0.104,
+   "level": -0.228,
    "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q5 proof of citizenship",
-     0.117
-    ],
-    [
-     "Q4 fees non-PR",
-     0.083
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.059
-    ]
-   ],
-   "probaB": 0.8,
+   "statusB": "weak",
    "profileTop": [
     [
+     10,
+     -0.049
+    ],
+    [
      4,
-     -0.121
+     -0.036
     ],
     [
-     5,
-     -0.119
-    ],
-    [
-     1,
-     0.095
+     8,
+     0.035
     ]
    ]
   },
@@ -860,36 +780,36 @@
     28.1,
     10.7
    ],
-   "level": -0.832,
-   "clusterB": 2,
+   "level": -0.875,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q2 programs by status",
-     0.136
+     0.156
+    ],
+    [
+     "Q10 separation referendum",
+     0.084
     ],
     [
      "Q1 immigration control",
-     0.12
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.106
+     0.066
     ]
    ],
-   "probaB": 0.94,
+   "probaB": 0.95,
    "profileTop": [
     [
-     1,
-     0.263
+     10,
+     -0.117
     ],
     [
-     2,
-     0.173
+     4,
+     -0.102
     ],
     [
-     7,
-     -0.172
+     5,
+     0.081
     ]
    ]
   },
@@ -899,31 +819,31 @@
    "complete": true,
    "yes": [
     33.1,
-    38.2,
-    39.0,
-    43.3,
-    44.5,
+    30.9,
+    31.7,
+    33.9,
+    37.0,
     25.8,
     34.5,
     30.3,
     31.6,
     12.0
    ],
-   "level": -0.745,
+   "level": -0.923,
    "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     6,
-     -0.287
+     8,
+     0.301
     ],
     [
-     4,
-     0.26
+     7,
+     0.27
     ],
     [
      1,
-     -0.145
+     -0.217
     ]
    ]
   },
@@ -938,41 +858,41 @@
     45.8,
     52.4,
     36.6,
-    43.0,
-    39.2,
-    41.3,
+    39.7,
+    36.7,
+    37.3,
     16.1
    ],
-   "level": -0.354,
-   "clusterB": 2,
+   "level": -0.438,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q2 programs by status",
-     0.143
+     0.156
+    ],
+    [
+     "Q10 separation referendum",
+     0.089
     ],
     [
      "Q1 immigration control",
-     0.127
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.116
+     0.062
     ]
    ],
-   "probaB": 0.91,
+   "probaB": 0.98,
    "profileTop": [
     [
-     1,
-     0.179
+     10,
+     -0.149
     ],
     [
-     6,
-     -0.171
+     8,
+     0.077
     ],
     [
      2,
-     0.11
+     0.052
     ]
    ]
   },
@@ -983,45 +903,45 @@
    "yes": [
     46.9,
     44.2,
-    44.7,
+    44.6,
     47.3,
     50.4,
     33.8,
-    37.9,
-    34.4,
-    36.7,
+    35.9,
+    31.9,
+    36.3,
     14.5
    ],
-   "level": -0.482,
-   "clusterB": 2,
+   "level": -0.547,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q2 programs by status",
-     0.14
+     0.149
     ],
     [
-     "Q6 provinces pick judges",
-     0.112
+     "Q10 separation referendum",
+     0.083
     ],
     [
      "Q1 immigration control",
-     0.108
+     0.054
     ]
    ],
-   "probaB": 0.92,
+   "probaB": 1.0,
    "profileTop": [
     [
-     1,
-     0.171
-    ],
-    [
-     6,
-     -0.166
-    ],
-    [
      4,
-     0.161
+     0.163
+    ],
+    [
+     10,
+     -0.143
+    ],
+    [
+     7,
+     -0.058
     ]
    ]
   },
@@ -1031,31 +951,31 @@
    "complete": true,
    "yes": [
     46.9,
-    50.3,
-    50.8,
-    49.6,
-    55.4,
-    42.8,
-    44.9,
+    44.5,
+    45.7,
+    44.6,
+    50.4,
+    37.0,
+    39.2,
     40.1,
     41.5,
     17.9
    ],
-   "level": -0.268,
+   "level": -0.441,
    "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     2,
-     0.131
+     8,
+     0.226
     ],
     [
      9,
-     -0.071
+     0.148
     ],
     [
-     10,
-     -0.048
+     1,
+     -0.089
     ]
    ]
   },
@@ -1064,32 +984,47 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    53.0,
-    56.2,
-    57.0,
-    55.0,
-    61.0,
-    49.1,
-    50.8,
-    45.2,
-    48.2,
+    53.2,
+    51.8,
+    52.3,
+    51.0,
+    56.7,
+    43.6,
+    49.5,
+    40.1,
+    41.8,
     20.7
    ],
-   "level": -0.035,
-   "clusterB": 2,
-   "statusB": "lagging",
+   "level": -0.221,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q2 programs by status",
+     0.167
+    ],
+    [
+     "Q10 separation referendum",
+     0.102
+    ],
+    [
+     "Q1 immigration control",
+     -0.064
+    ]
+   ],
+   "probaB": 0.88,
    "profileTop": [
     [
-     2,
-     0.134
+     7,
+     0.17
     ],
     [
      10,
-     -0.104
+     -0.086
     ],
     [
-     3,
-     0.065
+     9,
+     -0.06
     ]
    ]
   },
@@ -1098,32 +1033,32 @@
    "pollsReported": 0.986,
    "complete": true,
    "yes": [
-    47.6,
-    46.0,
-    51.8,
-    55.3,
-    64.1,
-    49.9,
-    51.7,
-    48.0,
+    55.1,
+    51.5,
+    52.0,
     50.4,
-    22.2
+    58.7,
+    43.1,
+    45.5,
+    41.1,
+    43.2,
+    22.4
    ],
-   "level": -0.068,
-   "clusterB": 3,
+   "level": -0.208,
+   "clusterB": 1,
    "statusB": "lagging",
    "profileTop": [
     [
-     2,
-     -0.238
-    ],
-    [
-     1,
-     -0.216
-    ],
-    [
      5,
-     0.148
+     0.056
+    ],
+    [
+     3,
+     -0.024
+    ],
+    [
+     4,
+     -0.023
     ]
    ]
   },
@@ -1134,79 +1069,64 @@
    "yes": [
     56.6,
     54.9,
-    59.9,
-    57.8,
-    65.3,
-    52.2,
+    55.3,
     53.8,
+    60.8,
+    46.5,
+    49.1,
     49.6,
     51.4,
     23.3
    ],
-   "level": 0.086,
-   "clusterB": 3,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q5 proof of citizenship",
-     0.136
-    ],
-    [
-     "Q10 separation referendum",
-     0.121
-    ],
-    [
-     "Q2 programs by status",
-     0.111
-    ]
-   ],
-   "probaB": 0.92,
+   "level": -0.053,
+   "clusterB": 1,
+   "statusB": "lagging",
    "profileTop": [
     [
+     8,
+     0.2
+    ],
+    [
+     9,
+     0.153
+    ],
+    [
      10,
-     -0.074
-    ],
-    [
-     3,
-     0.063
-    ],
-    [
-     5,
-     0.045
+     -0.128
     ]
    ]
   },
   "25": {
    "name": "Calgary-Varsity",
-   "pollsReported": 0.863,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    13.7,
-    38.1,
-    38.4,
-    38.6,
-    44.2,
-    33.6,
-    35.9,
-    30.8,
-    31.7,
-    13.5
+    37.5,
+    36.0,
+    36.5,
+    36.3,
+    41.9,
+    30.6,
+    32.8,
+    34.1,
+    35.6,
+    13.9
    ],
-   "level": -0.822,
-   "clusterB": 3,
+   "level": -0.76,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
+     8,
+     0.304
+    ],
+    [
+     9,
+     0.219
+    ],
+    [
      1,
-     -1.204
-    ],
-    [
-     2,
-     0.19
-    ],
-    [
-     10,
-     0.174
+     -0.177
     ]
    ]
   },
@@ -1217,245 +1137,260 @@
    "yes": [
     49.4,
     48.4,
-    54.6,
-    54.0,
-    60.3,
-    47.8,
-    50.5,
+    47.7,
+    48.0,
+    54.5,
+    40.9,
+    44.1,
     46.4,
     45.9,
     18.4
    ],
-   "level": -0.123,
-   "clusterB": 3,
+   "level": -0.294,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
+     8,
+     0.327
+    ],
+    [
+     9,
+     0.179
+    ],
+    [
      10,
-     -0.162
-    ],
-    [
-     2,
-     -0.088
-    ],
-    [
-     1,
-     -0.087
+     -0.149
     ]
    ]
   },
   "27": {
    "name": "Edmonton-Beverly-Clareview",
-   "pollsReported": 0.653,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    46.9,
+    48.4,
+    46.7,
+    47.7,
     45.0,
-    46.2,
-    44.2,
-    50.1,
-    34.3,
-    43.4,
-    43.9,
-    42.0,
-    17.3
+    51.8,
+    36.1,
+    38.4,
+    36.3,
+    37.5,
+    17.9
    ],
-   "level": -0.379,
-   "clusterB": 2,
-   "statusB": "lagging",
+   "level": -0.452,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
-     6,
-     -0.248
-    ],
-    [
      8,
-     0.238
+     0.075
     ],
     [
-     5,
-     -0.116
+     6,
+     -0.052
+    ],
+    [
+     7,
+     -0.047
     ]
    ]
   },
   "28": {
    "name": "Edmonton-Castle Downs",
-   "pollsReported": 0.348,
-   "complete": false,
+   "pollsReported": 0.826,
+   "complete": true,
    "yes": [
-    46.3,
-    44.6,
-    45.5,
-    50.8,
-    52.2,
-    40.3,
-    39.8,
-    35.9,
+    48.6,
+    46.2,
+    47.2,
+    50.3,
+    46.6,
     36.8,
-    14.3
+    38.0,
+    32.6,
+    33.9,
+    15.9
    ],
-   "level": -0.418,
-   "clusterB": 2,
-   "statusB": "assigned",
+   "level": -0.499,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q2 programs by status",
+     0.156
+    ],
+    [
+     "Q10 separation referendum",
+     0.091
+    ],
+    [
+     "Q1 immigration control",
+     0.061
+    ]
+   ],
+   "probaB": 0.97,
    "profileTop": [
     [
      4,
-     0.237
+     0.241
     ],
     [
-     10,
-     -0.164
+     5,
+     -0.151
     ],
     [
      9,
-     -0.12
+     -0.117
     ]
    ]
   },
   "29": {
    "name": "Edmonton-City Centre",
-   "pollsReported": 0.949,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
     33.5,
-    31.2,
+    31.1,
     31.7,
-    48.7,
-    41.1,
-    27.9,
-    30.7,
+    39.2,
+    35.3,
+    22.7,
     25.5,
-    54.9,
+    20.6,
+    44.3,
     11.0
    ],
-   "level": -0.742,
-   "clusterB": 3,
+   "level": -0.971,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q10 separation referendum",
-     0.108
-    ],
-    [
-     "Q4 fees non-PR",
-     0.1
-    ],
-    [
      "Q2 programs by status",
-     0.082
+     0.214
+    ],
+    [
+     "Q10 separation referendum",
+     0.102
+    ],
+    [
+     "Q3 12-month residency",
+     0.085
     ]
    ],
-   "probaB": 0.65,
+   "probaB": 0.87,
    "profileTop": [
     [
      9,
-     0.94
+     0.797
     ],
     [
      4,
-     0.477
+     0.223
     ],
     [
-     3,
-     -0.278
+     8,
+     -0.163
     ]
    ]
   },
   "30": {
    "name": "Edmonton-Decore",
-   "pollsReported": 0.946,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
+    49.4,
+    47.8,
     48.0,
-    46.2,
-    46.3,
-    43.6,
-    49.5,
-    34.9,
-    41.3,
-    39.2,
-    39.9,
-    16.0
+    45.3,
+    51.3,
+    38.0,
+    38.6,
+    34.7,
+    35.0,
+    16.4
    ],
-   "level": -0.417,
-   "clusterB": 2,
+   "level": -0.462,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
      "Q2 programs by status",
-     0.141
+     0.159
     ],
     [
-     "Q6 provinces pick judges",
-     0.115
+     "Q10 separation referendum",
+     0.091
     ],
     [
      "Q1 immigration control",
-     0.108
+     0.064
     ]
    ],
-   "probaB": 0.85,
+   "probaB": 0.96,
    "profileTop": [
     [
-     6,
-     -0.182
+     9,
+     -0.108
     ],
     [
-     1,
-     0.15
+     10,
+     -0.094
     ],
     [
      2,
-     0.116
+     0.083
     ]
    ]
   },
   "31": {
    "name": "Edmonton-Ellerslie",
-   "pollsReported": 0.942,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    46.1,
-    42.8,
-    51.9,
-    43.6,
-    52.5,
-    35.5,
-    36.9,
-    44.2,
-    36.1,
-    15.9
+    46.4,
+    42.9,
+    43.5,
+    41.3,
+    49.6,
+    32.3,
+    34.0,
+    30.5,
+    32.2,
+    16.0
    ],
-   "level": -0.417,
-   "clusterB": 2,
+   "level": -0.615,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q6 provinces pick judges",
-     0.126
+     "Q2 programs by status",
+     0.159
     ],
     [
      "Q10 separation referendum",
-     0.071
+     -0.091
     ],
     [
-     "Q7 abolish Senate",
-     0.066
+     "Q1 immigration control",
+     0.07
     ]
    ],
-   "probaB": 0.78,
+   "probaB": 0.86,
    "profileTop": [
     [
-     8,
-     0.287
+     5,
+     0.082
     ],
     [
-     3,
-     0.238
+     9,
+     -0.078
     ],
     [
      7,
-     -0.191
+     -0.072
     ]
    ]
   },
@@ -1466,30 +1401,45 @@
    "yes": [
     35.9,
     33.9,
-    44.8,
-    41.9,
-    47.5,
-    34.5,
-    36.0,
-    31.2,
-    34.6,
+    36.4,
+    34.4,
+    39.3,
+    27.2,
+    29.4,
+    24.0,
+    26.0,
     12.2
    ],
-   "level": -0.654,
-   "clusterB": 3,
-   "statusB": "lagging",
+   "level": -0.938,
+   "clusterB": 2,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q2 programs by status",
+     0.214
+    ],
+    [
+     "Q10 separation referendum",
+     0.129
+    ],
+    [
+     "Q1 immigration control",
+     0.087
+    ]
+   ],
+   "probaB": 0.84,
    "profileTop": [
     [
-     3,
-     0.193
-    ],
-    [
-     2,
-     -0.16
-    ],
-    [
      10,
-     -0.115
+     0.099
+    ],
+    [
+     1,
+     -0.078
+    ],
+    [
+     9,
+     -0.056
     ]
    ]
   },
@@ -1498,53 +1448,38 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    46.0,
-    42.5,
-    43.8,
-    42.3,
-    48.0,
+    34.9,
+    32.9,
+    33.8,
+    33.2,
+    38.5,
     36.5,
     38.3,
     33.6,
     35.3,
     13.5
    ],
-   "level": -0.532,
+   "level": -0.782,
    "clusterB": 2,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q2 programs by status",
-     0.141
-    ],
-    [
-     "Q1 immigration control",
-     0.141
-    ],
-    [
-     "Q10 separation referendum",
-     0.061
-    ]
-   ],
-   "probaB": 0.92,
+   "statusB": "lagging",
    "profileTop": [
     [
-     1,
-     0.185
+     6,
+     0.316
     ],
     [
-     10,
-     -0.123
+     8,
+     0.303
     ],
     [
-     2,
-     0.081
+     7,
+     0.286
     ]
    ]
   },
   "34": {
    "name": "Edmonton-Highlands-Norwood",
-   "pollsReported": 0.98,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
     38.1,
@@ -1552,159 +1487,159 @@
     36.4,
     35.0,
     41.0,
-    33.9,
-    36.8,
-    31.6,
-    33.5,
+    27.9,
+    30.5,
+    25.6,
+    27.0,
     13.9
    ],
-   "level": -0.713,
-   "clusterB": 1,
+   "level": -0.874,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
+     "Q2 programs by status",
+     0.205
+    ],
+    [
      "Q10 separation referendum",
-     0.175
+     0.12
     ],
     [
-     "Q5 proof of citizenship",
-     0.101
-    ],
-    [
-     "Q4 fees non-PR",
-     0.088
+     "Q1 immigration control",
+     0.086
     ]
    ],
    "probaB": 0.98,
    "profileTop": [
     [
-     5,
-     -0.15
+     10,
+     0.179
+    ],
+    [
+     9,
+     -0.067
     ],
     [
      4,
-     -0.118
-    ],
-    [
-     7,
-     0.102
+     -0.048
     ]
    ]
   },
   "35": {
    "name": "Edmonton-Manning",
-   "pollsReported": 0.153,
-   "complete": false,
+   "pollsReported": 1.0,
+   "complete": true,
    "yes": [
-    38.0,
-    37.2,
-    39.2,
-    36.1,
-    62.5,
-    48.5,
-    50.6,
-    44.4,
-    43.1,
-    10.5
+    49.4,
+    47.0,
+    48.4,
+    44.9,
+    52.7,
+    36.4,
+    38.9,
+    34.3,
+    36.2,
+    17.4
    ],
-   "level": -0.422,
-   "clusterB": 3,
-   "statusB": "assigned",
+   "level": -0.455,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q2 programs by status",
+     0.153
+    ],
+    [
+     "Q10 separation referendum",
+     0.08
+    ],
+    [
+     "Q1 immigration control",
+     0.06
+    ]
+   ],
+   "probaB": 0.98,
    "profileTop": [
     [
-     10,
-     -0.513
+     3,
+     0.064
+    ],
+    [
+     9,
+     -0.061
     ],
     [
      5,
-     0.434
-    ],
-    [
-     6,
-     0.387
+     0.051
     ]
    ]
   },
   "36": {
    "name": "Edmonton-McClung",
-   "pollsReported": 0.941,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    45.3,
-    42.7,
-    43.5,
-    41.8,
-    55.5,
-    41.7,
-    43.0,
-    37.6,
-    39.8,
+    45.9,
+    43.2,
+    44.3,
+    42.2,
+    49.5,
+    35.3,
+    37.5,
+    31.6,
+    33.4,
     15.1
    ],
-   "level": -0.415,
-   "clusterB": 3,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q5 proof of citizenship",
-     0.162
-    ],
-    [
-     "Q10 separation referendum",
-     0.153
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.062
-    ]
-   ],
-   "probaB": 0.77,
+   "level": -0.577,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
-     5,
-     0.134
-    ],
-    [
-     4,
-     -0.131
-    ],
-    [
      10,
-     -0.104
+     -0.065
+    ],
+    [
+     9,
+     -0.061
+    ],
+    [
+     6,
+     0.044
     ]
    ]
   },
   "37": {
    "name": "Edmonton-Meadows",
-   "pollsReported": 0.934,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    43.6,
+    44.5,
+    42.1,
+    43.7,
     41.6,
-    42.4,
-    38.1,
-    44.8,
-    30.5,
-    33.2,
-    28.6,
-    31.7,
-    14.3
+    46.9,
+    31.5,
+    34.2,
+    29.6,
+    32.4,
+    14.5
    ],
-   "level": -0.662,
-   "clusterB": 2,
-   "statusB": "lagging",
+   "level": -0.652,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
-     1,
-     0.217
+     3,
+     0.059
+    ],
+    [
+     6,
+     -0.047
     ],
     [
      2,
-     0.177
-    ],
-    [
-     8,
-     -0.151
+     0.033
     ]
    ]
   },
@@ -1717,126 +1652,111 @@
     44.6,
     46.2,
     43.8,
-    57.0,
-    42.6,
-    44.6,
-    38.1,
-    40.6,
+    50.8,
+    35.8,
+    37.6,
+    35.6,
+    34.9,
     17.0
    ],
-   "level": -0.341,
-   "clusterB": 3,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q5 proof of citizenship",
-     0.155
-    ],
-    [
-     "Q10 separation referendum",
-     0.144
-    ],
-    [
-     "Q2 programs by status",
-     0.07
-    ]
-   ],
-   "probaB": 0.79,
+   "level": -0.502,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
-     4,
-     -0.121
+     8,
+     0.098
     ],
     [
-     5,
-     0.121
+     9,
+     -0.072
     ],
     [
-     1,
-     0.08
+     7,
+     -0.031
     ]
    ]
   },
   "39": {
    "name": "Edmonton-North West",
-   "pollsReported": 0.794,
+   "pollsReported": 0.941,
    "complete": true,
    "yes": [
-    40.8,
-    38.0,
-    38.1,
-    36.0,
-    54.2,
-    37.7,
-    40.1,
-    34.4,
-    36.9,
-    12.0
+    46.0,
+    42.8,
+    43.6,
+    41.5,
+    49.4,
+    34.1,
+    37.2,
+    30.8,
+    30.8,
+    14.1
    ],
-   "level": -0.586,
-   "clusterB": 3,
-   "statusB": "lagging",
-   "profileTop": [
+   "level": -0.615,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
     [
-     5,
-     0.254
+     "Q2 programs by status",
+     0.151
     ],
     [
-     4,
-     -0.203
+     "Q10 separation referendum",
+     0.087
+    ],
+    [
+     "Q1 immigration control",
+     0.063
+    ]
+   ],
+   "probaB": 0.99,
+   "profileTop": [
+    [
+     9,
+     -0.144
     ],
     [
      10,
-     -0.201
+     -0.102
+    ],
+    [
+     5,
+     0.074
     ]
    ]
   },
   "40": {
    "name": "Edmonton-Riverview",
-   "pollsReported": 0.962,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    34.5,
-    32.7,
-    42.2,
-    48.9,
-    47.1,
-    34.4,
-    36.5,
-    30.1,
-    33.7,
+    34.8,
+    33.0,
+    34.1,
+    37.7,
+    39.1,
+    27.5,
+    36.7,
+    30.4,
+    34.1,
     11.8
    ],
-   "level": -0.66,
-   "clusterB": 3,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q10 separation referendum",
-     0.119
-    ],
-    [
-     "Q2 programs by status",
-     0.117
-    ],
-    [
-     "Q4 fees non-PR",
-     0.101
-    ]
-   ],
-   "probaB": 0.89,
+   "level": -0.841,
+   "clusterB": 2,
+   "statusB": "lagging",
    "profileTop": [
     [
-     4,
-     0.402
+     7,
+     0.28
     ],
     [
-     2,
-     -0.211
+     9,
+     0.236
     ],
     [
-     1,
-     -0.166
+     8,
+     0.22
     ]
    ]
   },
@@ -1847,30 +1767,30 @@
    "yes": [
     37.7,
     38.5,
-    44.1,
-    42.2,
-    48.6,
-    35.2,
+    36.5,
+    40.2,
+    40.7,
+    28.0,
     38.4,
     33.1,
     34.5,
     12.6
    ],
-   "level": -0.598,
-   "clusterB": 3,
+   "level": -0.746,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     10,
-     -0.137
+     7,
+     0.255
     ],
     [
-     3,
-     0.109
+     8,
+     0.246
     ],
     [
      1,
-     -0.092
+     -0.183
     ]
    ]
   },
@@ -1879,32 +1799,32 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    46.6,
-    44.1,
-    49.2,
-    46.1,
-    53.4,
-    38.1,
-    41.3,
-    36.6,
-    38.5,
+    46.9,
+    44.5,
+    45.8,
+    43.3,
+    49.8,
+    34.2,
+    41.6,
+    37.3,
+    39.6,
     15.6
    ],
-   "level": -0.4,
-   "clusterB": 2,
+   "level": -0.488,
+   "clusterB": 1,
    "statusB": "lagging",
    "profileTop": [
     [
-     3,
-     0.114
+     8,
+     0.155
     ],
     [
      10,
-     -0.085
+     -0.129
     ],
     [
-     1,
-     0.078
+     7,
+     0.126
     ]
    ]
   },
@@ -1913,32 +1833,32 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    48.2,
-    46.3,
-    45.4,
-    48.0,
-    61.4,
-    41.4,
-    43.3,
-    39.5,
+    49.0,
+    46.7,
+    46.9,
+    45.5,
+    54.4,
+    36.5,
+    38.8,
     40.8,
-    17.0
+    41.0,
+    17.4
    ],
-   "level": -0.305,
-   "clusterB": 3,
+   "level": -0.406,
+   "clusterB": 1,
    "statusB": "lagging",
    "profileTop": [
     [
-     5,
-     0.27
+     8,
+     0.218
     ],
     [
-     3,
-     -0.133
+     9,
+     0.091
     ],
     [
      10,
-     -0.075
+     -0.088
     ]
    ]
   },
@@ -1949,30 +1869,30 @@
    "yes": [
     28.3,
     24.7,
-    33.0,
-    30.9,
-    37.3,
-    26.0,
-    28.0,
-    23.9,
+    26.2,
+    24.8,
+    30.5,
+    19.7,
+    22.2,
+    17.8,
     25.3,
     9.6
    ],
-   "level": -1.057,
-   "clusterB": 3,
+   "level": -1.298,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
+     9,
+     0.275
+    ],
+    [
+     10,
+     0.246
+    ],
+    [
      2,
-     -0.203
-    ],
-    [
-     3,
-     0.094
-    ],
-    [
-     1,
-     -0.057
+     -0.153
     ]
    ]
   },
@@ -1983,45 +1903,30 @@
    "yes": [
     49.6,
     47.0,
-    51.6,
-    48.5,
-    56.6,
-    41.3,
-    43.5,
+    47.8,
+    45.3,
+    52.6,
+    37.0,
+    39.2,
     39.6,
     47.2,
     17.8
    ],
-   "level": -0.258,
+   "level": -0.381,
    "clusterB": 2,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q6 provinces pick judges",
-     0.127
-    ],
-    [
-     "Q7 abolish Senate",
-     0.072
-    ],
-    [
-     "Q10 separation referendum",
-     0.07
-    ]
-   ],
-   "probaB": 0.72,
+   "statusB": "lagging",
    "profileTop": [
     [
      9,
-     0.149
+     0.318
     ],
     [
-     7,
-     -0.073
+     8,
+     0.139
     ],
     [
-     3,
-     0.07
+     10,
+     -0.091
     ]
    ]
   },
@@ -2032,30 +1937,30 @@
    "yes": [
     40.2,
     38.5,
-    46.8,
-    45.4,
-    50.6,
-    37.1,
+    39.3,
+    38.6,
+    43.6,
+    29.7,
     39.7,
     35.3,
     36.9,
     12.9
    ],
-   "level": -0.518,
-   "clusterB": 3,
+   "level": -0.681,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     10,
-     -0.185
+     8,
+     0.273
     ],
     [
-     3,
-     0.136
+     7,
+     0.245
     ],
     [
-     4,
-     0.12
+     9,
+     0.195
     ]
    ]
   },
@@ -2064,32 +1969,32 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    58.7,
-    64.6,
-    68.1,
-    63.4,
-    69.6,
+    60.2,
+    57.4,
+    57.3,
+    57.6,
+    64.2,
     57.5,
     59.0,
     54.9,
     56.2,
     28.7
    ],
-   "level": 0.326,
+   "level": 0.164,
    "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     3,
-     0.181
+     8,
+     0.183
     ],
     [
-     1,
-     -0.161
+     6,
+     0.168
     ],
     [
-     2,
-     0.128
+     7,
+     0.158
     ]
    ]
   },
@@ -2099,31 +2004,46 @@
    "complete": true,
    "yes": [
     64.2,
+    61.6,
+    62.3,
+    60.9,
     66.8,
-    67.4,
-    65.6,
-    72.1,
-    58.7,
-    59.8,
-    55.6,
-    57.9,
+    52.4,
+    54.4,
+    49.6,
+    51.2,
     29.5
    ],
-   "level": 0.399,
-   "clusterB": 2,
-   "statusB": "lagging",
+   "level": 0.167,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q2 programs by status",
+     0.15
+    ],
+    [
+     "Q10 separation referendum",
+     0.08
+    ],
+    [
+     "Q1 immigration control",
+     0.054
+    ]
+   ],
+   "probaB": 1.0,
    "profileTop": [
     [
-     2,
-     0.151
-    ],
-    [
      9,
-     -0.077
+     -0.076
     ],
     [
-     3,
-     0.074
+     10,
+     -0.057
+    ],
+    [
+     4,
+     0.056
     ]
    ]
   },
@@ -2139,163 +2059,133 @@
     74.2,
     64.5,
     66.0,
-    65.7,
-    67.4,
+    61.1,
+    62.7,
     41.4
    ],
-   "level": 0.675,
+   "level": 0.592,
    "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q10 separation referendum",
-     0.182
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.093
-    ],
-    [
-     "Q4 fees non-PR",
-     0.09
-    ]
-   ],
-   "probaB": 0.87,
+   "statusB": "weak",
    "profileTop": [
     [
-     10,
-     0.183
+     4,
+     0.035
     ],
     [
-     5,
-     -0.119
+     9,
+     -0.032
     ],
     [
-     8,
-     0.08
+     3,
+     0.031
     ]
    ]
   },
   "50": {
    "name": "Banff-Kananaskis",
-   "pollsReported": 0.906,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    45.2,
-    48.6,
-    50.3,
-    49.3,
-    55.7,
     44.6,
-    47.8,
+    43.0,
     43.7,
-    46.0,
-    19.7
+    43.4,
+    49.4,
+    38.1,
+    40.1,
+    40.3,
+    42.4,
+    20.2
    ],
-   "level": -0.219,
-   "clusterB": 1,
+   "level": -0.446,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     1,
-     -0.161
-    ],
-    [
      8,
-     0.069
+     0.238
     ],
     [
-     7,
-     0.063
+     9,
+     0.19
+    ],
+    [
+     1,
+     -0.176
     ]
    ]
   },
   "51": {
    "name": "Bonnyville-Cold Lake-St. Paul",
-   "pollsReported": 0.486,
-   "complete": false,
+   "pollsReported": 1.0,
+   "complete": true,
    "yes": [
-    63.0,
-    61.0,
-    62.7,
-    59.4,
+    69.3,
     67.2,
-    54.2,
-    59.7,
-    56.8,
-    59.4,
-    36.3
+    68.5,
+    65.6,
+    72.7,
+    61.6,
+    62.6,
+    58.5,
+    60.7,
+    41.4
    ],
-   "level": 0.321,
-   "clusterB": 1,
-   "statusB": "assigned",
+   "level": 0.489,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
      10,
-     0.321
+     0.102
     ],
     [
      4,
-     -0.155
+     -0.034
     ],
     [
-     6,
-     -0.132
+     7,
+     -0.025
     ]
    ]
   },
   "52": {
    "name": "Brooks-Medicine Hat",
-   "pollsReported": 0.973,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
     68.0,
     65.0,
     66.0,
     63.6,
-    72.1,
-    64.4,
-    65.1,
-    61.4,
-    64.0,
+    70.3,
+    58.1,
+    60.9,
+    56.1,
+    58.6,
     36.8
    ],
-   "level": 0.523,
-   "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q10 separation referendum",
-     0.185
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.096
-    ],
-    [
-     "Q4 fees non-PR",
-     0.077
-    ]
-   ],
-   "probaB": 0.96,
+   "level": 0.382,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
-     4,
-     -0.178
+     6,
+     -0.04
     ],
     [
      10,
-     0.143
+     0.032
     ],
     [
-     3,
-     -0.113
+     4,
+     -0.024
     ]
    ]
   },
   "53": {
    "name": "Camrose",
-   "pollsReported": 0.914,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
     68.4,
@@ -2303,140 +2193,110 @@
     67.2,
     65.8,
     72.1,
-    66.3,
-    68.7,
-    63.0,
-    65.8,
+    61.0,
+    63.5,
+    57.5,
+    60.2,
     36.0
    ],
-   "level": 0.583,
+   "level": 0.447,
    "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q5 proof of citizenship",
-     0.119
-    ],
-    [
-     "Q4 fees non-PR",
-     0.092
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.053
-    ]
-   ],
-   "probaB": 0.85,
+   "statusB": "weak",
    "profileTop": [
     [
-     4,
-     -0.142
-    ],
-    [
-     5,
-     -0.134
+     10,
+     -0.077
     ],
     [
      7,
-     0.132
+     0.058
+    ],
+    [
+     1,
+     -0.026
     ]
    ]
   },
   "54": {
    "name": "Cardston-Siksika",
-   "pollsReported": 0.892,
+   "pollsReported": 0.985,
    "complete": true,
    "yes": [
     68.7,
-    66.2,
+    66.3,
     65.8,
-    64.2,
-    69.8,
-    62.0,
+    64.4,
+    69.9,
+    62.1,
     62.4,
     59.7,
-    60.9,
-    43.1
+    61.0,
+    43.0
    ],
-   "level": 0.505,
-   "clusterB": 1,
+   "level": 0.465,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
+     "Q2 programs by status",
+     0.149
+    ],
+    [
      "Q10 separation referendum",
-     0.189
+     0.119
     ],
     [
-     "Q5 proof of citizenship",
-     0.098
-    ],
-    [
-     "Q4 fees non-PR",
-     0.094
+     "Q3 12-month residency",
+     0.081
     ]
    ],
-   "probaB": 0.91,
+   "probaB": 0.94,
    "profileTop": [
     [
      10,
-     0.421
+     0.197
     ],
     [
      5,
-     -0.167
+     -0.107
     ],
     [
-     4,
-     -0.136
+     3,
+     -0.08
     ]
    ]
   },
   "55": {
    "name": "Central Peace-Notley",
-   "pollsReported": 0.95,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    76.2,
-    73.9,
+    76.6,
     74.3,
-    71.6,
-    78.5,
-    69.9,
-    72.5,
-    69.2,
-    72.0,
-    50.7
+    74.6,
+    71.9,
+    78.8,
+    70.3,
+    71.0,
+    67.3,
+    70.2,
+    50.4
    ],
-   "level": 0.905,
-   "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q10 separation referendum",
-     0.184
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.097
-    ],
-    [
-     "Q4 fees non-PR",
-     0.092
-    ]
-   ],
-   "probaB": 0.91,
+   "level": 0.846,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
-     10,
-     0.327
-    ],
-    [
      4,
-     -0.193
+     -0.072
     ],
     [
-     5,
-     -0.112
+     10,
+     0.059
+    ],
+    [
+     9,
+     0.048
     ]
    ]
   },
@@ -2446,31 +2306,46 @@
    "complete": true,
    "yes": [
     65.5,
-    66.5,
-    66.8,
-    65.5,
-    72.0,
-    58.7,
-    59.9,
-    54.8,
-    64.0,
-    30.8
+    63.3,
+    63.5,
+    62.4,
+    69.0,
+    55.1,
+    59.8,
+    54.7,
+    57.5,
+    31.0
    ],
-   "level": 0.429,
-   "clusterB": 2,
-   "statusB": "lagging",
+   "level": 0.287,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q2 programs by status",
+     0.157
+    ],
+    [
+     "Q10 separation referendum",
+     0.093
+    ],
+    [
+     "Q1 immigration control",
+     0.047
+    ]
+   ],
+   "probaB": 0.94,
    "profileTop": [
     [
-     9,
-     0.149
+     10,
+     -0.123
     ],
     [
-     8,
-     -0.131
+     6,
+     -0.064
     ],
     [
-     2,
-     0.108
+     7,
+     0.063
     ]
    ]
   },
@@ -2479,47 +2354,32 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    63.9,
+    63.8,
     60.4,
     61.2,
-    60.3,
+    59.5,
     66.3,
-    59.7,
-    61.3,
-    56.6,
-    57.7,
+    54.0,
+    56.0,
+    50.7,
+    51.7,
     31.9
    ],
-   "level": 0.318,
-   "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q10 separation referendum",
-     0.182
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.102
-    ],
-    [
-     "Q4 fees non-PR",
-     0.088
-    ]
-   ],
-   "probaB": 0.96,
+   "level": 0.178,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
-     5,
-     -0.14
+     9,
+     -0.067
     ],
     [
      10,
-     0.129
+     0.043
     ],
     [
-     3,
-     -0.115
+     1,
+     0.023
     ]
    ]
   },
@@ -2529,197 +2389,197 @@
    "complete": true,
    "yes": [
     74.6,
-    72.5,
+    72.6,
     72.8,
     71.8,
-    76.4,
-    72.6,
-    73.3,
-    69.3,
-    71.4,
+    76.5,
+    67.3,
+    68.6,
+    62.3,
+    66.0,
     45.3
    ],
-   "level": 0.863,
+   "level": 0.716,
    "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q10 separation referendum",
-     0.18
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.099
-    ],
-    [
-     "Q4 fees non-PR",
-     0.088
-    ]
-   ],
-   "probaB": 0.98,
+   "statusB": "weak",
    "profileTop": [
     [
-     5,
-     -0.189
-    ],
-    [
-     10,
-     0.156
+     8,
+     -0.098
     ],
     [
      4,
-     -0.142
+     0.044
+    ],
+    [
+     2,
+     0.031
     ]
    ]
   },
   "59": {
    "name": "Drumheller-Stettler",
-   "pollsReported": 0.986,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
     78.3,
     76.4,
-    77.3,
-    79.1,
-    84.3,
-    76.9,
-    76.7,
+    77.4,
+    76.3,
+    81.5,
+    73.6,
+    73.7,
     69.3,
-    74.9,
-    48.6
+    71.8,
+    48.7
    ],
-   "level": 1.091,
-   "clusterB": 3,
+   "level": 0.964,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q5 proof of citizenship",
-     0.138
-    ],
-    [
-     "Q4 fees non-PR",
-     0.097
-    ],
-    [
      "Q2 programs by status",
-     0.084
+     0.144
+    ],
+    [
+     "Q10 separation referendum",
+     0.088
+    ],
+    [
+     "Q1 immigration control",
+     0.053
     ]
    ],
-   "probaB": 0.79,
+   "probaB": 0.99,
    "profileTop": [
     [
-     8,
-     -0.173
+     10,
+     -0.144
     ],
     [
-     6,
-     0.135
+     4,
+     0.051
     ],
     [
-     3,
-     -0.116
+     5,
+     0.05
     ]
    ]
   },
   "60": {
    "name": "Fort McMurray-Lac La Biche",
-   "pollsReported": 0.286,
-   "complete": false,
+   "pollsReported": 1.0,
+   "complete": true,
    "yes": [
-    65.8,
-    69.3,
-    69.2,
-    66.4,
-    74.5,
-    62.1,
-    63.2,
-    60.1,
-    52.2,
-    37.4
+    68.6,
+    66.5,
+    66.7,
+    63.7,
+    70.6,
+    59.5,
+    60.2,
+    56.2,
+    59.0,
+    39.7
    ],
-   "level": 0.501,
+   "level": 0.414,
    "clusterB": 2,
-   "statusB": "assigned",
+   "statusB": "weak",
    "profileTop": [
     [
-     9,
-     -0.408
-    ],
-    [
      10,
-     0.188
+     0.119
     ],
     [
-     2,
-     0.164
+     7,
+     -0.051
+    ],
+    [
+     4,
+     -0.047
     ]
    ]
   },
   "61": {
    "name": "Fort McMurray-Wood Buffalo",
-   "pollsReported": 0.2,
+   "pollsReported": 0.35,
    "complete": false,
    "yes": [
-    70.7,
-    67.5,
-    69.6,
-    63.2,
-    73.1,
+    71.2,
+    67.7,
+    70.0,
+    63.1,
+    71.3,
+    54.5,
+    61.0,
     58.0,
-    60.4,
-    51.1,
-    63.6,
-    38.3
+    58.8,
+    39.3
    ],
-   "level": 0.482,
-   "clusterB": 2,
+   "level": 0.435,
+   "clusterB": 1,
    "statusB": "assigned",
    "profileTop": [
     [
-     8,
-     -0.335
+     6,
+     -0.245
     ],
     [
-     10,
-     0.248
+     3,
+     0.143
     ],
     [
      1,
-     0.211
+     0.12
     ]
    ]
   },
   "62": {
    "name": "Fort Saskatchewan-Vegreville",
-   "pollsReported": 0.744,
+   "pollsReported": 0.878,
    "complete": true,
    "yes": [
-    64.9,
-    68.4,
-    69.7,
-    67.3,
-    73.3,
-    62.1,
-    62.9,
-    57.5,
-    60.4,
-    33.3
+    66.2,
+    65.4,
+    69.5,
+    63.5,
+    69.4,
+    57.3,
+    59.5,
+    52.7,
+    61.4,
+    34.1
    ],
-   "level": 0.497,
-   "clusterB": 2,
-   "statusB": "lagging",
+   "level": 0.363,
+   "clusterB": 1,
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q2 programs by status",
+     0.167
+    ],
+    [
+     "Q10 separation referendum",
+     0.099
+    ],
+    [
+     "Q3 12-month residency",
+     0.061
+    ]
+   ],
+   "probaB": 0.9,
    "profileTop": [
     [
-     2,
-     0.128
+     3,
+     0.185
+    ],
+    [
+     9,
+     0.142
     ],
     [
      8,
-     -0.09
-    ],
-    [
-     3,
-     0.082
+     -0.118
     ]
    ]
   },
@@ -2730,79 +2590,64 @@
    "yes": [
     67.1,
     63.5,
-    69.3,
-    66.6,
-    75.0,
-    64.1,
-    65.8,
-    60.8,
-    64.2,
-    37.5
+    64.8,
+    62.4,
+    70.1,
+    58.9,
+    61.0,
+    55.6,
+    58.9,
+    37.4
    ],
-   "level": 0.558,
-   "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q10 separation referendum",
-     0.214
-    ],
-    [
-     "Q4 fees non-PR",
-     0.097
-    ],
-    [
-     "Q5 proof of citizenship",
-     -0.074
-    ]
-   ],
-   "probaB": 0.77,
+   "level": 0.365,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
-     2,
-     -0.151
-    ],
-    [
      10,
-     0.135
+     0.077
     ],
     [
      4,
-     -0.081
+     -0.062
+    ],
+    [
+     2,
+     -0.056
     ]
    ]
   },
   "64": {
    "name": "Grande Prairie-Wapiti",
-   "pollsReported": 0.481,
-   "complete": false,
+   "pollsReported": 0.901,
+   "complete": true,
    "yes": [
+    76.4,
+    73.2,
+    73.9,
     72.4,
-    68.5,
-    68.6,
-    71.1,
-    76.6,
-    75.1,
-    73.0,
-    73.0,
-    75.2,
-    42.4
+    78.5,
+    69.7,
+    69.7,
+    67.5,
+    68.4,
+    48.9
    ],
-   "level": 0.847,
-   "clusterB": 1,
-   "statusB": "assigned",
+   "level": 0.814,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
-     3,
-     -0.318
+     7,
+     -0.042
     ],
     [
-     6,
-     0.281
+     10,
+     0.036
     ],
     [
-     9,
-     0.265
+     1,
+     0.033
     ]
    ]
   },
@@ -2812,46 +2657,31 @@
    "complete": true,
    "yes": [
     66.3,
-    69.3,
-    69.9,
-    67.9,
-    73.6,
-    64.6,
-    65.5,
-    61.1,
-    63.4,
+    63.3,
+    63.9,
+    62.4,
+    68.3,
+    58.2,
+    59.7,
+    54.2,
+    56.3,
     34.4
    ],
-   "level": 0.567,
-   "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q5 proof of citizenship",
-     0.106
-    ],
-    [
-     "Q4 fees non-PR",
-     0.073
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.061
-    ]
-   ],
-   "probaB": 0.58,
+   "level": 0.311,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
-     2,
-     0.097
-    ],
-    [
-     1,
-     -0.076
-    ],
-    [
      6,
-     0.057
+     0.04
+    ],
+    [
+     7,
+     0.036
+    ],
+    [
+     5,
+     -0.033
     ]
    ]
   },
@@ -2861,46 +2691,31 @@
    "complete": true,
    "yes": [
     72.9,
-    75.9,
-    77.3,
-    74.2,
-    80.1,
-    68.3,
-    72.0,
-    68.5,
-    70.1,
-    43.2
+    70.7,
+    71.7,
+    69.7,
+    75.6,
+    63.7,
+    66.9,
+    62.5,
+    64.0,
+    43.1
    ],
-   "level": 0.885,
-   "clusterB": 2,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q2 programs by status",
-     0.143
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.123
-    ],
-    [
-     "Q1 immigration control",
-     -0.08
-    ]
-   ],
-   "probaB": 0.73,
+   "level": 0.638,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
-     2,
-     0.115
-    ],
-    [
      6,
-     -0.093
+     -0.078
     ],
     [
      3,
-     0.086
+     0.034
+    ],
+    [
+     9,
+     -0.021
     ]
    ]
   },
@@ -2909,47 +2724,47 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    70.1,
-    67.6,
-    68.6,
-    71.6,
-    75.8,
-    67.0,
-    68.4,
-    68.9,
-    67.2,
+    70.3,
+    67.8,
+    68.8,
+    67.8,
+    72.2,
+    61.3,
+    64.2,
+    63.0,
+    62.2,
     42.0
    ],
-   "level": 0.707,
-   "clusterB": 1,
+   "level": 0.539,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
+     "Q2 programs by status",
+     0.219
+    ],
+    [
      "Q10 separation referendum",
-     0.194
+     0.126
     ],
     [
-     "Q3 12-month residency",
-     0.062
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.051
+     "Q1 immigration control",
+     0.074
     ]
    ],
-   "probaB": 0.85,
+   "probaB": 0.88,
    "profileTop": [
     [
      8,
-     0.191
+     0.123
     ],
     [
-     3,
-     -0.18
+     6,
+     -0.074
     ],
     [
      10,
-     0.177
+     0.071
     ]
    ]
   },
@@ -2958,47 +2773,47 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    76.8,
-    74.5,
-    75.2,
-    73.1,
-    79.4,
+    71.6,
+    69.5,
     70.2,
-    71.3,
-    70.7,
-    68.2,
+    68.5,
+    75.0,
+    64.7,
+    66.2,
+    64.8,
+    62.8,
     42.4
    ],
-   "level": 0.88,
+   "level": 0.611,
    "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q2 programs by status",
-     0.128
+     0.211
+    ],
+    [
+     "Q10 separation referendum",
+     0.101
     ],
     [
      "Q1 immigration control",
-     0.113
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.055
+     0.085
     ]
    ],
-   "probaB": 0.78,
+   "probaB": 0.93,
    "profileTop": [
     [
-     1,
-     0.128
+     8,
+     0.121
     ],
     [
      9,
-     -0.114
+     -0.047
     ],
     [
-     8,
-     0.106
+     1,
+     -0.029
     ]
    ]
   },
@@ -3008,80 +2823,80 @@
    "complete": true,
    "yes": [
     62.8,
-    65.7,
-    66.8,
-    64.7,
-    71.4,
-    57.1,
-    59.1,
-    54.6,
+    60.5,
+    61.6,
+    60.0,
+    66.4,
+    51.2,
+    53.7,
+    51.8,
     57.5,
     29.1
    ],
-   "level": 0.361,
-   "clusterB": 2,
+   "level": 0.173,
+   "clusterB": 1,
    "statusB": "lagging",
    "profileTop": [
     [
-     2,
-     0.14
+     9,
+     0.172
     ],
     [
-     3,
-     0.084
+     6,
+     -0.099
     ],
     [
-     8,
-     -0.073
+     10,
+     -0.08
     ]
    ]
   },
   "70": {
    "name": "Lesser Slave Lake",
-   "pollsReported": 0.792,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    56.3,
+    58.1,
+    55.2,
+    55.5,
     52.4,
-    53.4,
-    49.4,
-    56.4,
-    45.8,
-    46.2,
-    42.3,
-    45.7,
-    30.8
+    59.8,
+    49.1,
+    49.3,
+    46.1,
+    49.7,
+    30.4
    ],
-   "level": -0.093,
-   "clusterB": 1,
+   "level": -0.027,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
+     "Q2 programs by status",
+     0.144
+    ],
+    [
      "Q10 separation referendum",
-     0.188
+     0.117
     ],
     [
-     "Q4 fees non-PR",
-     0.093
-    ],
-    [
-     "Q5 proof of citizenship",
-     0.092
+     "Q3 12-month residency",
+     0.079
     ]
    ],
-   "probaB": 0.77,
+   "probaB": 0.9,
    "profileTop": [
     [
      10,
-     0.491
+     0.209
     ],
     [
-     1,
-     0.16
+     4,
+     -0.112
     ],
     [
      5,
-     -0.149
+     -0.073
     ]
    ]
   },
@@ -3090,47 +2905,47 @@
    "pollsReported": 0.971,
    "complete": true,
    "yes": [
-    57.5,
-    54.3,
-    55.8,
-    53.3,
-    61.1,
-    48.3,
-    49.4,
-    44.6,
-    48.3,
-    20.0
+    51.4,
+    48.7,
+    50.3,
+    48.1,
+    56.0,
+    42.3,
+    43.9,
+    39.5,
+    45.1,
+    20.8
    ],
-   "level": -0.051,
+   "level": -0.279,
    "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
      "Q2 programs by status",
-     0.139
+     0.207
+    ],
+    [
+     "Q3 12-month residency",
+     0.086
     ],
     [
      "Q1 immigration control",
-     0.135
-    ],
-    [
-     "Q10 separation referendum",
-     0.066
+     0.083
     ]
    ],
-   "probaB": 0.9,
+   "probaB": 0.85,
    "profileTop": [
     [
-     1,
-     0.168
+     9,
+     0.13
     ],
     [
-     10,
-     -0.129
+     1,
+     -0.059
     ],
     [
      2,
-     0.074
+     -0.055
     ]
    ]
   },
@@ -3139,32 +2954,47 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    52.9,
-    48.4,
-    53.1,
-    50.0,
-    58.8,
-    46.0,
-    46.5,
-    42.3,
-    45.2,
-    18.6
+    47.0,
+    43.5,
+    44.9,
+    42.5,
+    50.5,
+    37.8,
+    38.4,
+    34.5,
+    35.5,
+    18.8
    ],
-   "level": -0.178,
+   "level": -0.5,
    "clusterB": 2,
-   "statusB": "lagging",
+   "statusB": "fitted",
+   "shapB": [
+    [
+     "Q2 programs by status",
+     0.206
+    ],
+    [
+     "Q10 separation referendum",
+     0.119
+    ],
+    [
+     "Q3 12-month residency",
+     0.081
+    ]
+   ],
+   "probaB": 0.99,
    "profileTop": [
     [
-     1,
-     0.11
-    ],
-    [
      10,
-     -0.094
+     0.112
     ],
     [
-     3,
-     0.05
+     4,
+     -0.074
+    ],
+    [
+     6,
+     0.071
     ]
    ]
   },
@@ -3176,44 +3006,29 @@
     65.7,
     64.0,
     64.6,
-    67.8,
-    74.1,
-    64.6,
-    64.9,
-    61.2,
-    63.6,
-    37.0
+    63.3,
+    69.6,
+    59.0,
+    60.1,
+    55.3,
+    57.8,
+    36.9
    ],
-   "level": 0.528,
-   "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q10 separation referendum",
-     0.209
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.055
-    ],
-    [
-     "Q3 12-month residency",
-     0.053
-    ]
-   ],
-   "probaB": 0.79,
+   "level": 0.35,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
-     3,
-     -0.18
-    ],
-    [
      10,
-     0.144
+     0.073
     ],
     [
-     2,
-     -0.1
+     1,
+     -0.055
+    ],
+    [
+     6,
+     0.031
     ]
    ]
   },
@@ -3222,47 +3037,32 @@
    "pollsReported": 0.93,
    "complete": true,
    "yes": [
-    71.7,
-    65.3,
-    65.5,
-    68.3,
-    72.5,
-    64.7,
-    63.7,
-    63.5,
     65.9,
-    34.1
+    63.6,
+    63.8,
+    63.0,
+    68.0,
+    57.5,
+    58.7,
+    54.0,
+    56.3,
+    35.3
    ],
-   "level": 0.563,
-   "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q5 proof of citizenship",
-     0.1
-    ],
-    [
-     "Q3 12-month residency",
-     0.062
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.056
-    ]
-   ],
-   "probaB": 0.59,
+   "level": 0.307,
+   "clusterB": 2,
+   "statusB": "weak",
    "profileTop": [
     [
-     1,
-     0.179
+     10,
+     0.052
+    ],
+    [
+     5,
+     -0.043
     ],
     [
      3,
-     -0.175
-    ],
-    [
-     9,
-     0.101
+     -0.019
     ]
    ]
   },
@@ -3271,47 +3071,32 @@
    "pollsReported": 0.906,
    "complete": true,
    "yes": [
-    66.4,
-    63.7,
-    63.8,
-    62.6,
-    68.7,
-    55.7,
+    58.1,
+    55.8,
+    55.8,
+    55.6,
+    61.7,
+    47.4,
     57.4,
     53.5,
     54.8,
     25.8
    ],
-   "level": 0.287,
+   "level": 0.05,
    "clusterB": 2,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q2 programs by status",
-     0.138
-    ],
-    [
-     "Q1 immigration control",
-     0.137
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.076
-    ]
-   ],
-   "probaB": 0.98,
+   "statusB": "lagging",
    "profileTop": [
     [
-     1,
+     8,
+     0.246
+    ],
+    [
+     7,
      0.207
     ],
     [
-     10,
-     -0.14
-    ],
-    [
-     2,
-     0.126
+     9,
+     0.188
     ]
    ]
   },
@@ -3320,47 +3105,32 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    79.5,
-    77.1,
-    77.7,
-    76.8,
-    81.1,
-    72.7,
-    73.7,
-    71.0,
-    73.3,
+    75.2,
+    73.1,
+    73.9,
+    73.0,
+    77.4,
+    68.2,
+    69.8,
+    65.0,
+    67.6,
     44.7
    ],
-   "level": 1.013,
-   "clusterB": 2,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q1 immigration control",
-     0.142
-    ],
-    [
-     "Q2 programs by status",
-     0.132
-    ],
-    [
-     "Q10 separation referendum",
-     0.073
-    ]
-   ],
-   "probaB": 0.88,
+   "level": 0.766,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
-     1,
-     0.153
+     10,
+     -0.079
     ],
     [
-     5,
-     -0.056
+     4,
+     0.06
     ],
     [
-     7,
-     -0.053
+     8,
+     -0.031
     ]
    ]
   },
@@ -3373,43 +3143,43 @@
     60.0,
     60.6,
     60.5,
-    66.0,
-    58.3,
-    58.3,
+    64.3,
     56.3,
-    58.5,
+    56.7,
+    54.4,
+    56.3,
     42.5
    ],
-   "level": 0.343,
-   "clusterB": 1,
+   "level": 0.262,
+   "clusterB": 2,
    "statusB": "fitted",
    "shapB": [
     [
+     "Q2 programs by status",
+     0.212
+    ],
+    [
      "Q10 separation referendum",
-     0.195
+     0.125
     ],
     [
-     "Q5 proof of citizenship",
-     0.101
-    ],
-    [
-     "Q4 fees non-PR",
-     0.074
+     "Q3 12-month residency",
+     0.082
     ]
    ],
-   "probaB": 0.93,
+   "probaB": 0.97,
    "profileTop": [
     [
      10,
-     0.561
+     0.406
     ],
     [
      5,
-     -0.182
+     -0.162
     ],
     [
      3,
-     -0.163
+     -0.112
     ]
    ]
   },
@@ -3420,64 +3190,64 @@
    "yes": [
     62.1,
     61.5,
-    66.0,
-    62.7,
-    71.7,
-    58.9,
-    60.4,
-    55.9,
-    58.5,
+    60.0,
+    57.1,
+    65.9,
+    52.8,
+    54.8,
+    49.5,
+    52.2,
     30.2
    ],
-   "level": 0.357,
-   "clusterB": 3,
+   "level": 0.139,
+   "clusterB": 1,
    "statusB": "weak",
    "profileTop": [
     [
-     5,
+     4,
+     -0.073
+    ],
+    [
+     2,
      0.072
     ],
     [
-     3,
-     0.053
-    ],
-    [
-     4,
-     -0.051
+     5,
+     0.027
     ]
    ]
   },
   "79": {
    "name": "Red Deer-South",
-   "pollsReported": 0.863,
+   "pollsReported": 0.973,
    "complete": true,
    "yes": [
-    59.7,
-    64.9,
-    65.1,
-    62.6,
-    70.1,
-    60.2,
-    60.2,
-    55.9,
+    59.8,
+    58.6,
+    58.8,
+    56.5,
+    64.0,
+    52.5,
+    54.2,
+    48.1,
     58.4,
-    29.5
+    29.3
    ],
-   "level": 0.35,
-   "clusterB": 3,
+   "level": 0.113,
+   "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
+     9,
+     0.271
+    ],
+    [
      1,
-     -0.145
+     -0.088
     ],
     [
-     2,
-     0.115
-    ],
-    [
-     6,
-     0.089
+     4,
+     -0.074
     ]
    ]
   },
@@ -3486,32 +3256,47 @@
    "pollsReported": 0.976,
    "complete": true,
    "yes": [
-    76.1,
-    73.3,
-    74.0,
-    73.9,
-    80.8,
+    76.8,
+    75.7,
+    74.9,
+    77.7,
+    81.5,
+    73.6,
+    71.8,
+    68.9,
     72.4,
-    75.0,
-    72.7,
-    78.8,
     51.1
    ],
-   "level": 1.006,
+   "level": 0.946,
    "clusterB": 1,
-   "statusB": "lagging",
-   "profileTop": [
+   "statusB": "fitted",
+   "shapB": [
     [
-     9,
-     0.31
+     "Q2 programs by status",
+     0.11
     ],
     [
-     10,
-     0.243
+     "Q3 12-month residency",
+     -0.074
+    ],
+    [
+     "Q10 separation referendum",
+     0.069
+    ]
+   ],
+   "probaB": 0.73,
+   "profileTop": [
+    [
+     4,
+     0.146
     ],
     [
      3,
-     -0.212
+     -0.09
+    ],
+    [
+     7,
+     -0.074
     ]
    ]
   },
@@ -3521,99 +3306,99 @@
    "complete": true,
    "yes": [
     51.2,
-    55.9,
-    56.6,
-    55.3,
-    62.1,
+    48.9,
+    49.8,
+    48.8,
+    55.6,
     47.9,
     49.5,
     44.1,
     46.3,
     19.2
    ],
-   "level": -0.07,
+   "level": -0.221,
    "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
+     6,
+     0.19
+    ],
+    [
      10,
-     -0.161
+     -0.179
     ],
     [
-     2,
-     0.158
-    ],
-    [
-     3,
-     0.082
+     7,
+     0.167
     ]
    ]
   },
   "82": {
    "name": "Spruce Grove-Stony Plain",
-   "pollsReported": 0.821,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    59.2,
-    55.7,
-    65.1,
-    62.5,
-    68.4,
-    56.2,
-    57.6,
-    53.1,
-    55.2,
-    27.3
+    61.0,
+    58.3,
+    59.8,
+    57.8,
+    64.2,
+    50.5,
+    52.7,
+    47.6,
+    48.6,
+    27.9
    ],
-   "level": 0.238,
-   "clusterB": 3,
-   "statusB": "lagging",
+   "level": 0.065,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
-     2,
-     -0.158
+     9,
+     -0.075
     ],
     [
      3,
-     0.133
+     0.039
     ],
     [
      4,
-     0.057
+     0.023
     ]
    ]
   },
   "83": {
    "name": "St. Albert",
-   "pollsReported": 0.983,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    46.6,
-    51.2,
-    52.0,
-    51.1,
-    57.2,
+    46.3,
+    46.7,
+    44.1,
     43.4,
-    45.0,
+    49.9,
+    43.4,
+    44.9,
     40.4,
-    32.1,
+    42.4,
     17.0
    ],
-   "level": -0.29,
+   "level": -0.399,
    "clusterB": 2,
    "statusB": "lagging",
    "profileTop": [
     [
-     9,
-     -0.457
+     6,
+     0.199
     ],
     [
-     2,
-     0.189
+     8,
+     0.194
     ],
     [
-     4,
-     0.119
+     7,
+     0.169
     ]
    ]
   },
@@ -3622,194 +3407,149 @@
    "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    58.5,
-    56.9,
-    64.1,
-    62.4,
-    71.3,
+    58.7,
+    57.0,
+    57.1,
+    56.5,
+    64.0,
     56.3,
-    58.0,
+    58.1,
     53.0,
-    55.1,
+    47.0,
     26.2
    ],
-   "level": 0.245,
-   "clusterB": 3,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q5 proof of citizenship",
-     0.133
-    ],
-    [
-     "Q10 separation referendum",
-     0.12
-    ],
-    [
-     "Q2 programs by status",
-     0.117
-    ]
-   ],
-   "probaB": 0.94,
+   "level": 0.085,
+   "clusterB": 2,
+   "statusB": "lagging",
    "profileTop": [
     [
-     5,
-     0.165
+     6,
+     0.204
     ],
     [
-     2,
-     -0.116
+     7,
+     0.2
     ],
     [
-     1,
-     -0.086
+     8,
+     0.191
     ]
    ]
   },
   "85": {
    "name": "Taber-Warner",
-   "pollsReported": 0.986,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    74.8,
+    74.9,
     72.4,
-    76.7,
-    75.0,
-    81.3,
-    73.5,
-    73.7,
-    69.9,
-    72.9,
+    73.8,
+    71.4,
+    78.1,
+    69.2,
+    70.1,
+    65.5,
+    68.5,
     46.3
    ],
-   "level": 0.951,
+   "level": 0.775,
    "clusterB": 1,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q10 separation referendum",
-     0.21
-    ],
-    [
-     "Q4 fees non-PR",
-     0.095
-    ],
-    [
-     "Q6 provinces pick judges",
-     0.044
-    ]
-   ],
-   "probaB": 0.82,
+   "statusB": "weak",
    "profileTop": [
     [
+     9,
+     0.041
+    ],
+    [
      2,
-     -0.137
+     -0.031
     ],
     [
-     10,
-     0.106
-    ],
-    [
-     6,
-     0.09
+     4,
+     -0.028
     ]
    ]
   },
   "86": {
    "name": "Vermilion-Lloydminster-Wainwright",
-   "pollsReported": 0.833,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    75.9,
-    73.7,
-    74.6,
-    75.7,
-    82.0,
-    73.5,
-    73.5,
-    69.6,
-    72.5,
-    39.4
+    76.1,
+    73.9,
+    74.8,
+    72.7,
+    79.2,
+    69.8,
+    70.2,
+    69.2,
+    68.7,
+    39.5
    ],
-   "level": 0.928,
-   "clusterB": 3,
+   "level": 0.8,
+   "clusterB": 1,
    "statusB": "fitted",
    "shapB": [
     [
-     "Q5 proof of citizenship",
-     0.155
+     "Q2 programs by status",
+     0.153
     ],
     [
      "Q10 separation referendum",
-     0.149
+     0.088
     ],
     [
-     "Q2 programs by status",
-     0.085
+     "Q1 immigration control",
+     0.062
     ]
    ],
-   "probaB": 0.86,
+   "probaB": 0.99,
    "profileTop": [
     [
      10,
-     -0.154
+     -0.332
     ],
     [
-     6,
-     0.116
+     8,
+     0.123
     ],
     [
-     3,
-     -0.103
+     5,
+     0.06
     ]
    ]
   },
   "87": {
    "name": "West Yellowhead",
-   "pollsReported": 0.986,
+   "pollsReported": 1.0,
    "complete": true,
    "yes": [
-    72.3,
-    69.5,
-    69.5,
-    76.1,
-    83.0,
-    69.1,
-    72.8,
-    70.0,
-    72.8,
+    70.6,
+    68.6,
+    67.6,
+    67.3,
+    74.3,
+    61.3,
+    63.6,
+    59.4,
+    62.2,
     40.0
    ],
-   "level": 0.853,
-   "clusterB": 3,
-   "statusB": "fitted",
-   "shapB": [
-    [
-     "Q5 proof of citizenship",
-     0.129
-    ],
-    [
-     "Q10 separation referendum",
-     0.12
-    ],
-    [
-     "Q2 programs by status",
-     0.105
-    ]
-   ],
-   "probaB": 0.8,
+   "level": 0.52,
+   "clusterB": 1,
+   "statusB": "weak",
    "profileTop": [
     [
-     3,
-     -0.283
-    ],
-    [
      5,
-     0.23
+     0.059
     ],
     [
-     2,
-     -0.175
+     6,
+     -0.055
+    ],
+    [
+     3,
+     -0.053
     ]
    ]
   }
