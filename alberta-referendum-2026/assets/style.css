@@ -38,7 +38,10 @@ h1 { font-size: 26px; margin: 0 0 4px; }
 .panel svg { display: block; width: 100%; height: auto; }
 
 .riding { stroke: var(--line); stroke-width: .6; cursor: pointer; }
+.riding.focus { stroke: #3a3a3a; stroke-width: 1.4; }
 .riding:hover, .riding.active { stroke: var(--ink); stroke-width: 2; }
+.inset-labels text { font-size: 13px; fill: #222; paint-order: stroke; stroke: #fff; stroke-width: 3px; stroke-linejoin: round; }
+.inset-labels text.focus-label { font-weight: 650; }
 .city-box { fill: none; stroke: var(--ink); stroke-width: 1; stroke-dasharray: 3 2; }
 
 .legend { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; margin: 14px 0; font-size: 13px; }

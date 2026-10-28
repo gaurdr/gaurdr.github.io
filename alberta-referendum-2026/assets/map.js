@@ -129,11 +129,52 @@
     return { type: "MultiPoint", coordinates: [[w - dx, s - dy], [e + dx, s - dy], [e + dx, n + dy], [w - dx, n + dy]] };
   }
 
-  function drawPanel(svgSel, features, focus, width, height, pad = 0) {
+  // Names inside a small inset, so a one-colour area still reads. A focus riding is labelled at the centre of its
+  // visible part; a neighbour is labelled in the part of its visible area that is clear of the focus ridings.
+  function addLabels(svg, features, path, width, height, focusNames) {
+    const g = svg.append("g").attr("pointer-events", "none").attr("class", "inset-labels");
+    const visible = (f) => {
+      const [[x0, y0], [x1, y1]] = path.bounds(f);
+      return [Math.max(x0, 0), Math.max(y0, 0), Math.min(x1, width), Math.min(y1, height)];
+    };
+    const focus = features.filter((f) => focusNames.has(f.properties.name)).map(visible);
+    const [fx0, fy0, fx1, fy1] = [d3.min(focus, (b) => b[0]), d3.min(focus, (b) => b[1]), d3.max(focus, (b) => b[2]), d3.max(focus, (b) => b[3])];
+    const placed = []; // label boxes already drawn: [x0, y0, x1, y1]
+    const box = (text, x, y) => { const w = text.length * 7; return [x - w / 2, y - 9, x + w / 2, y + 9]; };
+    const overlaps = (a) => placed.some((b) => a[0] < b[2] && a[2] > b[0] && a[1] < b[3] && a[3] > b[1]);
+    const add = (text, x, y, cls) => {
+      placed.push(box(text, x, y));
+      g.append("text").attr("class", cls).attr("x", x).attr("y", y)
+        .attr("text-anchor", "middle").attr("dominant-baseline", "middle").text(text);
+    };
+    for (const f of features.filter((x) => focusNames.has(x.properties.name))) { // city ridings first, so neighbours avoid them
+      const [ax, ay, bx, by] = visible(f);
+      add(f.properties.name.replace(/^[^-]+-/, ""), (ax + bx) / 2, (ay + by) / 2, "focus-label"); // "West" / "East"
+    }
+    for (const f of features.filter((x) => !focusNames.has(x.properties.name))) {
+      const [ax, ay, bx, by] = visible(f);
+      if (bx - ax < 40 || by - ay < 30) continue; // barely in view
+      const clearOfFocus = bx < fx0 || ax > fx1 || by < fy0 || ay > fy1;
+      let x0 = ax, x1 = bx;
+      if (!clearOfFocus) { // keep to the wider side of the focus ridings
+        const left = [ax, Math.min(bx, fx0 - 6)], right = [Math.max(ax, fx1 + 6), bx];
+        [x0, x1] = left[1] - left[0] >= right[1] - right[0] ? left : right;
+      }
+      if (x1 - x0 < 70) continue; // no room for the name
+      const x = (x0 + x1) / 2, mid = (ay + by) / 2;
+      // try the middle of the visible part, then step up and down until the label clears the others
+      const y = [0, -20, 20, -40, 40, -60, 60].map((d) => mid + d)
+        .find((yy) => yy - 9 >= ay && yy + 9 <= by && !overlaps(box(f.properties.name, x, yy)));
+      if (y !== undefined) add(f.properties.name, x, y, "");
+    }
+  }
+
+  function drawPanel(svgSel, features, focus, width, height, pad = 0, labelled = false) {
     const projection = d3.geoTransverseMercator().rotate([115, 0]);
     projection.fitExtent([[10, 30], [width - 10, height - 10]], fitTarget(focus, pad));
     const path = d3.geoPath(projection);
     const svg = svgSel.attr("viewBox", `0 0 ${width} ${height}`);
+    const focusNames = new Set(focus.map((f) => f.properties.name));
     const clipId = "clip-" + svgSel.attr("id");
     svg.append("clipPath").attr("id", clipId).append("rect").attr("width", width).attr("height", height);
     const g = svg.append("g").attr("clip-path", `url(#${clipId})`);
@@ -144,10 +185,13 @@
       .attr("class", "riding")
       .attr("d", path)
       .attr("data-num", (d) => d.properties.num)
+      .classed("focus", (d) => labelled && focusNames.has(d.properties.name))
       .on("mouseenter", function () { d3.select(this).raise(); })
       .on("mousemove", (event, d) => showTooltip(event, d.properties.num))
       .on("mouseleave", hideTooltip);
     paths.push(sel);
+    if (labelled) sel.filter((d) => focusNames.has(d.properties.name)).raise(); // keep the outline above neighbours
+    if (labelled) addLabels(svg, features, path, width, height, focusNames);
     return { svg, path, projection };
   }
 
@@ -333,7 +377,7 @@
     drawCityBox(main, lethbridge, "Lethbridge");
     drawPanel(d3.select("#map-edm"), features, edmonton, 520, 300);
     drawPanel(d3.select("#map-cgy"), features, calgary, 520, 300);
-    drawPanel(d3.select("#map-leth"), features, lethbridge, 520, 240, 0.2);
+    drawPanel(d3.select("#map-leth"), features, lethbridge, 520, 240, 0.2, true);
 
     d3.select("#search").on("input", function () {
       const q = this.value.trim().toLowerCase();
