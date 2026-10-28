@@ -245,7 +245,10 @@
     const m = D.meta;
     const when = new Date(m.observedAt).toLocaleString("en-CA", { timeZone: "America/Edmonton", month: "long", day: "numeric",
       year: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
-    d3.select("#status").text(`Based on partial results: ${d3.format(",")(m.pollsReported)} of ${d3.format(",")(m.totalPolls)} polls reported, as observed on ${when}. Clusters will change when the final count is in.`);
+    const polls = `${d3.format(",")(m.pollsReported)} of ${d3.format(",")(m.totalPolls)} polls reported`;
+    d3.select("#status").text(m.feedState === "final"
+      ? `Final results: ${polls}, as saved on ${when}. Results are unofficial until Elections Alberta certifies them.`
+      : `Based on partial results: ${polls}, as observed on ${when}. Clusters will change when the final count is in.`);
 
     const features = topojson.feature(topo, Object.values(topo.objects)[0]).features;
     const calgary = features.filter((f) => f.properties.name.startsWith("Calgary-"));
