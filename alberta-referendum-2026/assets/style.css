@@ -31,10 +31,10 @@ h1 { font-size: 26px; margin: 0 0 4px; }
 .card.blue .value { color: var(--blue); }
 .card.red .value { color: var(--red); }
 
-.layout { display: grid; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr); gap: 16px; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
 .panel { background: #fff; border: 1px solid #e3e3e0; border-radius: 8px; position: relative; }
 .panel h2 { position: absolute; top: 8px; left: 12px; margin: 0; z-index: 1; background: rgba(255,255,255,.9); padding: 1px 6px; border-radius: 4px; font-size: 13px; font-weight: 600; color: var(--muted); }
-.insets { display: grid; grid-template-rows: 1fr 1fr; gap: 16px; }
+.insets { display: grid; gap: 16px; align-content: start; }
 .panel svg { display: block; width: 100%; height: auto; }
 
 .riding { stroke: var(--line); stroke-width: .6; cursor: pointer; }

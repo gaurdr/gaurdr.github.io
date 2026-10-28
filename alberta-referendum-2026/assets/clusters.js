@@ -35,9 +35,18 @@
 
   // ---------- drawing ----------
 
-  function drawPanel(svgSel, features, focus, width, height) {
+  // What to fit a panel to: the focus ridings, optionally padded by a fraction of their extent (to show surroundings).
+  function fitTarget(focus, pad) {
+    const collection = { type: "FeatureCollection", features: focus };
+    if (!pad) return collection;
+    const [[w, s], [e, n]] = d3.geoBounds(collection);
+    const dx = (e - w) * pad, dy = (n - s) * pad;
+    return { type: "MultiPoint", coordinates: [[w - dx, s - dy], [e + dx, s - dy], [e + dx, n + dy], [w - dx, n + dy]] };
+  }
+
+  function drawPanel(svgSel, features, focus, width, height, pad = 0) {
     const projection = d3.geoTransverseMercator().rotate([115, 0])
-      .fitExtent([[10, 30], [width - 10, height - 10]], { type: "FeatureCollection", features: focus });
+      .fitExtent([[10, 30], [width - 10, height - 10]], fitTarget(focus, pad));
     const path = d3.geoPath(projection);
     const svg = svgSel.attr("viewBox", `0 0 ${width} ${height}`);
     const clipId = "clip-" + svgSel.attr("id");
@@ -253,11 +262,14 @@
     const features = topojson.feature(topo, Object.values(topo.objects)[0]).features;
     const calgary = features.filter((f) => f.properties.name.startsWith("Calgary-"));
     const edmonton = features.filter((f) => f.properties.name.startsWith("Edmonton-"));
+    const lethbridge = features.filter((f) => f.properties.name.startsWith("Lethbridge-"));
     const main = drawPanel(d3.select("#map-ab"), features, features, 520, 820);
     drawCityBox(main, calgary, "Calgary");
     drawCityBox(main, edmonton, "Edmonton");
-    drawPanel(d3.select("#map-edm"), features, edmonton, 520, 340);
-    drawPanel(d3.select("#map-cgy"), features, calgary, 520, 340);
+    drawCityBox(main, lethbridge, "Lethbridge");
+    drawPanel(d3.select("#map-edm"), features, edmonton, 520, 300);
+    drawPanel(d3.select("#map-cgy"), features, calgary, 520, 300);
+    drawPanel(d3.select("#map-leth"), features, lethbridge, 520, 240, 0.2);
 
     document.addEventListener("keydown", (e) => { if (e.key === "Escape") { legendFocus = null; select(null); } });
     renderTable();

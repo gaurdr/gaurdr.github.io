@@ -16,8 +16,8 @@
 .legend .sw { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
 
 .cl-layout { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 16px; align-items: start; }
-.cl-maps { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr); gap: 16px; }
-.cl-insets { display: grid; grid-template-rows: 1fr 1fr; gap: 16px; }
+.cl-maps { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.cl-insets { display: grid; gap: 16px; align-content: start; }
 .cl-side { padding: 14px 16px; position: sticky; top: 12px; max-height: calc(100vh - 24px); overflow: auto; font-size: 13.5px; }
 .cl-side h3 { margin: 0 0 2px; font-size: 18px; }
 .cl-side h4 { margin: 14px 0 6px; font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
