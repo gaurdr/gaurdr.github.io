@@ -15,8 +15,8 @@
   const clusterOf = (num) => D.ridings[num]?.[`cluster${key}`] ?? null;
   const C = () => D.clusterings[key];
   const qName = (q) => `Q${q} ${D.meta.questions[q]}`;
-  // Placed in the nearest cluster but not used to build it (few polls counted, or an outlier profile).
-  const isProvisional = (num) => ["assigned", "outlier", "weak", "lagging"].includes(D.ridings[num]?.[`status${key}`]);
+  // Placed in the nearest cluster but not used to build it (weak pattern, or uneven counting), so its label is less certain.
+  const hasUncertainLabel = (num) => ["assigned", "outlier", "weak", "lagging"].includes(D.ridings[num]?.[`status${key}`]);
 
   function featureName(f) {
     if (f === "level") return "Overall leaning";
@@ -105,7 +105,7 @@
       .on("keydown", (event, d) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); select(d.properties.num); } });
     paths.push(sel);
     if (labelled) sel.filter((d) => focusNames.has(d.properties.name)).raise(); // keep the outline above neighbours
-    // Hatching over provisional ridings (drawn above the fills, ignores the mouse).
+    // Hatching over ridings whose cluster label is less certain (drawn above the fills, ignores the mouse).
     const hatchId = "hatch-" + svgSel.attr("id");
     svg.append("defs").append("pattern").attr("id", hatchId).attr("patternUnits", "userSpaceOnUse")
       .attr("width", 6).attr("height", 6).attr("patternTransform", "rotate(45)")
@@ -131,7 +131,7 @@
       sel.attr("fill", (d) => color(clusterOf(d.properties.num)));
     }
     for (const h of hatches) {
-      h.attr("fill", function (d) { return isProvisional(d.properties.num) ? this.dataset.hatch : "none"; });
+      h.attr("fill", function (d) { return hasUncertainLabel(d.properties.num) ? this.dataset.hatch : "none"; });
     }
     highlight(selected ? clusterOf(selected) : legendFocus);
   }
@@ -157,7 +157,7 @@
     if (!r) return;
     const c = r[`cluster${key}`];
     tooltip.html(`<h3>${r.name}</h3><div class="chip"><span class="sw" style="background:${color(c)}"></span>
-      ${c == null ? "Not placed" : `Cluster ${c}${isProvisional(num) ? " (provisional)" : ""}`}</div><div class="sub" style="margin-top:4px">Click for details</div>`)
+      ${c == null ? "Not placed" : `Cluster ${c}${hasUncertainLabel(num) ? " (label less certain)" : ""}`}</div><div class="sub" style="margin-top:4px">Click for details</div>`)
       .style("display", "block");
     const box = tooltip.node().getBoundingClientRect();
     let x = event.clientX + 16, y = event.clientY + 16;
@@ -263,7 +263,7 @@
     const items = Object.entries(s.clusters).map(([c, cl]) =>
       `<span class="item" data-c="${c}" role="button" tabindex="0"><span class="sw" style="background:${color(+c)}"></span>Cluster ${c} (${cl.n})</span>`).join("");
     d3.select("#legend").html(`${items}<span><span class="sw" style="background:${GREY}"></span> Not placed</span>
-      <span><span class="sw provisional-sw"></span> Hatched: provisional (counting incomplete, or too weak a pattern)</span>
+      <span><span class="sw uncertain-sw"></span> Hatched: cluster label less certain (pattern too weak, or uneven counting)</span>
       <span style="color:var(--muted)">Click a cluster to highlight it</span>`);
     d3.selectAll(".legend .item")
       .on("click", function () { focusCluster(+this.dataset.c); })

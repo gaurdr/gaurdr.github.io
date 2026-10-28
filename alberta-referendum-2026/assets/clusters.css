@@ -45,7 +45,7 @@ table.yes td.bars { width: 26%; padding-left: 8px; }
 ul.reasons { margin: 4px 0; padding-left: 18px; }
 ul.reasons li { margin: 2px 0; }
 
-.provisional-sw { background: repeating-linear-gradient(45deg, #777 0 4px, #fff 4px 6px); }
+.uncertain-sw { background: repeating-linear-gradient(45deg, #777 0 4px, #fff 4px 6px); }
 .riding.dim { opacity: .28; }
 .riding.sel { stroke: var(--ink); stroke-width: 2.5; }
 
